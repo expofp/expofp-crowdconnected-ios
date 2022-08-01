@@ -1,0 +1,11 @@
+framework module CrowdConnectedGeo {
+  umbrella header "CrowdConnectedGeo.h"
+
+  export *
+  module * { export * }
+}
+
+module CrowdConnectedGeo.Swift {
+    header "CrowdConnectedGeo-Swift.h"
+    requires objc
+}

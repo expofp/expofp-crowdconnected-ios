@@ -1,0 +1,11 @@
+framework module CrowdConnectedIPS {
+  umbrella header "CrowdConnectedIPS.h"
+
+  export *
+  module * { export * }
+}
+
+module CrowdConnectedIPS.Swift {
+    header "CrowdConnectedIPS-Swift.h"
+    requires objc
+}
