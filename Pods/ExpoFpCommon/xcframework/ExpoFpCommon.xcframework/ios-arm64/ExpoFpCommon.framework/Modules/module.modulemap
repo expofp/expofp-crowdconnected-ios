@@ -1,0 +1,4 @@
+framework module ExpoFpCommon {
+  header "ExpoFpCommon-Swift.h"
+  requires objc
+}

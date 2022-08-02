@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.documentation_url  = "https://github.com/expofp/expofp-sdk-ios"
   spec.license            = { :type => "MIT" }
   spec.author                = { 'ExpoFP' => 'support@expofp.com' }
-  spec.source             = { :git => 'https://github.com/expofp/expofp-sdk-ios.git', :tag => "#{spec.version}" }
+  spec.source             = { :git => 'https://github.com/expofp/expofp-crowdconnected-ios.git', :tag => "#{spec.version}" }
   spec.swift_version      = "5"
 
   # Supported deployment targets
@@ -18,7 +18,9 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "xcframework/ExpoFpCrowdConnected.xcframework"
 
   # Add here any resources to be exported.
+  spec.dependency 'ExpoFpCommon', '~> 0.2.2'
   spec.dependency 'CrowdConnectedIPS', '~> 1.3.0'
   spec.dependency 'CrowdConnectedCore', '~> 1.3.0'
+  spec.dependency 'CrowdConnectedGeo', '~> 1.3.0'
 
 end

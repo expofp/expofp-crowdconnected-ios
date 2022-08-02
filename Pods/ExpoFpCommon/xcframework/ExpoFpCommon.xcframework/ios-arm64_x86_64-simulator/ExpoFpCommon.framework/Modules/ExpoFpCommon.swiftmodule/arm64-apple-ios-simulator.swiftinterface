@@ -1,0 +1,37 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ExpoFpCommon
+import Foundation
+import Swift
+import _Concurrency
+@_hasMissingDesignatedInitializers public class GlobalLocationProvider {
+  public static func initialize(_ locationProvider: ExpoFpCommon.LocationProvider)
+  public static func start()
+  public static func stop()
+  public static func getLocationProvider() -> ExpoFpCommon.LocationProvider?
+  @objc deinit
+}
+public protocol LocationProviderDelegate {
+  func didUpdateLocation(location: ExpoFpCommon.Location)
+  func didStartSuccess()
+  func didStartFailure(reason: Swift.String)
+  func didStopSuccess()
+  func didStopFailure(reason: Swift.String)
+}
+public struct Location {
+  public let x: Swift.Double?
+  public let y: Swift.Double?
+  public let z: Swift.String?
+  public let angle: Swift.Double?
+  public let latitude: Swift.Double?
+  public let longitude: Swift.Double?
+  public init(latitude: Swift.Double, longitude: Swift.Double, angle: Swift.Double? = nil)
+  public init(x: Swift.Double, y: Swift.Double, z: Swift.String? = nil, angle: Swift.Double? = nil)
+  public init(x: Swift.Double? = nil, y: Swift.Double? = nil, z: Swift.String? = nil, angle: Swift.Double? = nil, latitude: Swift.Double? = nil, longitude: Swift.Double? = nil)
+}
+public protocol LocationProvider {
+  func addDelegate(_ provider: ExpoFpCommon.LocationProviderDelegate)
+  func removeDelegate(_ provider: ExpoFpCommon.LocationProviderDelegate)
+  func start()
+  func stop()
+}

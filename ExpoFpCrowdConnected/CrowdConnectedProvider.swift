@@ -17,9 +17,6 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     }
     
     public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location]) {
-        print("++++ CrowdConnectedProvider didUpdateLocation")
-        print(locations)
-        
         if(!locations.isEmpty){
             let loc = locations.first!
             
@@ -54,8 +51,6 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     
     
     public func start() {
-        print("++++ CrowdConnectedProvider start, mode: \(self.settings.mode)")
-        
         switch self.settings.mode {
         case .IPS_ONLY:
             CrowdConnectedIPS.activate()
@@ -70,7 +65,6 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
         }
         
         CrowdConnected.shared.start(appKey: self.settings.appKey, token: self.settings.token, secret: self.settings.secret) { deviceId, error in
-            print("++++ CrowdConnectedProvider CrowdConnected.shared.start deviceId: \(deviceId ?? "NaN")")
             if(deviceId != nil && deviceId != ""){
                 CrowdConnected.shared.delegate = self
                 for (aliasKey, aliasValue) in self.settings.aliases {
@@ -81,13 +75,11 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     }
     
     public func stop() {
-        print("++++ CrowdConnectedProvider stop")
         CrowdConnected.shared.delegate = nil
         CrowdConnected.shared.stop()
     }
     
     private func requestPermissions() {
-        print("++++ CrowdConnectedProvider requestPermissions")
         let locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()
     }
