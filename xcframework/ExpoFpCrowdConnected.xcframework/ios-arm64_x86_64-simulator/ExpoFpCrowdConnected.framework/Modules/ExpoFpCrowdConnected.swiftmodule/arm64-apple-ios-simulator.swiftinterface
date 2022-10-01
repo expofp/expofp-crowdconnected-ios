@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ExpoFpCrowdConnected
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
 import CrowdConnectedCore
 import CrowdConnectedGeo
@@ -10,6 +11,7 @@ import ExpoFpCommon
 import Foundation
 import Swift
 import _Concurrency
+import _StringProcessing
 public class Settings {
   final public let appKey: Swift.String
   final public let token: Swift.String
@@ -21,10 +23,12 @@ public class Settings {
   @objc deinit
 }
 public class CrowdConnectedProvider : ExpoFpCommon.LocationProvider, CrowdConnectedCore.CrowdConnectedDelegate {
+  public var delegate: ExpoFpCommon.LocationProviderDelegate? {
+    get
+    set(newDelegate)
+  }
   public init(_ settings: ExpoFpCrowdConnected.Settings)
   @objc public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location])
-  public func addDelegate(_ delegate: ExpoFpCommon.LocationProviderDelegate)
-  public func removeDelegate(_ delegate: ExpoFpCommon.LocationProviderDelegate)
   public func start()
   public func stop()
   @objc deinit

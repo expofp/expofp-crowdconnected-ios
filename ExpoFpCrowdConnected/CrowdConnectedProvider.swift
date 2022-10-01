@@ -7,13 +7,20 @@ import CrowdConnectedShared
 import CoreLocation
 
 public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
-    
     private let settings: Settings
-    private var delegates: [LocationProviderDelegate]
+    
+    private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
+    
+    public var delegate: ExpoFpCommon.LocationProviderDelegate? {
+        get { lDelegate }
+        set(newDelegate) {
+            lDelegate = newDelegate
+            requestPermissions()
+        }
+    }
     
     public init(_ settings: Settings){
         self.settings = settings
-        self.delegates = []
     }
     
     public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location]) {
@@ -32,24 +39,13 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
             }
             
             if(dloc != nil) {
-                for delegate in self.delegates {
-                    delegate.didUpdateLocation(location: dloc!)
+                if let dlg = delegate {
+                    dlg.didUpdateLocation(location: dloc!)
                 }
             }
         }
     }
-    
-    public func addDelegate(_ delegate: LocationProviderDelegate) {
-        self.delegates.append(delegate)
         
-        requestPermissions()
-    }
-    
-    public func removeDelegate(_ delegate: LocationProviderDelegate) {
-        self.delegates.remove(at: self.delegates.startIndex)
-    }
-    
-    
     public func start() {
         switch self.settings.mode {
         case .IPS_ONLY:
