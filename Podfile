@@ -4,12 +4,12 @@ target 'ExpoFpCrowdConnected' do
 
 use_frameworks!
 
-#pod 'ExpoFpCommon', '0.2.2'
+pod 'ExpoFpCommon', '0.3.0'
 
-pod 'ExpoFpCommon', :path => '/Users/vladimir/Xcode projects/expofp-common-ios'
+#pod 'ExpoFpCommon', :path => '/Users/vladimir/Xcode projects/expofp-common-ios'
 
-pod 'CrowdConnectedIPS', '1.3.0'
-pod 'CrowdConnectedGeo’, '1.3.0'
-pod 'CrowdConnectedCore', '1.3.0'
+pod 'CrowdConnectedIPS', '1.3.2'
+pod 'CrowdConnectedGeo’, '1.3.2'
+pod 'CrowdConnectedCore', '1.3.2'
 
 end

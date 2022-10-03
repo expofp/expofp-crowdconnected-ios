@@ -4,110 +4,77 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/CrowdConnectedShared-Swift.h</key>
+		<key>Headers/CrowdConnectedCore-Swift.h</key>
 		<data>
-		ZlXGVZeCn6KY+PmzEHAMLdV/iLk=
+		nRZpnez5zjraWTwp7idUE3BKmTk=
 		</data>
-		<key>Headers/CrowdConnectedShared.h</key>
+		<key>Headers/CrowdConnectedCore.h</key>
 		<data>
-		Rrnvd7Jt7D3huSxGLMPJ2Kv2OW8=
+		4wBX6iJ3BOp4nYE/WfqqeNG8wKk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3AkSeBzjpVwy7/vdJeNLXHZhgj4=
+		59ZNOu0Jpc3XuxAg0H3GNiVUfNo=
 		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		sjcT/1MJ+up4Hu2KphT90QNZibI=
+		PLmAXIYHuF3JNN5toiEvcw0Hk7w=
 		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		EthQfbAb/AZ4Q5AY0K+Dm1ewy9U=
+		Nr3K6u1yAxJJ7pc9CB9jeRLBCWo=
 		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XynmbUxE9KGidmasVBzBA/PoeQE=
-		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		vcsdb5xFUi7qEuty2TnXqboJ928=
-		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		I1SetkKNW4ZL7sMdQWF5I10CejM=
-		</data>
-		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		vTXHaZZsctfEdhdBV2Nn100tHlM=
+		HLp/FYh/PmQLpykwN4eOVuivFlw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		dLCm1+1Gt9WgBaymuhWcEGpkfAY=
+		tcfFJppjdAQyDHSm4vZVx7mm8/Y=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/CrowdConnectedShared-Swift.h</key>
+		<key>Headers/CrowdConnectedCore-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b0saLg7tjx/iSfuD6GANGIROg0iupFfz+Ph/qUq7Aqs=
+			kAiA8kSEiKbbM7SyHh7cNv/bu13p6ULiqGp2TgDvRJI=
 			</data>
 		</dict>
-		<key>Headers/CrowdConnectedShared.h</key>
+		<key>Headers/CrowdConnectedCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Bvylx6hJGf3syQDNz6Lich/UmsteNtD1FrI4QyfIx0=
+			PNKw+bMiOdn1U6OTirTjiR0gHRMTq3sZ7FfoIE1wSRg=
 			</data>
 		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0CyaVf0T/lGTMt4dDXZfTI6SbTS0x7AjcuQ1mnTrEMQ=
+			4jvsVkB+3tE8+vD7mPxaczgxGzpJPoJl51YtsAnf+Ww=
 			</data>
 		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fUAftAtuyHQAm0zMW0X1vmHoviyo60xk9Y6aoXHc2jY=
+			7nQctjEKqgZP6UBbd6148wdDuDRiFT2iUw4p3Aty3Gs=
 			</data>
 		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/CrowdConnectedCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ekXVTpbdP1uI46V/24GJvtjK3VjrNBaWy8Q2rPSQuLw=
-			</data>
-		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VyDDaeqA2/hs68L3e19SPWaB6UvBkMyIyuy/8HVO4HA=
-			</data>
-		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aXFKD8kGoWw+D9ve4AypYJFsI2JI6KXjgxjLIJhpeyM=
-			</data>
-		</dict>
-		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			r2nkQUlBhqid7JigOi+PEnyInRpPNcqm3FlFSLFLnzI=
+			gZLi4MJA8C3f2IaZtmw0R3/0AwaH3lyDtyAzaxctfAs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			46ADs4p1y5M0c0P5ohiTptsMDKxEjXHZ3RRRz3uxSvU=
+			E2d6bBz7pGw0f9zPpA0y4PrrezACeyq6t7kzTTN7coI=
 			</data>
 		</dict>
 	</dict>

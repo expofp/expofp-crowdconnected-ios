@@ -4,77 +4,110 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/CrowdConnectedIPS-Swift.h</key>
+		<key>Headers/CrowdConnectedShared-Swift.h</key>
 		<data>
-		5gHldDgRMpeXJjl2cyOGnryiNEo=
+		ZlXGVZeCn6KY+PmzEHAMLdV/iLk=
 		</data>
-		<key>Headers/CrowdConnectedIPS.h</key>
+		<key>Headers/CrowdConnectedShared.h</key>
 		<data>
-		TvE4AXjEGqTt0FngSf68SKNqcbY=
+		Rrnvd7Jt7D3huSxGLMPJ2Kv2OW8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		V5mTVhCwz3BCgrdfE14oGic6OSU=
+		SnMNLGhXhEeKFGNwb4mKlxzIOYg=
 		</data>
-		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sjHBZd3emtPs1RoZrvArraaEFUI=
+		sjcT/1MJ+up4Hu2KphT90QNZibI=
 		</data>
-		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bo4RpD+Gs9xnHs5/X5l5FD0Xtuc=
+		EthQfbAb/AZ4Q5AY0K+Dm1ewy9U=
 		</data>
-		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NLepJHwIv103Y7bcyj0wqNBRi80=
+		EP60ehkVUEE6mdW/fByW1i25jw8=
+		</data>
+		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		vcsdb5xFUi7qEuty2TnXqboJ928=
+		</data>
+		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		I1SetkKNW4ZL7sMdQWF5I10CejM=
+		</data>
+		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		wlbrzjDOpesBRytBF0s+EY8RLQw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		LEJkN966AuQFWB10wJG9kX8+nL0=
+		dLCm1+1Gt9WgBaymuhWcEGpkfAY=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/CrowdConnectedIPS-Swift.h</key>
+		<key>Headers/CrowdConnectedShared-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9BB1P/8hjrd91jR5zi5tp2xZKcZXTomigSlNRJzbyW4=
+			b0saLg7tjx/iSfuD6GANGIROg0iupFfz+Ph/qUq7Aqs=
 			</data>
 		</dict>
-		<key>Headers/CrowdConnectedIPS.h</key>
+		<key>Headers/CrowdConnectedShared.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tt/HYoOEb3npry+a28Hsgc9C7WAJESdsnWYEWeFYbVA=
+			+Bvylx6hJGf3syQDNz6Lich/UmsteNtD1FrI4QyfIx0=
 			</data>
 		</dict>
-		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kA7s6ULHdpOuY8PU4ky10pZGhr5Z0IUDiAILeL7TSM0=
+			0CyaVf0T/lGTMt4dDXZfTI6SbTS0x7AjcuQ1mnTrEMQ=
 			</data>
 		</dict>
-		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u0R4AcYUXXeTQ646PEcjbyuXxsjlbsv9eJCH0Nfefq4=
+			fUAftAtuyHQAm0zMW0X1vmHoviyo60xk9Y6aoXHc2jY=
 			</data>
 		</dict>
-		<key>Modules/CrowdConnectedIPS.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<key>Modules/CrowdConnectedShared.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			olEfAgQ271rn3iyl/w5egQAGFEVaF/3zvvYPDWk71Wc=
+			WG6EMqvZvTVtvmsfY5ChKi+MKIxHQ/f63lVgAzayy5c=
+			</data>
+		</dict>
+		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VyDDaeqA2/hs68L3e19SPWaB6UvBkMyIyuy/8HVO4HA=
+			</data>
+		</dict>
+		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aXFKD8kGoWw+D9ve4AypYJFsI2JI6KXjgxjLIJhpeyM=
+			</data>
+		</dict>
+		<key>Modules/CrowdConnectedShared.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V4gE+tBKB1qZKsDLOnWHowfPEYgCqxRfqVUWnkN82wA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J29fyMG/FBIWFqxPSEz9LotFKerQ4eYhBbz5fkFFxrw=
+			46ADs4p1y5M0c0P5ohiTptsMDKxEjXHZ3RRRz3uxSvU=
 			</data>
 		</dict>
 	</dict>

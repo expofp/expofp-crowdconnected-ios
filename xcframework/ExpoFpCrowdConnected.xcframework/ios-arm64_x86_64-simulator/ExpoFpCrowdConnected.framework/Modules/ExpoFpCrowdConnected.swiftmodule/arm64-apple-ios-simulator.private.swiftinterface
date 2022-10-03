@@ -1,0 +1,47 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ExpoFpCrowdConnected
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreLocation
+import CrowdConnectedCore
+import CrowdConnectedGeo
+import CrowdConnectedIPS
+import CrowdConnectedShared
+import ExpoFpCommon
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+public class Settings {
+  final public let appKey: Swift.String
+  final public let token: Swift.String
+  final public let secret: Swift.String
+  final public let mode: ExpoFpCrowdConnected.Mode
+  public var aliases: [Swift.String : Swift.String]
+  public init(_ appKey: Swift.String, _ token: Swift.String, _ secret: Swift.String, _ mode: ExpoFpCrowdConnected.Mode = Mode.IPS_ONLY, aliases: [Swift.String : Swift.String] = [:])
+  public func addAlias(_ key: Swift.String, _ value: Swift.String)
+  @objc deinit
+}
+public class CrowdConnectedProvider : ExpoFpCommon.LocationProvider, CrowdConnectedCore.CrowdConnectedDelegate {
+  public var delegate: ExpoFpCommon.LocationProviderDelegate? {
+    get
+    set(newDelegate)
+  }
+  public init(_ settings: ExpoFpCrowdConnected.Settings)
+  @objc public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location])
+  public func start()
+  public func stop()
+  @objc deinit
+}
+public enum Mode {
+  case IPS_ONLY
+  case GPS_ONLY
+  case IPS_AND_GPS
+  public static func == (a: ExpoFpCrowdConnected.Mode, b: ExpoFpCrowdConnected.Mode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ExpoFpCrowdConnected.Mode : Swift.Equatable {}
+extension ExpoFpCrowdConnected.Mode : Swift.Hashable {}

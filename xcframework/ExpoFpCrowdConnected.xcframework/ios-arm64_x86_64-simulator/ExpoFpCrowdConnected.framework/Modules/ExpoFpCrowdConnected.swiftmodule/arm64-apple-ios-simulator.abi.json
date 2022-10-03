@@ -1,0 +1,989 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Settings",
+        "printedName": "Settings",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appKey",
+            "printedName": "appKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC6appKeySSvp",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC6appKeySSvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC6appKeySSvg",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC6appKeySSvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC5tokenSSvp",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC5tokenSSvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC5tokenSSvg",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC5tokenSSvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "secret",
+            "printedName": "secret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC6secretSSvp",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC6secretSSvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC6secretSSvg",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC6secretSSvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mode",
+            "printedName": "mode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "ExpoFpCrowdConnected.Mode",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC4modeAA4ModeOvp",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC4modeAA4ModeOvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC4modeAA4ModeOvg",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC4modeAA4ModeOvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "aliases",
+            "printedName": "aliases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvp",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvg",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvs",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvs",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvM",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC7aliasesSDyS2SGvM",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:_:_:_:aliases:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Settings",
+                "printedName": "ExpoFpCrowdConnected.Settings",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "ExpoFpCrowdConnected.Mode",
+                "hasDefaultArg": true,
+                "usr": "s:20ExpoFpCrowdConnected4ModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC____7aliasesACSS_S2SAA4ModeOSDyS2SGtcfc",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC____7aliasesACSS_S2SAA4ModeOSDyS2SGtcfc",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "addAlias",
+            "printedName": "addAlias(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC8addAliasyySS_SStF",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC8addAliasyySS_SStF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20ExpoFpCrowdConnected8SettingsC",
+        "mangledName": "$s20ExpoFpCrowdConnected8SettingsC",
+        "moduleName": "ExpoFpCrowdConnected",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoFpCommon",
+        "printedName": "ExpoFpCommon",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedCore",
+        "printedName": "CrowdConnectedCore",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedIPS",
+        "printedName": "CrowdConnectedIPS",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedGeo",
+        "printedName": "CrowdConnectedGeo",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CrowdConnectedProvider",
+        "printedName": "CrowdConnectedProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ExpoFpCommon.LocationProviderDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationProviderDelegate",
+                    "printedName": "ExpoFpCommon.LocationProviderDelegate",
+                    "usr": "s:12ExpoFpCommon24LocationProviderDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvp",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ExpoFpCommon.LocationProviderDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationProviderDelegate",
+                        "printedName": "ExpoFpCommon.LocationProviderDelegate",
+                        "usr": "s:12ExpoFpCommon24LocationProviderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvg",
+                "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ExpoFpCommon.LocationProviderDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationProviderDelegate",
+                        "printedName": "ExpoFpCommon.LocationProviderDelegate",
+                        "usr": "s:12ExpoFpCommon24LocationProviderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvs",
+                "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvs",
+                "moduleName": "ExpoFpCrowdConnected",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvM",
+                "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC8delegate0aB6Common08LocationE8Delegate_pSgvM",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CrowdConnectedProvider",
+                "printedName": "ExpoFpCrowdConnected.CrowdConnectedProvider",
+                "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Settings",
+                "printedName": "ExpoFpCrowdConnected.Settings",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderCyAcA8SettingsCcfc",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderCyAcA8SettingsCcfc",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "didUpdateLocation",
+            "printedName": "didUpdateLocation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CrowdConnectedCore.Location]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Location",
+                    "printedName": "CrowdConnectedCore.Location",
+                    "usr": "c:@M@CrowdConnectedCore@objc(cs)Location"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC17didUpdateLocationyySay0cD4Core0H0CGF",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC17didUpdateLocationyySay0cD4Core0H0CGF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "objc_name": "didUpdateLocation:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC5startyyF",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC5startyyF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC4stopyyF",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC4stopyyF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC",
+        "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC",
+        "moduleName": "ExpoFpCrowdConnected",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocationProvider",
+            "printedName": "LocationProvider",
+            "usr": "s:12ExpoFpCommon16LocationProviderP",
+            "mangledName": "$s12ExpoFpCommon16LocationProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CrowdConnectedDelegate",
+            "printedName": "CrowdConnectedDelegate",
+            "usr": "c:@M@CrowdConnectedCore@objc(pl)CrowdConnectedDelegate",
+            "mangledName": "$s18CrowdConnectedCore0aB8DelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Mode",
+        "printedName": "Mode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "IPS_ONLY",
+            "printedName": "IPS_ONLY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "ExpoFpCrowdConnected.Mode",
+                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO8IPS_ONLYyA2CmF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO8IPS_ONLYyA2CmF",
+            "moduleName": "ExpoFpCrowdConnected"
+          },
+          {
+            "kind": "Var",
+            "name": "GPS_ONLY",
+            "printedName": "GPS_ONLY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "ExpoFpCrowdConnected.Mode",
+                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO8GPS_ONLYyA2CmF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO8GPS_ONLYyA2CmF",
+            "moduleName": "ExpoFpCrowdConnected"
+          },
+          {
+            "kind": "Var",
+            "name": "IPS_AND_GPS",
+            "printedName": "IPS_AND_GPS",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "ExpoFpCrowdConnected.Mode",
+                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO11IPS_AND_GPSyA2CmF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO11IPS_AND_GPSyA2CmF",
+            "moduleName": "ExpoFpCrowdConnected"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "ExpoFpCrowdConnected.Mode",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "ExpoFpCrowdConnected.Mode",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO2eeoiySbAC_ACtFZ",
+            "moduleName": "ExpoFpCrowdConnected",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO9hashValueSivp",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO9hashValueSivp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO9hashValueSivg",
+                "mangledName": "$s20ExpoFpCrowdConnected4ModeO9hashValueSivg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO4hash4intoys6HasherVz_tF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20ExpoFpCrowdConnected4ModeO",
+        "mangledName": "$s20ExpoFpCrowdConnected4ModeO",
+        "moduleName": "ExpoFpCrowdConnected",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios\/ExpoFpCrowdConnected\/Settings.swift",
+      "kind": "Dictionary",
+      "offset": 336,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}
