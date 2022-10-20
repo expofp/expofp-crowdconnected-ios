@@ -23,13 +23,13 @@ PODS:
   - CrowdConnectedIPS (1.3.2):
     - CrowdConnectedShared
   - CrowdConnectedShared (1.3.2)
-  - ExpoFpCommon (3.0.0)
+  - ExpoFpCommon (3.0.1)
 
 DEPENDENCIES:
   - CrowdConnectedCore (= 1.3.2)
   - CrowdConnectedGeo (= 1.3.2)
   - CrowdConnectedIPS (= 1.3.2)
-  - ExpoFpCommon (= 3.0.0)
+  - ExpoFpCommon (= 3.0.1)
 
 SPEC REPOS:
   trunk:
@@ -56,8 +56,8 @@ SPEC CHECKSUMS:
   CrowdConnectedGeo: 577ec50ab10fc923be0b54ad9894615abde7179c
   CrowdConnectedIPS: eafc1db4480445b812c50d2b2d06e80cb47708f1
   CrowdConnectedShared: df21903a4ef721925c855341d3021de93d48238e
-  ExpoFpCommon: 918aef73ab873d6cca2470b3fe856bc7a7eadac9
+  ExpoFpCommon: e26d79e694d26b3533d13d70709b4124c13e3027
 
-PODFILE CHECKSUM: 1e877e1104fd2407878beb1bbcb6cb0ba672191a
+PODFILE CHECKSUM: a1aa998d07b5ada2aa292c681566cf2d4bac5dae
 
 COCOAPODS: 1.11.3
