@@ -1,0 +1,11 @@
+framework module CrowdConnectedShared {
+  umbrella header "CrowdConnectedShared.h"
+
+  export *
+  module * { export * }
+}
+
+module CrowdConnectedShared.Swift {
+    header "CrowdConnectedShared-Swift.h"
+    requires objc
+}

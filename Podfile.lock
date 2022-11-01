@@ -1,0 +1,63 @@
+PODS:
+  - AWSAuthCore (2.28.0):
+    - AWSCore (= 2.28.0)
+  - AWSCognitoIdentityProvider (2.28.0):
+    - AWSCognitoIdentityProviderASF (= 2.28.0)
+    - AWSCore (= 2.28.0)
+  - AWSCognitoIdentityProviderASF (2.28.0):
+    - AWSCore (= 2.28.0)
+  - AWSCore (2.28.0)
+  - AWSMobileClient (2.28.0):
+    - AWSAuthCore (= 2.28.0)
+    - AWSCognitoIdentityProvider (= 2.28.0)
+    - AWSCognitoIdentityProviderASF (= 2.28.0)
+    - AWSCore (= 2.28.0)
+  - AWSPinpoint (2.28.0):
+    - AWSCore (= 2.28.0)
+  - CrowdConnectedCore (1.3.2):
+    - AWSMobileClient
+    - AWSPinpoint
+    - CrowdConnectedShared
+  - CrowdConnectedGeo (1.3.2):
+    - CrowdConnectedShared
+  - CrowdConnectedIPS (1.3.2):
+    - CrowdConnectedShared
+  - CrowdConnectedShared (1.3.2)
+  - ExpoFpCommon (3.0.1)
+
+DEPENDENCIES:
+  - CrowdConnectedCore (= 1.3.2)
+  - CrowdConnectedGeo (= 1.3.2)
+  - CrowdConnectedIPS (= 1.3.2)
+  - ExpoFpCommon (= 3.0.1)
+
+SPEC REPOS:
+  trunk:
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSPinpoint
+    - CrowdConnectedCore
+    - CrowdConnectedGeo
+    - CrowdConnectedIPS
+    - CrowdConnectedShared
+    - ExpoFpCommon
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 658c331fe5cbc58608ced499aa0d8d46c57e9c96
+  AWSCognitoIdentityProvider: 9778edc430206a1bf67ff5f0c7a7b130fa4a5380
+  AWSCognitoIdentityProviderASF: a82f81ad75fce6d8c826ed394fa3cf7c51306897
+  AWSCore: 0ebe9ba8a459893cdf268ce0bae61875efd0182b
+  AWSMobileClient: 8d466f135e8d851a76e57cbfe65bb67eb522b64c
+  AWSPinpoint: f3e51482ba9dab1c6657b377d6a7f39edcb8f64f
+  CrowdConnectedCore: 26d8fa6eb5fba70825a113a0b6f6ed435d21a00a
+  CrowdConnectedGeo: 577ec50ab10fc923be0b54ad9894615abde7179c
+  CrowdConnectedIPS: eafc1db4480445b812c50d2b2d06e80cb47708f1
+  CrowdConnectedShared: df21903a4ef721925c855341d3021de93d48238e
+  ExpoFpCommon: e26d79e694d26b3533d13d70709b4124c13e3027
+
+PODFILE CHECKSUM: a1aa998d07b5ada2aa292c681566cf2d4bac5dae
+
+COCOAPODS: 1.11.3
