@@ -47,6 +47,7 @@ public enum ReactiveNotification : Swift.String {
   case didEnterRegion
   case didExitRegion
   case updateTrackingMode
+  case uploadRecords
   case invalidAccessToken
   public var name: Foundation.NSNotification.Name {
     get
