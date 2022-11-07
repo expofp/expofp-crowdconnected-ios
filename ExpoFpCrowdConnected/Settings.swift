@@ -1,6 +1,6 @@
 import Foundation
 
-public class Settings {
+/*public class Settings {
     
     public let appKey: String
     public let token: String
@@ -20,3 +20,4 @@ public class Settings {
         aliases[key] = value
     }
 }
+*/

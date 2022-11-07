@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpCrowdConnected"
-  spec.version            = "3.0.3"
+  spec.version            = "0.3.2"
   spec.platform           = :ios, '13.0'
   spec.summary            = "Fplan Library for iOS apps"
   spec.description        = "Library for displaying expo plans"
@@ -18,10 +18,10 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "xcframework/ExpoFpCrowdConnected.xcframework"
 
   # Add here any resources to be exported.
-  spec.dependency 'ExpoFpCommon', '~> 3.0.3'
-  spec.dependency 'AWSKinesis', '~> 2.28.1'
-  spec.dependency 'CrowdConnectedIPS', '~> 1.4.0'
-  spec.dependency 'CrowdConnectedCore', '~> 1.4.0'
-  spec.dependency 'CrowdConnectedGeo', '~> 1.4.0'
+  spec.dependency 'ExpoFpCommon', '0.3.2'
+  spec.dependency 'AWSKinesis', '2.28.1'
+  spec.dependency 'CrowdConnectedIPS', '1.4.0'
+  spec.dependency 'CrowdConnectedCore', '1.4.0'
+  spec.dependency 'CrowdConnectedGeo', '1.4.0'
 
 end

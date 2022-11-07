@@ -34,6 +34,7 @@
 		E71269BB2896CB4800B79842 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E71269BD2897100700B79842 /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		E725CD9328E99B76009A54D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E77BFEF129154A5B0017ADF9 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		E78744C62875C53500323060 /* ExpoFpCrowdConnected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExpoFpCrowdConnected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78744D02875C59700323060 /* CrowdConnectedProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrowdConnectedProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +93,7 @@
 				E78744D02875C59700323060 /* CrowdConnectedProvider.swift */,
 				E71269BB2896CB4800B79842 /* Settings.swift */,
 				E71269BD2897100700B79842 /* Mode.swift */,
+				E77BFEF129154A5B0017ADF9 /* Header.h */,
 			);
 			path = ExpoFpCrowdConnected;
 			sourceTree = "<group>";
@@ -240,6 +242,7 @@
 					"$(ARCHS_STANDARD)",
 					x86_64,
 				);
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -307,6 +310,7 @@
 					"$(ARCHS_STANDARD)",
 					x86_64,
 				);
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
