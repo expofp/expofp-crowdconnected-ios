@@ -1,21 +1,21 @@
 PODS:
-  - AWSAuthCore (2.28.1):
-    - AWSCore (= 2.28.1)
-  - AWSCognitoIdentityProvider (2.28.1):
-    - AWSCognitoIdentityProviderASF (= 2.28.1)
-    - AWSCore (= 2.28.1)
-  - AWSCognitoIdentityProviderASF (2.28.1):
-    - AWSCore (= 2.28.1)
-  - AWSCore (2.28.1)
-  - AWSKinesis (2.28.1):
-    - AWSCore (= 2.28.1)
-  - AWSMobileClient (2.28.1):
-    - AWSAuthCore (= 2.28.1)
-    - AWSCognitoIdentityProvider (= 2.28.1)
-    - AWSCognitoIdentityProviderASF (= 2.28.1)
-    - AWSCore (= 2.28.1)
-  - AWSPinpoint (2.28.1):
-    - AWSCore (= 2.28.1)
+  - AWSAuthCore (2.28.2):
+    - AWSCore (= 2.28.2)
+  - AWSCognitoIdentityProvider (2.28.2):
+    - AWSCognitoIdentityProviderASF (= 2.28.2)
+    - AWSCore (= 2.28.2)
+  - AWSCognitoIdentityProviderASF (2.28.2):
+    - AWSCore (= 2.28.2)
+  - AWSCore (2.28.2)
+  - AWSKinesis (2.28.2):
+    - AWSCore (= 2.28.2)
+  - AWSMobileClient (2.28.2):
+    - AWSAuthCore (= 2.28.2)
+    - AWSCognitoIdentityProvider (= 2.28.2)
+    - AWSCognitoIdentityProviderASF (= 2.28.2)
+    - AWSCore (= 2.28.2)
+  - AWSPinpoint (2.28.2):
+    - AWSCore (= 2.28.2)
   - CrowdConnectedCore (1.4.0):
     - AWSMobileClient
     - AWSPinpoint
@@ -25,14 +25,14 @@ PODS:
   - CrowdConnectedIPS (1.4.0):
     - CrowdConnectedShared
   - CrowdConnectedShared (1.4.0)
-  - ExpoFpCommon (0.3.2)
+  - ExpoFpCommon (0.3.5)
 
 DEPENDENCIES:
-  - AWSKinesis (= 2.28.1)
+  - AWSKinesis (= 2.28.2)
   - CrowdConnectedCore (= 1.4.0)
   - CrowdConnectedGeo (= 1.4.0)
   - CrowdConnectedIPS (= 1.4.0)
-  - ExpoFpCommon (= 0.3.2)
+  - ExpoFpCommon (= 0.3.5)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -50,19 +50,19 @@ SPEC REPOS:
     - ExpoFpCommon
 
 SPEC CHECKSUMS:
-  AWSAuthCore: d1171a16d930fb7e5a2a159e0722029a9b02e1b2
-  AWSCognitoIdentityProvider: b6399c5256384deadfe8f6d8b46e52f932510be9
-  AWSCognitoIdentityProviderASF: 646d347510dec5fd1820225003f4a78deb7284e2
-  AWSCore: e7ef30bd3842a33b51e29d02627b866b607e42e1
-  AWSKinesis: 4f8f545c8d352cc216fc9a807a13476bcb1c600c
-  AWSMobileClient: afcd8bb8e1db23b678f55d162a135db5bce2cbe8
-  AWSPinpoint: c9f79c1d5bdad7c3b31a4612ac095c0e3d442985
+  AWSAuthCore: 09b10773154596717583a7ea4e8cf80f7f014d3c
+  AWSCognitoIdentityProvider: fd6ce8429b5cbb22794359424f8bcdf1956aa7c1
+  AWSCognitoIdentityProviderASF: ae23b2c36af3d59622b23d79cea88707662ada6e
+  AWSCore: 1e0cdd5ac2330d02ce019673065791d2b6596293
+  AWSKinesis: 5cd8700ee9e33fd439f8e1850f29fe93092c9ccb
+  AWSMobileClient: 2fed98a97ee48bf8401bcb1649d32829d5f98962
+  AWSPinpoint: 3a44c5993ecc8466d2d9a1686be0da201ba72604
   CrowdConnectedCore: 525dee267e5020dd389062355423a53dc0e6bd2a
   CrowdConnectedGeo: cf4a10afda7347861c28ad30e71f9d4e79f82875
   CrowdConnectedIPS: 83ea186595aefb164ec6f4f76b6c24db359770ee
   CrowdConnectedShared: 8aa8ba584aeebdc9bfad7c9ea78d335652ed99fe
-  ExpoFpCommon: 4ae1b7d4856eae9a20ddca2599c11536df2e4552
+  ExpoFpCommon: 576847ec899531a24e37b771aa0ccc94205c9488
 
-PODFILE CHECKSUM: 3e90308431ff05ae8e3883002a46de7d0a333af6
+PODFILE CHECKSUM: a775641a3bb8d157431fb81d00337837367ab2c7
 
 COCOAPODS: 1.11.3
