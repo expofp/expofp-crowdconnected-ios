@@ -5,7 +5,7 @@ platform :ios, '14.0'
 use_frameworks!
 
 def shared_pods
-  pod 'ExpoFpCommon', '0.3.5'
+  pod 'ExpoFpCommon', '0.3.6'
   #pod 'ExpoFpCommon', :path => '/Users/vladimir/Xcode projects/expofp-common-ios'
 
   pod 'AWSKinesis', '2.28.2'

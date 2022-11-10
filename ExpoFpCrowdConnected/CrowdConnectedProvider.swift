@@ -6,7 +6,7 @@ import CrowdConnectedGeo
 import CrowdConnectedShared
 import CoreLocation
 
-/*public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
+public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     private let settings: Settings
     
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
@@ -80,4 +80,4 @@ import CoreLocation
         locationManager.requestWhenInUseAuthorization()
     }
 }
-*/
+
