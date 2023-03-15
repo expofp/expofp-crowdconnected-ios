@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -2230,7 +2230,7 @@
 				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2807,14 +2807,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		123F6BDBE0225CD2FAFB896A23464CC8 /* Debug */ = {
+		01B370A781F834106DB85989600B5EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05D4B90A6D782997C88BF21893269B5D /* AWSCore.debug.xcconfig */;
+			baseConfigurationReference = F8AF89736F08FC5F56EDE5EEE6F1B6F3 /* AWSKinesis.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2823,8 +2820,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSCore/AWSCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSCore/AWSCore-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSKinesis/AWSKinesis-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSKinesis/AWSKinesis-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
@@ -2833,9 +2830,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AWSCore/AWSCore.modulemap";
-				PRODUCT_MODULE_NAME = AWSCore;
-				PRODUCT_NAME = AWSCore;
+				MODULEMAP_FILE = "Target Support Files/AWSKinesis/AWSKinesis.modulemap";
+				PRODUCT_MODULE_NAME = AWSKinesis;
+				PRODUCT_NAME = AWSKinesis;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -2846,14 +2843,11 @@
 			};
 			name = Debug;
 		};
-		13A7058616D4B199EB091972B4281F49 /* Debug */ = {
+		1D9DDED94545F11B4440100F81088D01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3087B30C90193210A219623A0E0FC7B8 /* AWSPinpoint.debug.xcconfig */;
+			baseConfigurationReference = 978FCD966FADF41381C667DF73A7EBE7 /* AWSKinesis.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2862,8 +2856,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSPinpoint/AWSPinpoint-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSKinesis/AWSKinesis-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSKinesis/AWSKinesis-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
@@ -2872,27 +2866,25 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint.modulemap";
-				PRODUCT_MODULE_NAME = AWSPinpoint;
-				PRODUCT_NAME = AWSPinpoint;
+				MODULEMAP_FILE = "Target Support Files/AWSKinesis/AWSKinesis.modulemap";
+				PRODUCT_MODULE_NAME = AWSKinesis;
+				PRODUCT_NAME = AWSKinesis;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		1D6F13C8BA9A72230F70AD9AE29A7458 /* Release */ = {
+		336D59B8DF0B97744E7DEFACC9C35723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5672895AC73F1D7A1D2AB002D85FF065 /* AWSCognitoIdentityProvider.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2925,14 +2917,31 @@
 			};
 			name = Release;
 		};
-		1E4B37E1F7564B85612DD0655F6D0EBF /* Release */ = {
+		34614F953BA2644E83DF1150E1E68BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 853C34B76AD3ED9EEEB49896F02DB2EE /* AWSAuthCore.release.xcconfig */;
+			baseConfigurationReference = 05745F95FB212F47C958101F410CFC06 /* CrowdConnectedCore.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
 				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49275B8644D353CCD7A366CD657B65EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3087B30C90193210A219623A0E0FC7B8 /* AWSPinpoint.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2941,8 +2950,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSAuthCore/AWSAuthCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSAuthCore/AWSAuthCore-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSPinpoint/AWSPinpoint-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
@@ -2951,129 +2960,18 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AWSAuthCore/AWSAuthCore.modulemap";
-				PRODUCT_MODULE_NAME = AWSAuthCore;
-				PRODUCT_NAME = AWSAuthCore;
+				MODULEMAP_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint.modulemap";
+				PRODUCT_MODULE_NAME = AWSPinpoint;
+				PRODUCT_NAME = AWSPinpoint;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		1EC3B67478AED4ACB6F5110DF3244706 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6571079AC56806D8CD7183AC2660DF6 /* CrowdConnectedShared.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
 			name = Debug;
-		};
-		20D473D8414A7CC58E90961536ABDC99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CC626CCEE05D8A0FA6FDCF64C01338E /* CrowdConnectedGeo.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		273A69479014AE1BDF791A93A2C356A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C0B4A20360DC26E79302A5A9ECA6090 /* Pods-ExpoFpCrowdConnected.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ExpoFpCrowdConnected/Pods-ExpoFpCrowdConnected-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ExpoFpCrowdConnected/Pods-ExpoFpCrowdConnected.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		45AF0C3D7E52C5756353D952A197718B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA327B22DC8ACFD4B2133277B5D1A8CC /* CrowdConnectedGeo.release.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3141,155 +3039,12 @@
 			};
 			name = Debug;
 		};
-		4BCC89F230D9B016D36AEB84D7852E9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 390A3B280693FBC41AE73A70738B015E /* AWSCognitoIdentityProvider.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.modulemap";
-				PRODUCT_MODULE_NAME = AWSCognitoIdentityProvider;
-				PRODUCT_NAME = AWSCognitoIdentityProvider;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4CFFE7B3870C683C603110156FF4CC49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A5CF0BF31F34FB56CA8A401B97A5DCB /* AWSPinpoint.release.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSPinpoint/AWSPinpoint-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint.modulemap";
-				PRODUCT_MODULE_NAME = AWSPinpoint;
-				PRODUCT_NAME = AWSPinpoint;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5176BD84768852E906D333ED4637E620 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D70BEA8CB109AB76593D047F7B2AC1DB /* AWSCognitoIdentityProviderASF.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.modulemap";
-				PRODUCT_MODULE_NAME = AWSCognitoIdentityProviderASF;
-				PRODUCT_NAME = AWSCognitoIdentityProviderASF;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5418DDA29656DCB9C6D245CAFC1FBB12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5031AF5BC86C910FF95C2D4FF2A1D56 /* CrowdConnectedCore.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6011747E75C76768527F38590F93D3E3 /* Debug */ = {
+		53650F89C6D162559A36F3A9925EECD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 448CDA4621D9000CE889DE269D4BEED8 /* Pods-ExpoFpCrowdConnected.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3323,14 +3078,11 @@
 			};
 			name = Debug;
 		};
-		64646C5CD960B3F2FCAA8AC05A091966 /* Release */ = {
+		6ED79DB2581DAC3D41DD32A3F7F4A1B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 978FCD966FADF41381C667DF73A7EBE7 /* AWSKinesis.release.xcconfig */;
+			baseConfigurationReference = 390A3B280693FBC41AE73A70738B015E /* AWSCognitoIdentityProvider.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3339,8 +3091,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSKinesis/AWSKinesis-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSKinesis/AWSKinesis-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
@@ -3349,49 +3101,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AWSKinesis/AWSKinesis.modulemap";
-				PRODUCT_MODULE_NAME = AWSKinesis;
-				PRODUCT_NAME = AWSKinesis;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		686F8B999D3F833FEF39E70334A1C063 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8AF89736F08FC5F56EDE5EEE6F1B6F3 /* AWSKinesis.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSKinesis/AWSKinesis-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSKinesis/AWSKinesis-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AWSKinesis/AWSKinesis.modulemap";
-				PRODUCT_MODULE_NAME = AWSKinesis;
-				PRODUCT_NAME = AWSKinesis;
+				MODULEMAP_FILE = "Target Support Files/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.modulemap";
+				PRODUCT_MODULE_NAME = AWSCognitoIdentityProvider;
+				PRODUCT_NAME = AWSCognitoIdentityProvider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -3402,14 +3114,11 @@
 			};
 			name = Debug;
 		};
-		6FF641C5E514D3161AAD901CACCA90FA /* Release */ = {
+		6F86588740EC803B3863E6561C5D2835 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A41AA781F45A78D525A4A5DB1879F30 /* CrowdConnectedIPS.release.xcconfig */;
+			baseConfigurationReference = B502DEE8F7EDECD25F307B35AC5F517E /* CrowdConnectedIPS.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3421,18 +3130,14 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		7C83600DF2371B11FBDD942F50E31586 /* Release */ = {
+		7558EF26309196CDDDA40F7BE698DECE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 125A78AA5205A88CB72DA6A4D4872896 /* AWSCognitoIdentityProviderASF.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3465,14 +3170,237 @@
 			};
 			name = Release;
 		};
-		8ACD872540955E2E80B5C0CBCE0ED3D9 /* Release */ = {
+		75E832B6D87BC13A47C4E7C04DFA4E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C0B4A20360DC26E79302A5A9ECA6090 /* Pods-ExpoFpCrowdConnected.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExpoFpCrowdConnected/Pods-ExpoFpCrowdConnected-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExpoFpCrowdConnected/Pods-ExpoFpCrowdConnected.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		785EA365E6B4BF0EE0E41273F0F406A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6BB472CDABE3586B3962D08E043A19 /* AWSMobileClient.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSMobileClient/AWSMobileClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSMobileClient/AWSMobileClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSMobileClient/AWSMobileClient.modulemap";
+				PRODUCT_MODULE_NAME = AWSMobileClient;
+				PRODUCT_NAME = AWSMobileClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		82660C4EC1D79DC354CB8528D1BCAB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D4B90A6D782997C88BF21893269B5D /* AWSCore.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCore/AWSCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCore/AWSCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSCore/AWSCore.modulemap";
+				PRODUCT_MODULE_NAME = AWSCore;
+				PRODUCT_NAME = AWSCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		847FEF90DF42ED4B18FD5D5FC9FD802A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 271722DAE7BFB289530B5B928CD0E957 /* CrowdConnectedShared.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
 				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84D869862BA37F1E2771FB301C972BA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A41AA781F45A78D525A4A5DB1879F30 /* CrowdConnectedIPS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86A9F33261650F2F943C9A98033529E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5CF0BF31F34FB56CA8A401B97A5DCB /* AWSPinpoint.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSPinpoint/AWSPinpoint-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSPinpoint/AWSPinpoint.modulemap";
+				PRODUCT_MODULE_NAME = AWSPinpoint;
+				PRODUCT_NAME = AWSPinpoint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8AB0B541A317BDACE2B7314F136F856C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9368EDFEC525A706850CDACB59095D9 /* AWSCore.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCore/AWSCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCore/AWSCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AWSCore/AWSCore.modulemap";
+				PRODUCT_MODULE_NAME = AWSCore;
+				PRODUCT_NAME = AWSCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B415995C7A0C30A2B4EF3A29DEDB497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B24F29FA63A7FAD90948213EFE0535C /* ExpoFpCommon.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3550,14 +3478,11 @@
 			};
 			name = Release;
 		};
-		A173675CFEB5CC4BDEF3326E9EB30801 /* Release */ = {
+		9B7CB03E88E6EF2512D6DB1E2707094E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9368EDFEC525A706850CDACB59095D9 /* AWSCore.release.xcconfig */;
+			baseConfigurationReference = 853C34B76AD3ED9EEEB49896F02DB2EE /* AWSAuthCore.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3566,8 +3491,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSCore/AWSCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSCore/AWSCore-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSAuthCore/AWSAuthCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSAuthCore/AWSAuthCore-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
@@ -3576,9 +3501,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AWSCore/AWSCore.modulemap";
-				PRODUCT_MODULE_NAME = AWSCore;
-				PRODUCT_NAME = AWSCore;
+				MODULEMAP_FILE = "Target Support Files/AWSAuthCore/AWSAuthCore.modulemap";
+				PRODUCT_MODULE_NAME = AWSAuthCore;
+				PRODUCT_NAME = AWSAuthCore;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -3590,81 +3515,11 @@
 			};
 			name = Release;
 		};
-		B1CDB79899B96DA4D37BB56560C01273 /* Debug */ = {
+		A89F094A2041F040DD3DF763313993CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B502DEE8F7EDECD25F307B35AC5F517E /* CrowdConnectedIPS.debug.xcconfig */;
+			baseConfigurationReference = F700C1F1710554566560267695878CEB /* AWSMobileClient.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		BE7FB5209F30EB6764A396BEFAED7AEA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B24F29FA63A7FAD90948213EFE0535C /* ExpoFpCommon.release.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C0CE2880A98B9CF690A5F38D62FAEE58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75ECAF6E57F4E93D892D137C5BC623C5 /* ExpoFpCommon.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C8104C7CDE08731514AB76F02F9E94E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA6BB472CDABE3586B3962D08E043A19 /* AWSMobileClient.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3691,19 +3546,113 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Release;
+		};
+		B4B8B3C9F29F9B07A2BCAF7E18ED4D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA327B22DC8ACFD4B2133277B5D1A8CC /* CrowdConnectedGeo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2F19BBA0E7313AC610E7B09951339F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC626CCEE05D8A0FA6FDCF64C01338E /* CrowdConnectedGeo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
 			name = Debug;
 		};
-		D4E807203E75ECE804D04D34C7A8050A /* Debug */ = {
+		C6A14D8E47B042DF0B8F6EFB6FB47365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5031AF5BC86C910FF95C2D4FF2A1D56 /* CrowdConnectedCore.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8D2900B9D812C1174B4E0F6D05E6A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6571079AC56806D8CD7183AC2660DF6 /* CrowdConnectedShared.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDDF725C466FE98DB75CA0A238144F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75ECAF6E57F4E93D892D137C5BC623C5 /* ExpoFpCommon.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7C711B31767E20AA8DB0205A520206B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37AA24B8855E1B33C4FFF1B2B04D9FD9 /* AWSAuthCore.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3735,14 +3684,11 @@
 			};
 			name = Debug;
 		};
-		D989FAC629F2D3501A1FFDEE92A71376 /* Release */ = {
+		F5F58E286F4B9084DC15A447774F313E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F700C1F1710554566560267695878CEB /* AWSMobileClient.release.xcconfig */;
+			baseConfigurationReference = D70BEA8CB109AB76593D047F7B2AC1DB /* AWSCognitoIdentityProviderASF.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3751,8 +3697,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AWSMobileClient/AWSMobileClient-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AWSMobileClient/AWSMobileClient-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
@@ -3761,42 +3707,18 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AWSMobileClient/AWSMobileClient.modulemap";
-				PRODUCT_MODULE_NAME = AWSMobileClient;
-				PRODUCT_NAME = AWSMobileClient;
+				MODULEMAP_FILE = "Target Support Files/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.modulemap";
+				PRODUCT_MODULE_NAME = AWSCognitoIdentityProviderASF;
+				PRODUCT_NAME = AWSCognitoIdentityProviderASF;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		F12D6BC8C3695AC6F05568A758C0770A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05745F95FB212F47C958101F410CFC06 /* CrowdConnectedCore.release.xcconfig */;
-			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -3804,8 +3726,8 @@
 		222B587313A8E73D4479D6C7A922097D /* Build configuration list for PBXNativeTarget "Pods-ExpoFpCrowdConnected" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6011747E75C76768527F38590F93D3E3 /* Debug */,
-				273A69479014AE1BDF791A93A2C356A5 /* Release */,
+				53650F89C6D162559A36F3A9925EECD5 /* Debug */,
+				75E832B6D87BC13A47C4E7C04DFA4E1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3813,8 +3735,8 @@
 		3781E05CDD72B7B6E1BC66482B3C691E /* Build configuration list for PBXNativeTarget "AWSKinesis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				686F8B999D3F833FEF39E70334A1C063 /* Debug */,
-				64646C5CD960B3F2FCAA8AC05A091966 /* Release */,
+				01B370A781F834106DB85989600B5EBC /* Debug */,
+				1D9DDED94545F11B4440100F81088D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3822,8 +3744,8 @@
 		37B99C5E58219AD889AB0FD0EC2191A1 /* Build configuration list for PBXNativeTarget "AWSCognitoIdentityProvider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BCC89F230D9B016D36AEB84D7852E9F /* Debug */,
-				1D6F13C8BA9A72230F70AD9AE29A7458 /* Release */,
+				6ED79DB2581DAC3D41DD32A3F7F4A1B8 /* Debug */,
+				336D59B8DF0B97744E7DEFACC9C35723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3840,8 +3762,8 @@
 		561FEA0ECBAD0365AAC4493C519D0805 /* Build configuration list for PBXAggregateTarget "CrowdConnectedGeo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20D473D8414A7CC58E90961536ABDC99 /* Debug */,
-				45AF0C3D7E52C5756353D952A197718B /* Release */,
+				C2F19BBA0E7313AC610E7B09951339F2 /* Debug */,
+				B4B8B3C9F29F9B07A2BCAF7E18ED4D5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3849,8 +3771,8 @@
 		7FBAAA8A9808080A8F9036EDFB128EAF /* Build configuration list for PBXNativeTarget "AWSMobileClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8104C7CDE08731514AB76F02F9E94E4 /* Debug */,
-				D989FAC629F2D3501A1FFDEE92A71376 /* Release */,
+				785EA365E6B4BF0EE0E41273F0F406A4 /* Debug */,
+				A89F094A2041F040DD3DF763313993CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3858,8 +3780,8 @@
 		8EBC44ABF819AE496C1AA8B18DCEECCE /* Build configuration list for PBXAggregateTarget "CrowdConnectedIPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1CDB79899B96DA4D37BB56560C01273 /* Debug */,
-				6FF641C5E514D3161AAD901CACCA90FA /* Release */,
+				6F86588740EC803B3863E6561C5D2835 /* Debug */,
+				84D869862BA37F1E2771FB301C972BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3867,8 +3789,8 @@
 		A9BCC6EEF0F60B92EEEEF851A21A1DE2 /* Build configuration list for PBXNativeTarget "AWSAuthCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4E807203E75ECE804D04D34C7A8050A /* Debug */,
-				1E4B37E1F7564B85612DD0655F6D0EBF /* Release */,
+				E7C711B31767E20AA8DB0205A520206B /* Debug */,
+				9B7CB03E88E6EF2512D6DB1E2707094E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3876,8 +3798,8 @@
 		AA76CADCEB247F72EA542F23AA88B293 /* Build configuration list for PBXNativeTarget "AWSCognitoIdentityProviderASF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5176BD84768852E906D333ED4637E620 /* Debug */,
-				7C83600DF2371B11FBDD942F50E31586 /* Release */,
+				F5F58E286F4B9084DC15A447774F313E /* Debug */,
+				7558EF26309196CDDDA40F7BE698DECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3885,8 +3807,8 @@
 		B9F83F552D2C5BF676CB4BD58187B5A2 /* Build configuration list for PBXNativeTarget "AWSPinpoint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13A7058616D4B199EB091972B4281F49 /* Debug */,
-				4CFFE7B3870C683C603110156FF4CC49 /* Release */,
+				49275B8644D353CCD7A366CD657B65EA /* Debug */,
+				86A9F33261650F2F943C9A98033529E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3894,8 +3816,8 @@
 		C5613E794335FA74FB5FF6003A46C42A /* Build configuration list for PBXNativeTarget "AWSCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				123F6BDBE0225CD2FAFB896A23464CC8 /* Debug */,
-				A173675CFEB5CC4BDEF3326E9EB30801 /* Release */,
+				82660C4EC1D79DC354CB8528D1BCAB6C /* Debug */,
+				8AB0B541A317BDACE2B7314F136F856C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3903,8 +3825,8 @@
 		F1AD709EBD51316DBD216C5EB0FE37D2 /* Build configuration list for PBXAggregateTarget "ExpoFpCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0CE2880A98B9CF690A5F38D62FAEE58 /* Debug */,
-				BE7FB5209F30EB6764A396BEFAED7AEA /* Release */,
+				CDDF725C466FE98DB75CA0A238144F79 /* Debug */,
+				8B415995C7A0C30A2B4EF3A29DEDB497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3912,8 +3834,8 @@
 		F5E86F295F1BFDF6780C212AEE059D7B /* Build configuration list for PBXAggregateTarget "CrowdConnectedShared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EC3B67478AED4ACB6F5110DF3244706 /* Debug */,
-				8ACD872540955E2E80B5C0CBCE0ED3D9 /* Release */,
+				C8D2900B9D812C1174B4E0F6D05E6A1B /* Debug */,
+				847FEF90DF42ED4B18FD5D5FC9FD802A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3921,8 +3843,8 @@
 		FE0817D5E2D4353CD37978778A50F10A /* Build configuration list for PBXAggregateTarget "CrowdConnectedCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5418DDA29656DCB9C6D245CAFC1FBB12 /* Debug */,
-				F12D6BC8C3695AC6F05568A758C0770A /* Release */,
+				C6A14D8E47B042DF0B8F6EFB6FB47365 /* Debug */,
+				34614F953BA2644E83DF1150E1E68BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
