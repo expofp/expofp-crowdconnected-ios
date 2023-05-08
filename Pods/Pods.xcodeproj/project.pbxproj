@@ -16,7 +16,6 @@
 			dependencies = (
 			);
 			name = CrowdConnectedShared;
-			productName = CrowdConnectedShared;
 		};
 		45CFEB72CCB4C360BC289EE18E51C9D8 /* CrowdConnectedIPS */ = {
 			isa = PBXAggregateTarget;
@@ -28,7 +27,6 @@
 				1F3ED1CBFEA7602B0A3F608FCFEF1B4E /* PBXTargetDependency */,
 			);
 			name = CrowdConnectedIPS;
-			productName = CrowdConnectedIPS;
 		};
 		493E430097FB044EFFC9C893372A5370 /* ExpoFpCommon */ = {
 			isa = PBXAggregateTarget;
@@ -39,7 +37,6 @@
 			dependencies = (
 			);
 			name = ExpoFpCommon;
-			productName = ExpoFpCommon;
 		};
 		7F8814183CD537F2F016B6275AA2F047 /* CrowdConnectedGeo */ = {
 			isa = PBXAggregateTarget;
@@ -51,7 +48,6 @@
 				6ED822109E63D34EC466E5F4D3F4072B /* PBXTargetDependency */,
 			);
 			name = CrowdConnectedGeo;
-			productName = CrowdConnectedGeo;
 		};
 		B48916D274896F9BC8C5CDF89516C277 /* CrowdConnectedCore */ = {
 			isa = PBXAggregateTarget;
@@ -65,7 +61,6 @@
 				95BBADB3FE7091C66F5394FAC9BD0BCE /* PBXTargetDependency */,
 			);
 			name = CrowdConnectedCore;
-			productName = CrowdConnectedCore;
 		};
 /* End PBXAggregateTarget section */
 
@@ -682,7 +677,7 @@
 		25D72A9E84E3718C899462005FD6AD86 /* AWSmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSmetamacros.h; path = AWSCore/Mantle/extobjc/AWSmetamacros.h; sourceTree = "<group>"; };
 		2610DAD2C4CEC84AF23D65BDA246DEA5 /* AWSCognitoIdentity+Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSCognitoIdentity+Fabric.h"; path = "AWSCore/CognitoIdentity/AWSCognitoIdentity+Fabric.h"; sourceTree = "<group>"; };
 		264B11B0695AA03EB3EC6FB61571576C /* AWSDDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDAbstractDatabaseLogger.m; path = AWSCore/Logging/AWSDDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		268D6B773747068603D8071BA38EBDD5 /* CrowdConnectedShared.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = CrowdConnectedShared.xcframework; sourceTree = "<group>"; };
+		268D6B773747068603D8071BA38EBDD5 /* CrowdConnectedShared.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CrowdConnectedShared.xcframework; sourceTree = "<group>"; };
 		271722DAE7BFB289530B5B928CD0E957 /* CrowdConnectedShared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrowdConnectedShared.release.xcconfig; sourceTree = "<group>"; };
 		274EDA8FABE7063E32488C6FE9E19EC0 /* AWSKinesisService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSKinesisService.m; path = AWSKinesis/AWSKinesisService.m; sourceTree = "<group>"; };
 		28507AACEDDBB88746D6B7F1FCCB14C8 /* AWSFMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMDatabasePool.m; path = AWSCore/FMDB/AWSFMDatabasePool.m; sourceTree = "<group>"; };
@@ -742,7 +737,7 @@
 		4745736E52B781FDD462BCA71EA567D3 /* AWSCognitoIdentity+Fabric.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSCognitoIdentity+Fabric.m"; path = "AWSCore/CognitoIdentity/AWSCognitoIdentity+Fabric.m"; sourceTree = "<group>"; };
 		48C505B4F860D78E1A7780F306DA4C78 /* Pods-ExpoFpCrowdConnected-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExpoFpCrowdConnected-Info.plist"; sourceTree = "<group>"; };
 		49CD9BE9E432AA06949C21713C4B9331 /* AWSMantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMantle.h; path = AWSCore/Mantle/AWSMantle.h; sourceTree = "<group>"; };
-		49FCBFEEFC770635C12EA0F7087BA564 /* CrowdConnectedGeo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = CrowdConnectedGeo.xcframework; sourceTree = "<group>"; };
+		49FCBFEEFC770635C12EA0F7087BA564 /* CrowdConnectedGeo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CrowdConnectedGeo.xcframework; sourceTree = "<group>"; };
 		4A41AA781F45A78D525A4A5DB1879F30 /* CrowdConnectedIPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrowdConnectedIPS.release.xcconfig; sourceTree = "<group>"; };
 		4A5CF0BF31F34FB56CA8A401B97A5DCB /* AWSPinpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSPinpoint.release.xcconfig; sourceTree = "<group>"; };
 		4A86C3F8DD15EE42F8B2593048237644 /* FederationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FederationProvider.swift; path = AWSAuthSDK/Sources/AWSMobileClient/Models/FederationProvider.swift; sourceTree = "<group>"; };
@@ -817,7 +812,7 @@
 		7950026EA40C1A4BE54A9232E1341A20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7AC6D3A0A64918D051070789D1A391E2 /* AWSPinpoint-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSPinpoint-Info.plist"; sourceTree = "<group>"; };
 		7BC7665BAFDBD744C52B6C5169FA85FD /* AWSDDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDASLLogCapture.m; path = AWSCore/Logging/AWSDDASLLogCapture.m; sourceTree = "<group>"; };
-		7C5BC5CBC080779005A9502F87A99DD0 /* tommath.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tommath.c; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c; sourceTree = "<group>"; };
+		7C5BC5CBC080779005A9502F87A99DD0 /* tommath.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tommath.c; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/LibTomMath/tommath.c; sourceTree = "<group>"; };
 		7C5ED288A69A697933893A3E53F938E7 /* AWSTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTaskCompletionSource.m; path = AWSCore/Bolts/AWSTaskCompletionSource.m; sourceTree = "<group>"; };
 		7CD118834BCAF61DD46927663C1B4CD8 /* AWSPinpoint.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSPinpoint.modulemap; sourceTree = "<group>"; };
 		7DBAF3E1D4C46F4BA592FC9D8BA82C44 /* AWSPinpointEventRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSPinpointEventRecorder.h; path = AWSPinpoint/AWSPinpointEventRecorder.h; sourceTree = "<group>"; };
@@ -855,7 +850,7 @@
 		8F543166FDC16A6438CBF6C63A1DFAE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		8F7C2EED3DB25542BD7BD3BF096D5226 /* AWSBolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSBolts.h; path = AWSCore/Bolts/AWSBolts.h; sourceTree = "<group>"; };
 		8FD038A56A85DECCA7F7C4C8C7B3A339 /* AWSPinpointTargetingResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSPinpointTargetingResources.m; path = AWSPinpoint/AWSPinpointTargeting/AWSPinpointTargetingResources.m; sourceTree = "<group>"; };
-		8FE9D7A25F23479D49C1F6D464A4AE5C /* CrowdConnectedIPS.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = CrowdConnectedIPS.xcframework; sourceTree = "<group>"; };
+		8FE9D7A25F23479D49C1F6D464A4AE5C /* CrowdConnectedIPS.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CrowdConnectedIPS.xcframework; sourceTree = "<group>"; };
 		8FEC619949D065FB19F0B24F33D1F031 /* FetchUserPoolTokensOperation+States.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FetchUserPoolTokensOperation+States.swift"; path = "AWSAuthSDK/Sources/AWSMobileClient/AWSMobileClientOperations/AWSAsyncOperations/GetTokensUserPool/FetchUserPoolTokensOperation+States.swift"; sourceTree = "<group>"; };
 		91350E5F26570105F4291129FBC68073 /* AWSCognitoIdentityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityModel.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityModel.h; sourceTree = "<group>"; };
 		9245524CEA1C085FEC79ED3C076DEA1C /* AWSKinesisService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSKinesisService.h; path = AWSKinesis/AWSKinesisService.h; sourceTree = "<group>"; };
@@ -873,7 +868,7 @@
 		99BC2CA5A012118328FA2798EAB8A750 /* AWSFMDB+AWSHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSFMDB+AWSHelpers.h"; path = "AWSCore/FMDB/AWSFMDB+AWSHelpers.h"; sourceTree = "<group>"; };
 		9B24F29FA63A7FAD90948213EFE0535C /* ExpoFpCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpoFpCommon.release.xcconfig; sourceTree = "<group>"; };
 		9CDB4E8F9A6048A1A5AEE0847A077421 /* AWSSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSerialization.m; path = AWSCore/Serialization/AWSSerialization.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0E68C652B09280B5547F87DC7975DF /* AWSBolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSBolts.m; path = AWSCore/Bolts/AWSBolts.m; sourceTree = "<group>"; };
 		9E63E22E7775EC2636CD3A52CC61D0A0 /* AWSTimestampSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTimestampSerialization.h; path = AWSCore/Serialization/AWSTimestampSerialization.h; sourceTree = "<group>"; };
 		A149D17121F66F933DA506C8EBDD94F3 /* AWSXMLWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSXMLWriter.m; path = AWSCore/XMLWriter/AWSXMLWriter.m; sourceTree = "<group>"; };
@@ -923,7 +918,7 @@
 		B94DFB24249188C155629014CE76CAFA /* AWSCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AWSCore-Info.plist"; sourceTree = "<group>"; };
 		BA327B22DC8ACFD4B2133277B5D1A8CC /* CrowdConnectedGeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrowdConnectedGeo.release.xcconfig; sourceTree = "<group>"; };
 		BA6BB472CDABE3586B3962D08E043A19 /* AWSMobileClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AWSMobileClient.debug.xcconfig; sourceTree = "<group>"; };
-		BAF12615697EAD68CB7132A700D8B978 /* CrowdConnectedCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = CrowdConnectedCore.xcframework; sourceTree = "<group>"; };
+		BAF12615697EAD68CB7132A700D8B978 /* CrowdConnectedCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CrowdConnectedCore.xcframework; sourceTree = "<group>"; };
 		BB8F897F873D8DE7EC8482C2B34C2C1C /* AWSJKBigInteger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSJKBigInteger.h; path = AWSCognitoIdentityProvider/Internal/JKBigInteger/AWSJKBigInteger.h; sourceTree = "<group>"; };
 		BBA78EAF202AD572C4FDD7ED2242B8CC /* AWSPinpoint-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSPinpoint-umbrella.h"; sourceTree = "<group>"; };
 		BD79A5CA06EF5F514E135B0D2DFEC6A5 /* AWSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSNetworking.h; path = AWSCore/Networking/AWSNetworking.h; sourceTree = "<group>"; };
@@ -992,7 +987,7 @@
 		E4E32E08164BD70778D7774EDE8C0670 /* AWSMTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLReflection.m; path = AWSCore/Mantle/AWSMTLReflection.m; sourceTree = "<group>"; };
 		E5068456EB31C0AA78098FB47212A7BD /* AWSUICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSUICKeyChainStore.m; path = AWSCore/UICKeyChainStore/AWSUICKeyChainStore.m; sourceTree = "<group>"; };
 		E5469504F32898BDC5706B14882F27ED /* AWSSignInManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSignInManager.h; path = AWSAuthSDK/Sources/AWSAuthCore/AWSSignInManager.h; sourceTree = "<group>"; };
-		E619E579F2F19CF496B362BAE730FFB4 /* ExpoFpCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = ExpoFpCommon.xcframework; path = xcframework/ExpoFpCommon.xcframework; sourceTree = "<group>"; };
+		E619E579F2F19CF496B362BAE730FFB4 /* ExpoFpCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = ExpoFpCommon.xcframework; path = xcframework/ExpoFpCommon.xcframework; sourceTree = "<group>"; };
 		E6571079AC56806D8CD7183AC2660DF6 /* CrowdConnectedShared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrowdConnectedShared.debug.xcconfig; sourceTree = "<group>"; };
 		E6D512B005527573997DB8054562EF4B /* JSONHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHelper.swift; path = AWSAuthSDK/Sources/AWSMobileClient/Internal/JSONHelper.swift; sourceTree = "<group>"; };
 		E79A2789967DEF9197E1709AF412D67A /* AWSCocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCocoaLumberjack.h; path = AWSCore/Logging/AWSCocoaLumberjack.h; sourceTree = "<group>"; };
@@ -1282,6 +1277,7 @@
 				0324F74EE0BCE9F698EC7E22F434A102 /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */,
 				C9C6F7DCECD1A57BD6460D3B743C7F71 /* Support Files */,
 			);
+			name = AWSCore;
 			path = AWSCore;
 			sourceTree = "<group>";
 		};
@@ -1291,6 +1287,7 @@
 				A320A8D994DAE0A7539C747C7A528146 /* Frameworks */,
 				F79006CDC9E4E6406B55BF7BF4D72C32 /* Support Files */,
 			);
+			name = CrowdConnectedGeo;
 			path = CrowdConnectedGeo;
 			sourceTree = "<group>";
 		};
@@ -1331,6 +1328,7 @@
 				72A1C58D1BD2BA5E1D7EC363E99B1F9E /* AWSPinpointTargetingService.m */,
 				668F0E7120DE672EED74451A0EDBBB0B /* Support Files */,
 			);
+			name = AWSPinpoint;
 			path = AWSPinpoint;
 			sourceTree = "<group>";
 		};
@@ -1340,6 +1338,7 @@
 				CFE36A85367489CD69C0238CB3B7B9D1 /* Frameworks */,
 				65E261C551C59DB226AA900BA45ADF88 /* Support Files */,
 			);
+			name = CrowdConnectedCore;
 			path = CrowdConnectedCore;
 			sourceTree = "<group>";
 		};
@@ -1399,6 +1398,7 @@
 				274EDA8FABE7063E32488C6FE9E19EC0 /* AWSKinesisService.m */,
 				BA1D6B34F0796E0B04AA2D7BCBF8FC54 /* Support Files */,
 			);
+			name = AWSKinesis;
 			path = AWSKinesis;
 			sourceTree = "<group>";
 		};
@@ -1484,6 +1484,7 @@
 				72110FB1EC3D82F6A61E8DBA0705593D /* Frameworks */,
 				3E27F710797313AEC8340E46F755E46C /* Support Files */,
 			);
+			name = CrowdConnectedShared;
 			path = CrowdConnectedShared;
 			sourceTree = "<group>";
 		};
@@ -1493,6 +1494,7 @@
 				00789821483987EA07D44C34A6155C43 /* Frameworks */,
 				CB8EE70471750BC3DC8F30459CFC94D9 /* Support Files */,
 			);
+			name = ExpoFpCommon;
 			path = ExpoFpCommon;
 			sourceTree = "<group>";
 		};
@@ -1520,6 +1522,7 @@
 				CD08318C0694C2F1ACD3ECAF46C4BEAC /* AWSCognitoIdentityProviderASF.m */,
 				F31D0D0AC49BD4F95243042D0C547404 /* Support Files */,
 			);
+			name = AWSCognitoIdentityProviderASF;
 			path = AWSCognitoIdentityProviderASF;
 			sourceTree = "<group>";
 		};
@@ -1610,6 +1613,7 @@
 				B4AFD05C185AD5B6446359C7BBAC8E0B /* UserState.swift */,
 				CF1CE5A42F28088AC1E9F13776790EEE /* Support Files */,
 			);
+			name = AWSMobileClient;
 			path = AWSMobileClient;
 			sourceTree = "<group>";
 		};
@@ -1629,6 +1633,7 @@
 				C134C4DC5E81E5DD0BD19F28CA93247B /* AWSUIConfiguration.h */,
 				898208E19557BDE4DE9DDC4461B5ECCC /* Support Files */,
 			);
+			name = AWSAuthCore;
 			path = AWSAuthCore;
 			sourceTree = "<group>";
 		};
@@ -1687,6 +1692,7 @@
 				7C5BC5CBC080779005A9502F87A99DD0 /* tommath.c */,
 				713388E84FC1A9FBA082A518370A725B /* Support Files */,
 			);
+			name = AWSCognitoIdentityProvider;
 			path = AWSCognitoIdentityProvider;
 			sourceTree = "<group>";
 		};
@@ -1798,6 +1804,7 @@
 				641EF59E017D24553498DD568DB07D8F /* Frameworks */,
 				CE4AE015F8AD628DE1E0F3640BA8BCE9 /* Support Files */,
 			);
+			name = CrowdConnectedIPS;
 			path = CrowdConnectedIPS;
 			sourceTree = "<group>";
 		};

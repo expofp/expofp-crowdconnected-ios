@@ -5,7 +5,7 @@ platform :ios, '14.0'
 use_frameworks!
 
 def shared_pods
-  pod 'ExpoFpCommon', '0.3.1.1'
+  pod 'ExpoFpCommon', '4.0.0'
 
   pod 'AWSKinesis', '2.28.2'
   pod 'CrowdConnectedIPS', '1.4.0'
