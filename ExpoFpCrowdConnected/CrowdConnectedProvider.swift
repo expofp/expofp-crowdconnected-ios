@@ -15,7 +15,6 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
         get { lDelegate }
         set(newDelegate) {
             lDelegate = newDelegate
-            requestPermissions()
         }
     }
     
@@ -47,6 +46,8 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     }
         
     public func start() {
+        requestPermissions()
+        
         switch self.settings.mode {
         case .IPS_ONLY:
             CrowdConnectedIPS.activate()
