@@ -77,8 +77,10 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     }
     
     private func requestPermissions() {
-        let locationManager = CLLocationManager()
-        locationManager.requestWhenInUseAuthorization()
+        DispatchQueue.main.async {
+            let locationManager = CLLocationManager()
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
 }
 
