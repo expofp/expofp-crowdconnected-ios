@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -150,7 +150,7 @@
 				};
 			};
 			buildConfigurationList = E78744C02875C53500323060 /* Build configuration list for PBXProject "ExpoFpCrowdConnected" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -373,7 +373,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpoFpCrowdConnected/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth requested for better positioning experience.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth requested for better positioning experience.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +411,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpoFpCrowdConnected/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth requested for better positioning experience.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth requested for better positioning experience.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Platform location requested for better positioning experience.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

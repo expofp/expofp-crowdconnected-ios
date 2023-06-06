@@ -35,4 +35,6 @@ public protocol LocationProvider {
   var delegate: ExpoFpCommon.LocationProviderDelegate? { get set }
   func start()
   func stop()
+  func requestAlwaysAuthorization()
+  func requestWhenInUseAuthorization()
 }

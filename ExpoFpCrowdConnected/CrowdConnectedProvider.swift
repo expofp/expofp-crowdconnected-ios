@@ -7,7 +7,10 @@ import CrowdConnectedShared
 import CoreLocation
 
 public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
+    
     private let settings: Settings
+    
+    private let locationManager = CLLocationManager()
     
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
     
@@ -46,8 +49,6 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
     }
         
     public func start() {
-        requestPermissions()
-        
         switch self.settings.mode {
         case .IPS_ONLY:
             CrowdConnectedIPS.activate()
@@ -76,11 +77,12 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
         CrowdConnected.shared.stop()
     }
     
-    private func requestPermissions() {
-        DispatchQueue.main.async {
-            let locationManager = CLLocationManager()
-            locationManager.requestWhenInUseAuthorization()
-        }
+    public func requestWhenInUseAuthorization() {
+        locationManager.requestWhenInUseAuthorization()
+    }
+    
+    public func requestAlwaysAuthorization() {
+        locationManager.requestAlwaysAuthorization()
     }
 }
 

@@ -31,6 +31,8 @@ public class CrowdConnectedProvider : ExpoFpCommon.LocationProvider, CrowdConnec
   @objc public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location])
   public func start()
   public func stop()
+  public func requestWhenInUseAuthorization()
+  public func requestAlwaysAuthorization()
   @objc deinit
 }
 public enum Mode {

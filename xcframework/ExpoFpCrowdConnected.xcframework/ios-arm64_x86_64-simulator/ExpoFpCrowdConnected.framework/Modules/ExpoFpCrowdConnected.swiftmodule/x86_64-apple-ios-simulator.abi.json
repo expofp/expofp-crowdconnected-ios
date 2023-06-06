@@ -704,6 +704,46 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestWhenInUseAuthorization",
+            "printedName": "requestWhenInUseAuthorization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC29requestWhenInUseAuthorizationyyF",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC29requestWhenInUseAuthorizationyyF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestAlwaysAuthorization",
+            "printedName": "requestAlwaysAuthorization()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC26requestAlwaysAuthorizationyyF",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC26requestAlwaysAuthorizationyyF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
