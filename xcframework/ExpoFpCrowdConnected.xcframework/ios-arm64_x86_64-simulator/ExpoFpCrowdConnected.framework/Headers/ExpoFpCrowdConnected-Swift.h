@@ -230,6 +230,10 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreLocation;
+@import CrowdConnectedCore;
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #endif
@@ -250,6 +254,17 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class Location;
+@class CLLocationManager;
+
+SWIFT_CLASS("_TtC20ExpoFpCrowdConnected22CrowdConnectedProvider")
+@interface CrowdConnectedProvider : NSObject <CLLocationManagerDelegate, CrowdConnectedDelegate>
+- (void)didUpdateLocation:(NSArray<Location *> * _Nonnull)locations;
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif
@@ -490,6 +505,10 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreLocation;
+@import CrowdConnectedCore;
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #endif
@@ -510,6 +529,17 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class Location;
+@class CLLocationManager;
+
+SWIFT_CLASS("_TtC20ExpoFpCrowdConnected22CrowdConnectedProvider")
+@interface CrowdConnectedProvider : NSObject <CLLocationManagerDelegate, CrowdConnectedDelegate>
+- (void)didUpdateLocation:(NSArray<Location *> * _Nonnull)locations;
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif

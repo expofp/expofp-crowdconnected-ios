@@ -611,7 +611,7 @@
                 "kind": "TypeNominal",
                 "name": "CrowdConnectedProvider",
                 "printedName": "ExpoFpCrowdConnected.CrowdConnectedProvider",
-                "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC"
+                "usr": "c:@M@ExpoFpCrowdConnected@objc(cs)CrowdConnectedProvider"
               },
               {
                 "kind": "TypeNominal",
@@ -655,7 +655,7 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC17didUpdateLocationyySay0cD4Core0H0CGF",
+            "usr": "c:@M@ExpoFpCrowdConnected@objc(cs)CrowdConnectedProvider(im)didUpdateLocation:",
             "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC17didUpdateLocationyySay0cD4Core0H0CGF",
             "moduleName": "ExpoFpCrowdConnected",
             "objc_name": "didUpdateLocation:",
@@ -668,17 +668,23 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start()",
+            "printedName": "start(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC5startyyF",
-            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC5startyyF",
+            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC5startyySbF",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC5startyySbF",
             "moduleName": "ExpoFpCrowdConnected",
             "declAttributes": [
               "AccessControl"
@@ -707,51 +713,70 @@
           },
           {
             "kind": "Function",
-            "name": "requestWhenInUseAuthorization",
-            "printedName": "requestWhenInUseAuthorization()",
+            "name": "locationManagerDidChangeAuthorization",
+            "printedName": "locationManagerDidChangeAuthorization(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC29requestWhenInUseAuthorizationyyF",
-            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC29requestWhenInUseAuthorizationyyF",
+            "usr": "c:@M@ExpoFpCrowdConnected@objc(cs)CrowdConnectedProvider(im)locationManagerDidChangeAuthorization:",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC37locationManagerDidChangeAuthorizationyySo010CLLocationG0CF",
             "moduleName": "ExpoFpCrowdConnected",
+            "objc_name": "locationManagerDidChangeAuthorization:",
             "declAttributes": [
+              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "requestAlwaysAuthorization",
-            "printedName": "requestAlwaysAuthorization()",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "CrowdConnectedProvider",
+                "printedName": "ExpoFpCrowdConnected.CrowdConnectedProvider",
+                "usr": "c:@M@ExpoFpCrowdConnected@objc(cs)CrowdConnectedProvider"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC26requestAlwaysAuthorizationyyF",
-            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC26requestAlwaysAuthorizationyyF",
+            "declKind": "Constructor",
+            "usr": "c:@M@ExpoFpCrowdConnected@objc(cs)CrowdConnectedProvider(im)init",
+            "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderCACycfc",
             "moduleName": "ExpoFpCrowdConnected",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "ObjC",
+              "Override"
             ],
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:20ExpoFpCrowdConnected0cD8ProviderC",
+        "usr": "c:@M@ExpoFpCrowdConnected@objc(cs)CrowdConnectedProvider",
         "mangledName": "$s20ExpoFpCrowdConnected0cD8ProviderC",
         "moduleName": "ExpoFpCrowdConnected",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -767,6 +792,55 @@
             "printedName": "CrowdConnectedDelegate",
             "usr": "c:@M@CrowdConnectedCore@objc(pl)CrowdConnectedDelegate",
             "mangledName": "$s18CrowdConnectedCore0aB8DelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1024,6 +1098,27 @@
       "offset": 336,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 401,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 438,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 176,
+      "length": 22,
+      "value": "\"ExpoFpCrowdConnected.CrowdConnectedProvider\""
     }
   ]
 }

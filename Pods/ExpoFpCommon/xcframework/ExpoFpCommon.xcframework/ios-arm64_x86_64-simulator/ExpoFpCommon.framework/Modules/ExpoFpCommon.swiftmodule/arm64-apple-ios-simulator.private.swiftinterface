@@ -32,9 +32,7 @@ public struct Location {
   public init(x: Swift.Double? = nil, y: Swift.Double? = nil, z: Swift.String? = nil, angle: Swift.Double? = nil, latitude: Swift.Double? = nil, longitude: Swift.Double? = nil)
 }
 public protocol LocationProvider {
-  var delegate: ExpoFpCommon.LocationProviderDelegate? { get set }
-  func start()
+  func start(_ inBackgound: Swift.Bool)
   func stop()
-  func requestAlwaysAuthorization()
-  func requestWhenInUseAuthorization()
+  var delegate: ExpoFpCommon.LocationProviderDelegate? { get set }
 }

@@ -912,6 +912,60 @@
         "printedName": "LocationProvider",
         "children": [
           {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ExpoFpCommon16LocationProviderP5startyySbF",
+            "mangledName": "$s12ExpoFpCommon16LocationProviderP5startyySbF",
+            "moduleName": "ExpoFpCommon",
+            "genericSig": "<τ_0_0 where τ_0_0 : ExpoFpCommon.LocationProvider>",
+            "sugared_genericSig": "<Self where Self : ExpoFpCommon.LocationProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ExpoFpCommon16LocationProviderP4stopyyF",
+            "mangledName": "$s12ExpoFpCommon16LocationProviderP4stopyyF",
+            "moduleName": "ExpoFpCommon",
+            "genericSig": "<τ_0_0 where τ_0_0 : ExpoFpCommon.LocationProvider>",
+            "sugared_genericSig": "<Self where Self : ExpoFpCommon.LocationProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
@@ -1028,102 +1082,6 @@
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12ExpoFpCommon16LocationProviderP5startyyF",
-            "mangledName": "$s12ExpoFpCommon16LocationProviderP5startyyF",
-            "moduleName": "ExpoFpCommon",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoFpCommon.LocationProvider>",
-            "sugared_genericSig": "<Self where Self : ExpoFpCommon.LocationProvider>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12ExpoFpCommon16LocationProviderP4stopyyF",
-            "mangledName": "$s12ExpoFpCommon16LocationProviderP4stopyyF",
-            "moduleName": "ExpoFpCommon",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoFpCommon.LocationProvider>",
-            "sugared_genericSig": "<Self where Self : ExpoFpCommon.LocationProvider>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "requestAlwaysAuthorization",
-            "printedName": "requestAlwaysAuthorization()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12ExpoFpCommon16LocationProviderP26requestAlwaysAuthorizationyyF",
-            "mangledName": "$s12ExpoFpCommon16LocationProviderP26requestAlwaysAuthorizationyyF",
-            "moduleName": "ExpoFpCommon",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoFpCommon.LocationProvider>",
-            "sugared_genericSig": "<Self where Self : ExpoFpCommon.LocationProvider>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "requestWhenInUseAuthorization",
-            "printedName": "requestWhenInUseAuthorization()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12ExpoFpCommon16LocationProviderP29requestWhenInUseAuthorizationyyF",
-            "mangledName": "$s12ExpoFpCommon16LocationProviderP29requestWhenInUseAuthorizationyyF",
-            "moduleName": "ExpoFpCommon",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoFpCommon.LocationProvider>",
-            "sugared_genericSig": "<Self where Self : ExpoFpCommon.LocationProvider>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",

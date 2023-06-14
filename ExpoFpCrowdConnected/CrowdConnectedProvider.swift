@@ -6,18 +6,21 @@ import CrowdConnectedGeo
 import CrowdConnectedShared
 import CoreLocation
 
-public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
-    
+public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, LocationProvider, CrowdConnectedDelegate {
     private let settings: Settings
-    
     private let locationManager = CLLocationManager()
     
+    private var started = false
+    private var inBackground = false
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
     
     public var delegate: ExpoFpCommon.LocationProviderDelegate? {
         get { lDelegate }
         set(newDelegate) {
             lDelegate = newDelegate
+            DispatchQueue.global(qos: .userInitiated).async {
+                self.requestPermission()
+            }
         }
     }
     
@@ -47,42 +50,107 @@ public class CrowdConnectedProvider : LocationProvider, CrowdConnectedDelegate {
             }
         }
     }
-        
-    public func start() {
-        switch self.settings.mode {
-        case .IPS_ONLY:
-            CrowdConnectedIPS.activate()
-            break
-        case .IPS_AND_GPS:
-            CrowdConnectedGeo.activate()
-            CrowdConnectedIPS.activate()
-            break
-        case .GPS_ONLY:
-            CrowdConnectedGeo.activate()
-            break
+    
+    public func start(_ inBackground: Bool) {
+        if(self.started){
+            return
         }
         
-        CrowdConnected.shared.start(appKey: self.settings.appKey, token: self.settings.token, secret: self.settings.secret) { deviceId, error in
-            if(deviceId != nil && deviceId != ""){
-                CrowdConnected.shared.delegate = self
-                for (aliasKey, aliasValue) in self.settings.aliases {
-                    CrowdConnected.shared.setAlias(key: aliasKey, value: aliasValue)
-                }
-            }
-        }
+        print("[CrowdConnectedProvider] start")
+        
+        self.started = true
+        self.inBackground = inBackground
+        startAsync(inBackground)
     }
     
     public func stop() {
-        CrowdConnected.shared.delegate = nil
-        CrowdConnected.shared.stop()
+        if(!self.started){
+            return
+        }
+        
+        print("[CrowdConnectedProvider] stop")
+        
+        self.started = false
+        stopAsync()
     }
     
-    public func requestWhenInUseAuthorization() {
-        locationManager.requestWhenInUseAuthorization()
+    public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        if(manager.authorizationStatus == .notDetermined){
+            requestPermission()
+        }
+        else if(self.started
+           && (manager.authorizationStatus == .authorizedAlways
+               || manager.authorizationStatus == .authorizedWhenInUse)
+           && manager.accuracyAuthorization == .reducedAccuracy){
+            print("[CrowdConnectedProvider] The provider requires 'accuracyAuthorization' permission to work.")
+        }
     }
     
-    public func requestAlwaysAuthorization() {
-        locationManager.requestAlwaysAuthorization()
+    private func startAsync(_ inBackground: Bool){
+        DispatchQueue.global(qos: .userInitiated).async {
+            
+            self.locationManager.delegate = self
+            if(inBackground){
+                self.locationManager.allowsBackgroundLocationUpdates = true
+            }
+            
+            switch self.settings.mode {
+            case .IPS_ONLY:
+                print("[CrowdConnectedProvider] CrowdConnectedIPS activate")
+                CrowdConnectedIPS.activate()
+                break
+            case .IPS_AND_GPS:
+                print("[CrowdConnectedProvider] CrowdConnectedGeo activate")
+                CrowdConnectedGeo.activate()
+                print("[CrowdConnectedProvider] CrowdConnectedIPS activate")
+                CrowdConnectedIPS.activate()
+                break
+            case .GPS_ONLY:
+                print("[CrowdConnectedProvider] CrowdConnectedGeo activate")
+                CrowdConnectedGeo.activate()
+                break
+            }
+            
+            print("[CrowdConnectedProvider] CrowdConnected start")
+            CrowdConnected.shared.start(appKey: self.settings.appKey, token: self.settings.token, secret: self.settings.secret) { deviceId, error in
+                
+                if let err = error {
+                    print("[CrowdConnectedProvider] CrowdConnected error: \(err)")
+                }
+                else if(deviceId != nil && deviceId != ""){
+                    print("[CrowdConnectedProvider] CrowdConnected is connected, deviceId: \(deviceId!)")
+                    CrowdConnected.shared.delegate = self
+                    for (aliasKey, aliasValue) in self.settings.aliases {
+                        CrowdConnected.shared.setAlias(key: aliasKey, value: aliasValue)
+                    }
+                }
+            }
+            
+            self.requestPermission()
+        }
+    }
+    
+    private func stopAsync(){
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.locationManager.delegate = nil
+            self.locationManager.allowsBackgroundLocationUpdates = false
+            
+            CrowdConnected.shared.delegate = nil
+            CrowdConnected.shared.stop()
+        }
+    }
+    
+    private func requestPermission(){
+        if(started && delegate != nil){
+            if(inBackground){
+                print("[CrowdConnectedProvider] request 'AlwaysAuthorization' permission")
+                locationManager.requestAlwaysAuthorization()
+            }
+            else {
+                print("[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission")
+                locationManager.requestWhenInUseAuthorization()
+            }
+        }
     }
 }
 

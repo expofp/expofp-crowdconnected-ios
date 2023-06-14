@@ -22,17 +22,16 @@ public class Settings {
   public func addAlias(_ key: Swift.String, _ value: Swift.String)
   @objc deinit
 }
-public class CrowdConnectedProvider : ExpoFpCommon.LocationProvider, CrowdConnectedCore.CrowdConnectedDelegate {
+@objc public class CrowdConnectedProvider : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate, ExpoFpCommon.LocationProvider, CrowdConnectedCore.CrowdConnectedDelegate {
   public var delegate: ExpoFpCommon.LocationProviderDelegate? {
     get
     set(newDelegate)
   }
   public init(_ settings: ExpoFpCrowdConnected.Settings)
   @objc public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location])
-  public func start()
+  public func start(_ inBackground: Swift.Bool)
   public func stop()
-  public func requestWhenInUseAuthorization()
-  public func requestAlwaysAuthorization()
+  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc deinit
 }
 public enum Mode {
