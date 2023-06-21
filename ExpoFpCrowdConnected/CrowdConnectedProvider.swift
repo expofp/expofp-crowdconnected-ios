@@ -11,6 +11,7 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     private let locationManager = CLLocationManager()
     
     private var started = false
+    private var ccStarted = false
     private var inBackground = false
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
     
@@ -18,9 +19,7 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
         get { lDelegate }
         set(newDelegate) {
             lDelegate = newDelegate
-            DispatchQueue.global(qos: .userInitiated).async {
-                self.requestPermission()
-            }
+            requestPermission()
         }
     }
     
@@ -78,21 +77,22 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
         if(manager.authorizationStatus == .notDetermined){
             requestPermission()
         }
-        else if(self.started
-           && (manager.authorizationStatus == .authorizedAlways
-               || manager.authorizationStatus == .authorizedWhenInUse)
-           && manager.accuracyAuthorization == .reducedAccuracy){
+        else if((manager.authorizationStatus == .authorizedAlways
+                    || manager.authorizationStatus == .authorizedWhenInUse)
+                && manager.accuracyAuthorization == .reducedAccuracy){
             print("[CrowdConnectedProvider] The provider requires 'accuracyAuthorization' permission to work.")
         }
     }
     
     private func startAsync(_ inBackground: Bool){
+        ccStarted = true
+        
         DispatchQueue.global(qos: .userInitiated).async {
             
             self.locationManager.delegate = self
-            if(inBackground){
-                self.locationManager.allowsBackgroundLocationUpdates = true
-            }
+            /*if(inBackground){
+             self.locationManager.allowsBackgroundLocationUpdates = true
+             }*/
             
             switch self.settings.mode {
             case .IPS_ONLY:
@@ -113,12 +113,12 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
             
             print("[CrowdConnectedProvider] CrowdConnected start")
             CrowdConnected.shared.start(appKey: self.settings.appKey, token: self.settings.token, secret: self.settings.secret) { deviceId, error in
-                
                 if let err = error {
                     print("[CrowdConnectedProvider] CrowdConnected error: \(err)")
                 }
                 else if(deviceId != nil && deviceId != ""){
-                    print("[CrowdConnectedProvider] CrowdConnected is connected, deviceId: \(deviceId!)")
+                    print("[CrowdConnectedProvider] CrowdConnected is connected: \(CrowdConnected.shared.isSuccessfullyRunning)")
+                    print("[CrowdConnectedProvider] CrowdConnected, deviceId: \(deviceId!)")
                     CrowdConnected.shared.delegate = self
                     for (aliasKey, aliasValue) in self.settings.aliases {
                         CrowdConnected.shared.setAlias(key: aliasKey, value: aliasValue)
@@ -131,6 +131,7 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     }
     
     private func stopAsync(){
+        ccStarted = false
         DispatchQueue.global(qos: .userInitiated).async {
             self.locationManager.delegate = nil
             self.locationManager.allowsBackgroundLocationUpdates = false
@@ -144,11 +145,15 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
         if(started && delegate != nil){
             if(inBackground){
                 print("[CrowdConnectedProvider] request 'AlwaysAuthorization' permission")
-                locationManager.requestAlwaysAuthorization()
+                DispatchQueue.global(qos: .userInitiated).async {
+                    self.locationManager.requestAlwaysAuthorization()
+                }
             }
             else {
                 print("[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission")
-                locationManager.requestWhenInUseAuthorization()
+                DispatchQueue.global(qos: .userInitiated).async {
+                    self.locationManager.requestWhenInUseAuthorization()
+                }
             }
         }
     }

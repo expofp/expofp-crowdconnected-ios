@@ -1109,7 +1109,14 @@
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 438,
+      "offset": 435,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 472,
       "length": 5,
       "value": "false"
     },
