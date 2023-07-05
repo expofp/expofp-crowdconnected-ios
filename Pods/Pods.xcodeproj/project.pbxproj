@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		12537BEC833703BD5C8B75E2F75E59F1 /* CrowdConnectedShared */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F5E86F295F1BFDF6780C212AEE059D7B /* Build configuration list for PBXAggregateTarget "CrowdConnectedShared" */;
+			buildConfigurationList = 06AF4AC984BFFCEE447A740B943A4D8B /* Build configuration list for PBXAggregateTarget "CrowdConnectedShared" */;
 			buildPhases = (
-				81DC804C979C4080E6A10DA76A1FC088 /* [CP] Copy XCFrameworks */,
+				248232C0E0369E45EEBEFF24412C4689 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -51,14 +51,15 @@
 		};
 		B48916D274896F9BC8C5CDF89516C277 /* CrowdConnectedCore */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = FE0817D5E2D4353CD37978778A50F10A /* Build configuration list for PBXAggregateTarget "CrowdConnectedCore" */;
+			buildConfigurationList = 07349B96295DC2EA0C4196630414C306 /* Build configuration list for PBXAggregateTarget "CrowdConnectedCore" */;
 			buildPhases = (
-				A21E232F23EC401682FB3B411CA63356 /* [CP] Copy XCFrameworks */,
+				5B42C1F5756EE1160FADA6C71B3E464C /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				5894F2BAE656D6CF0A6754E54A3E1CE4 /* PBXTargetDependency */,
-				FAB6AF0107C2AACF481F19C70550C6E9 /* PBXTargetDependency */,
-				95BBADB3FE7091C66F5394FAC9BD0BCE /* PBXTargetDependency */,
+				D9CA9AA1E855F0A9CA7B029F77847A65 /* PBXTargetDependency */,
+				019EB7559CD74250BBAD14E1FC918481 /* PBXTargetDependency */,
+				E6C696115169B66C27DE5010F56A30D5 /* PBXTargetDependency */,
+				EE46336A5E839D65861C960AF5E235F0 /* PBXTargetDependency */,
 			);
 			name = CrowdConnectedCore;
 		};
@@ -451,12 +452,12 @@
 			remoteGlobalIDString = 2E831B3C3EFD86D68870161A3C949893;
 			remoteInfo = AWSPinpoint;
 		};
-		2D1A81584AB555B0A465767A135D446C /* PBXContainerItemProxy */ = {
+		2ED2D011F3008D0F3B527344D6250CF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E831B3C3EFD86D68870161A3C949893;
-			remoteInfo = AWSPinpoint;
+			remoteGlobalIDString = 12537BEC833703BD5C8B75E2F75E59F1;
+			remoteInfo = CrowdConnectedShared;
 		};
 		37BAF926AF6FCEA0B1EC3B8F76664EB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -486,13 +487,6 @@
 			remoteGlobalIDString = 9B172FACE90046AA5E100E650B6109DD;
 			remoteInfo = AWSCore;
 		};
-		816D9544C6375E2154AA5F7C8AFA871B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6428ED7DAC8003D918A4F549769F079D;
-			remoteInfo = AWSMobileClient;
-		};
 		879166685F96150BB57CBD1C7F0E8303 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -520,6 +514,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9B172FACE90046AA5E100E650B6109DD;
 			remoteInfo = AWSCore;
+		};
+		9F397BD7CDA125D8A214927F55DDDD6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E831B3C3EFD86D68870161A3C949893;
+			remoteInfo = AWSPinpoint;
 		};
 		A1670AD908BAB9092CC91E5F3075B4F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -556,6 +557,13 @@
 			remoteGlobalIDString = 29212B2F049288E035AB98405A23E41E;
 			remoteInfo = AWSCognitoIdentityProvider;
 		};
+		CB4A6C510F051DA08E710E80A7D5F354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B6662199549F63C4645D3DDDBAF07B4;
+			remoteInfo = AWSKinesis;
+		};
 		CCD0FBA1FAFE68F07FA142AD8B7FBCE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -591,12 +599,12 @@
 			remoteGlobalIDString = 12537BEC833703BD5C8B75E2F75E59F1;
 			remoteInfo = CrowdConnectedShared;
 		};
-		D641A9E1381D252AF102AB1AE5B9C3E8 /* PBXContainerItemProxy */ = {
+		F815F3A6553A24984A346B8D9478D77F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12537BEC833703BD5C8B75E2F75E59F1;
-			remoteInfo = CrowdConnectedShared;
+			remoteGlobalIDString = 6428ED7DAC8003D918A4F549769F079D;
+			remoteInfo = AWSMobileClient;
 		};
 		F9D61286FA554560F6AEA19990F481F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2343,7 +2351,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/CrowdConnectedIPS/CrowdConnectedIPS-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81DC804C979C4080E6A10DA76A1FC088 /* [CP] Copy XCFrameworks */ = {
+		248232C0E0369E45EEBEFF24412C4689 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2360,7 +2368,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/CrowdConnectedShared/CrowdConnectedShared-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A21E232F23EC401682FB3B411CA63356 /* [CP] Copy XCFrameworks */ = {
+		5B42C1F5756EE1160FADA6C71B3E464C /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2649,6 +2657,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		019EB7559CD74250BBAD14E1FC918481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSMobileClient;
+			target = 6428ED7DAC8003D918A4F549769F079D /* AWSMobileClient */;
+			targetProxy = F815F3A6553A24984A346B8D9478D77F /* PBXContainerItemProxy */;
+		};
 		0781110AC451B70392F3918A21C788CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AWSAuthCore;
@@ -2691,12 +2705,6 @@
 			target = 12537BEC833703BD5C8B75E2F75E59F1 /* CrowdConnectedShared */;
 			targetProxy = 060A8B02C4DB0DF985A6B8534FF189F4 /* PBXContainerItemProxy */;
 		};
-		5894F2BAE656D6CF0A6754E54A3E1CE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AWSMobileClient;
-			target = 6428ED7DAC8003D918A4F549769F079D /* AWSMobileClient */;
-			targetProxy = 816D9544C6375E2154AA5F7C8AFA871B /* PBXContainerItemProxy */;
-		};
 		6DDFDC1A396F84C4E9C05A7A0D9917FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ExpoFpCommon;
@@ -2726,12 +2734,6 @@
 			name = AWSCore;
 			target = 9B172FACE90046AA5E100E650B6109DD /* AWSCore */;
 			targetProxy = 57D4C25E5A5A9E2AC0AD918F919F1330 /* PBXContainerItemProxy */;
-		};
-		95BBADB3FE7091C66F5394FAC9BD0BCE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CrowdConnectedShared;
-			target = 12537BEC833703BD5C8B75E2F75E59F1 /* CrowdConnectedShared */;
-			targetProxy = D641A9E1381D252AF102AB1AE5B9C3E8 /* PBXContainerItemProxy */;
 		};
 		A39E8C9A05DBBEC4AF50622CD8563BB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2775,17 +2777,35 @@
 			target = BBF90BA4F6EC5653945C7B0FFD9128D2 /* AWSCognitoIdentityProviderASF */;
 			targetProxy = 8B75E03C868B2517D59DEC3F4B15D99A /* PBXContainerItemProxy */;
 		};
+		D9CA9AA1E855F0A9CA7B029F77847A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSKinesis;
+			target = 1B6662199549F63C4645D3DDDBAF07B4 /* AWSKinesis */;
+			targetProxy = CB4A6C510F051DA08E710E80A7D5F354 /* PBXContainerItemProxy */;
+		};
 		E097124409BC83CD9C9EB06048AFE7C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AWSKinesis;
 			target = 1B6662199549F63C4645D3DDDBAF07B4 /* AWSKinesis */;
 			targetProxy = D277A2182654B5B2DF03121AA19926BE /* PBXContainerItemProxy */;
 		};
+		E6C696115169B66C27DE5010F56A30D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSPinpoint;
+			target = 2E831B3C3EFD86D68870161A3C949893 /* AWSPinpoint */;
+			targetProxy = 9F397BD7CDA125D8A214927F55DDDD6C /* PBXContainerItemProxy */;
+		};
 		EACA31A0B64EBECF1E618D2ABE916BF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AWSCognitoIdentityProvider;
 			target = 29212B2F049288E035AB98405A23E41E /* AWSCognitoIdentityProvider */;
 			targetProxy = C90D9AAE3B860DD96D05474FF44B5356 /* PBXContainerItemProxy */;
+		};
+		EE46336A5E839D65861C960AF5E235F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CrowdConnectedShared;
+			target = 12537BEC833703BD5C8B75E2F75E59F1 /* CrowdConnectedShared */;
+			targetProxy = 2ED2D011F3008D0F3B527344D6250CF1 /* PBXContainerItemProxy */;
 		};
 		F1CB024BC47FB0B3820AC2AEE5E94831 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2798,12 +2818,6 @@
 			name = CrowdConnectedIPS;
 			target = 45CFEB72CCB4C360BC289EE18E51C9D8 /* CrowdConnectedIPS */;
 			targetProxy = 1A82BD8BA63618C46A97C475A257DD25 /* PBXContainerItemProxy */;
-		};
-		FAB6AF0107C2AACF481F19C70550C6E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AWSPinpoint;
-			target = 2E831B3C3EFD86D68870161A3C949893 /* AWSPinpoint */;
-			targetProxy = 2D1A81584AB555B0A465767A135D446C /* PBXContainerItemProxy */;
 		};
 		FF7ED3DDFEEE2EEE8099EB20DDE95C95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2847,6 +2861,25 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		136E8646E08A06204213BB1746D86BDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5031AF5BC86C910FF95C2D4FF2A1D56 /* CrowdConnectedCore.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -2921,26 +2954,6 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		34614F953BA2644E83DF1150E1E68BC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05745F95FB212F47C958101F410CFC06 /* CrowdConnectedCore.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -3046,6 +3059,26 @@
 			};
 			name = Debug;
 		};
+		52763EB3E3418B9EFC5DD8449D4FB3B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271722DAE7BFB289530B5B928CD0E957 /* CrowdConnectedShared.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		53650F89C6D162559A36F3A9925EECD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 448CDA4621D9000CE889DE269D4BEED8 /* Pods-ExpoFpCrowdConnected.debug.xcconfig */;
@@ -3139,6 +3172,26 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		721953ED5E97E0E903D16B2A133D4341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05745F95FB212F47C958101F410CFC06 /* CrowdConnectedCore.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		7558EF26309196CDDDA40F7BE698DECE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3288,26 +3341,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		847FEF90DF42ED4B18FD5D5FC9FD802A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 271722DAE7BFB289530B5B928CD0E957 /* CrowdConnectedShared.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		84D869862BA37F1E2771FB301C972BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3598,47 +3631,28 @@
 			};
 			name = Debug;
 		};
-		C6A14D8E47B042DF0B8F6EFB6FB47365 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5031AF5BC86C910FF95C2D4FF2A1D56 /* CrowdConnectedCore.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C8D2900B9D812C1174B4E0F6D05E6A1B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6571079AC56806D8CD7183AC2660DF6 /* CrowdConnectedShared.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		CDDF725C466FE98DB75CA0A238144F79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75ECAF6E57F4E93D892D137C5BC623C5 /* ExpoFpCommon.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONESIMULATOR_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1417E8DD65FEE0376D64A618ABFA63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6571079AC56806D8CD7183AC2660DF6 /* CrowdConnectedShared.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3730,6 +3744,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06AF4AC984BFFCEE447A740B943A4D8B /* Build configuration list for PBXAggregateTarget "CrowdConnectedShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1417E8DD65FEE0376D64A618ABFA63D /* Debug */,
+				52763EB3E3418B9EFC5DD8449D4FB3B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07349B96295DC2EA0C4196630414C306 /* Build configuration list for PBXAggregateTarget "CrowdConnectedCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136E8646E08A06204213BB1746D86BDF /* Debug */,
+				721953ED5E97E0E903D16B2A133D4341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		222B587313A8E73D4479D6C7A922097D /* Build configuration list for PBXNativeTarget "Pods-ExpoFpCrowdConnected" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3834,24 +3866,6 @@
 			buildConfigurations = (
 				CDDF725C466FE98DB75CA0A238144F79 /* Debug */,
 				8B415995C7A0C30A2B4EF3A29DEDB497 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F5E86F295F1BFDF6780C212AEE059D7B /* Build configuration list for PBXAggregateTarget "CrowdConnectedShared" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C8D2900B9D812C1174B4E0F6D05E6A1B /* Debug */,
-				847FEF90DF42ED4B18FD5D5FC9FD802A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE0817D5E2D4353CD37978778A50F10A /* Build configuration list for PBXAggregateTarget "CrowdConnectedCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C6A14D8E47B042DF0B8F6EFB6FB47365 /* Debug */,
-				34614F953BA2644E83DF1150E1E68BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

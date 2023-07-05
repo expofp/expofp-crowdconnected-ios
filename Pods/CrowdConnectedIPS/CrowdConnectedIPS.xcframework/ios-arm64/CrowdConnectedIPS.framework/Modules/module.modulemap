@@ -6,6 +6,6 @@ framework module CrowdConnectedIPS {
 }
 
 module CrowdConnectedIPS.Swift {
-    header "CrowdConnectedIPS-Swift.h"
-    requires objc
+  header "CrowdConnectedIPS-Swift.h"
+  requires objc
 }

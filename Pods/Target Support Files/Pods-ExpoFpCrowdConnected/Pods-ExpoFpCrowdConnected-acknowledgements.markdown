@@ -38,19 +38,19 @@ The AWS Mobile SDK for iOS is generally licensed under the Apache 2.0 License, w
 
 ## CrowdConnectedCore
 
-Copyright (c) 2022 Crowd Connected Ltd
+Copyright (c) 2023 Crowd Connected Ltd
 
 ## CrowdConnectedGeo
 
-Copyright (c) 2022 Crowd Connected Ltd
+Copyright (c) 2023 Crowd Connected Ltd
 
 ## CrowdConnectedIPS
 
-Copyright (c) 2022 Crowd Connected Ltd
+Copyright (c) 2023 Crowd Connected Ltd
 
 ## CrowdConnectedShared
 
-Copyright (c) 2022 Crowd Connected Ltd
+Copyright (c) 2023 Crowd Connected Ltd
 
 ## ExpoFpCommon
 

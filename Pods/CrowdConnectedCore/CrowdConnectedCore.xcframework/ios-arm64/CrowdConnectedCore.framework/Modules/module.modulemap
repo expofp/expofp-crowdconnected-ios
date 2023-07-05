@@ -6,6 +6,6 @@ framework module CrowdConnectedCore {
 }
 
 module CrowdConnectedCore.Swift {
-    header "CrowdConnectedCore-Swift.h"
-    requires objc
+  header "CrowdConnectedCore-Swift.h"
+  requires objc
 }

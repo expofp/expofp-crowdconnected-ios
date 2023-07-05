@@ -6,6 +6,6 @@ framework module CrowdConnectedGeo {
 }
 
 module CrowdConnectedGeo.Swift {
-    header "CrowdConnectedGeo-Swift.h"
-    requires objc
+  header "CrowdConnectedGeo-Swift.h"
+  requires objc
 }
