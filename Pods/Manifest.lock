@@ -26,14 +26,14 @@ PODS:
   - CrowdConnectedIPS (1.5.0):
     - CrowdConnectedShared
   - CrowdConnectedShared (1.5.0)
-  - ExpoFpCommon (4.2.0)
+  - ExpoFpCommon (4.2.1)
 
 DEPENDENCIES:
   - AWSKinesis (= 2.28.2)
   - CrowdConnectedCore (= 1.5.0)
   - CrowdConnectedGeo (= 1.5.0)
   - CrowdConnectedIPS (= 1.5.0)
-  - ExpoFpCommon (= 4.2.0)
+  - ExpoFpCommon (= 4.2.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -62,8 +62,8 @@ SPEC CHECKSUMS:
   CrowdConnectedGeo: 9a933e53a266accdaeb630a31a6fb7ba724acae4
   CrowdConnectedIPS: 1bef42e3c356e3ee3e3cd9968725c263faf32e8b
   CrowdConnectedShared: 81c0f9ba7bb8e6fe51ad5f8fe498ae692fb0e81c
-  ExpoFpCommon: 0b8e4f3f1ab40814d380a49caa455f022e7a0a84
+  ExpoFpCommon: ab37c30eafba8de6fbb6906f842e42737044d9de
 
-PODFILE CHECKSUM: dcaaedeef3ec7a3c40db846f875a6f518e09fea9
+PODFILE CHECKSUM: f85e96d1cb8a72290415e92a53a6ea46983d7140
 
 COCOAPODS: 1.11.3
