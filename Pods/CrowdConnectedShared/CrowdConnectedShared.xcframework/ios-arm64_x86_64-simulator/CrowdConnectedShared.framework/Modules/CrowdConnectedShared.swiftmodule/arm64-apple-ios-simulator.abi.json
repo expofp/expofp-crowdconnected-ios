@@ -778,8 +778,8 @@
           },
           {
             "kind": "Var",
-            "name": "startLibrary",
-            "printedName": "startLibrary",
+            "name": "startSDK",
+            "printedName": "startSDK",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -809,14 +809,14 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO12startLibraryyA2CmF",
-            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO12startLibraryyA2CmF",
+            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO8startSDKyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO8startSDKyA2CmF",
             "moduleName": "CrowdConnectedShared"
           },
           {
             "kind": "Var",
-            "name": "stopLibrary",
-            "printedName": "stopLibrary",
+            "name": "stopSDK",
+            "printedName": "stopSDK",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -846,8 +846,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO11stopLibraryyA2CmF",
-            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO11stopLibraryyA2CmF",
+            "usr": "s:20CrowdConnectedShared20ReactiveNotificationO7stopSDKyA2CmF",
+            "mangledName": "$s20CrowdConnectedShared20ReactiveNotificationO7stopSDKyA2CmF",
             "moduleName": "CrowdConnectedShared"
           },
           {

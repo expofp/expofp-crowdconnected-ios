@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/CrowdConnectedGeo.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		HPicoL2pWLwMECG+L8l0ZYYpd6o=
+		jBjC36C2mN6G/tpNOzR7R4IxsNc=
 		</data>
 		<key>Modules/CrowdConnectedGeo.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/CrowdConnectedGeo.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		eSWfGsH1FBwZasEXRpjDBHz4Prw=
+		ZNpgxsAAJ4f2NCMlFgr5FqIUiOQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,7 +61,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Qx/GHlbmDAJ/6e0lI45K3x1HYvVXnKx9uEeUHt4njY=
+			+DBYFZkcJnnKZyRUBfp3fx7o8iMWx5HBWjjQE1v9EUM=
 			</data>
 		</dict>
 		<key>Modules/CrowdConnectedGeo.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vhvtoxQHNl8QBgjLKH7LCeeek3gqn9PQZFGj58eeeqI=
+			a/fTou+C5FVH5oBoNuZcH15ey3c0fnb7qE6sa1IFlJI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

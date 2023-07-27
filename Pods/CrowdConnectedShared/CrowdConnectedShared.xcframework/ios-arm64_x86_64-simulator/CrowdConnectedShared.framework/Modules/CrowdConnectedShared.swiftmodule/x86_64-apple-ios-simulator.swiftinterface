@@ -35,8 +35,8 @@ public enum ReactiveNotification : Swift.String {
   case ipsModuleState
   case coreBluetoothModuleState
   case geoModuleState
-  case startLibrary
-  case stopLibrary
+  case startSDK
+  case stopSDK
   case startNavigationSession
   case endNavigationSession
   case newRemoteLog

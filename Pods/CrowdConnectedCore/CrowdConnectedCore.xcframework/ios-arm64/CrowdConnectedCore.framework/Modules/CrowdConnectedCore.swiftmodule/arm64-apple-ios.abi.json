@@ -100,6 +100,13 @@
       },
       {
         "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedCore"
+      },
+      {
+        "kind": "Import",
         "name": "AWSCore",
         "printedName": "AWSCore",
         "declKind": "Import",
@@ -2764,32 +2771,46 @@
       "value": "\"CrowdConnected.Session.Password.StorageKey\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateStore.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateStore.swift",
       "kind": "StringLiteral",
-      "offset": 144,
+      "offset": 164,
       "length": 40,
       "value": "\"CrowdConnected.LibraryState.StorageKey\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateStore.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateStore.swift",
       "kind": "StringLiteral",
-      "offset": 225,
+      "offset": 245,
       "length": 10,
       "value": "\"stateKey\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateStore.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateStore.swift",
       "kind": "StringLiteral",
-      "offset": 279,
+      "offset": 299,
       "length": 18,
       "value": "\"locationValueKey\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateStore.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateStore.swift",
       "kind": "StringLiteral",
-      "offset": 337,
+      "offset": 357,
       "length": 14,
       "value": "\"timestampKey\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1217,
+      "length": 97,
+      "value": "\"Checking SDK state that is older than \""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1300,
+      "length": 12,
+      "value": "\" milliseconds\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Login\/CognitoLogin.swift",
@@ -2856,15 +2877,22 @@
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Login\/CognitoLogin.swift",
+      "kind": "StringLiteral",
+      "offset": 2478,
+      "length": 61,
+      "value": "\"Failed to generate access token due to missing credentials.\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Login\/CognitoLogin.swift",
       "kind": "BooleanLiteral",
-      "offset": 3078,
+      "offset": 3201,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Login\/CognitoLogin.swift",
       "kind": "StringLiteral",
-      "offset": 3794,
+      "offset": 3917,
       "length": 33,
       "value": "\"Access token has been refreshed\""
     },
@@ -2876,25 +2904,25 @@
       "value": "\"CrowdConnectedCore.CognitoLogin\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LibraryVersionResolver.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/SDKVersionResolver.swift",
       "kind": "StringLiteral",
-      "offset": 145,
+      "offset": 141,
       "length": 45,
       "value": "\"CrowdConnected.lastConfiguredBuildNumberKey\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LibraryVersionResolver.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/SDKVersionResolver.swift",
       "kind": "StringLiteral",
-      "offset": 246,
+      "offset": 242,
       "length": 7,
-      "value": "\"1.5.0\""
+      "value": "\"1.5.2\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LibraryVersionResolver.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/SDKVersionResolver.swift",
       "kind": "IntegerLiteral",
-      "offset": 310,
+      "offset": 306,
       "length": 3,
-      "value": "184"
+      "value": "186"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SettingsUpdater.swift",
@@ -3284,252 +3312,252 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/RecordsDatabase\/RecordsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4064,
+      "offset": 4052,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/RecordsDatabase\/RecordsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4113,
+      "offset": 4101,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/RecordsDatabase\/RecordsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4241,
+      "offset": 4225,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/RecordsDatabase\/RecordsManager.swift",
       "kind": "StringLiteral",
-      "offset": 4370,
+      "offset": 4354,
       "length": 28,
       "value": "\"Resetting records database\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 374,
+      "offset": 366,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 407,
+      "offset": 395,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 474,
+      "offset": 458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 516,
+      "offset": 500,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 544,
+      "offset": 528,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 584,
+      "offset": 568,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 819,
+      "offset": 803,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1026,
+      "offset": 1002,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1573,
+      "offset": 1537,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1611,
+      "offset": 1575,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2064,
+      "offset": 2012,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2238,
+      "offset": 2178,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 2965,
-      "length": 23,
-      "value": "\"Refresh library state\""
+      "offset": 2885,
+      "length": 19,
+      "value": "\"Refresh SDK state\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 2983,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4191,
+      "offset": 4035,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4299,
+      "offset": 4139,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 4584,
+      "offset": 4416,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 4589,
+      "offset": 4421,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5223,
+      "offset": 5035,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 5892,
-      "length": 96,
-      "value": "\"Switch off library since the device is inside no zone and there are no recent BT observations.\""
+      "offset": 5704,
+      "length": 92,
+      "value": "\"Switch off SDK since the device is inside no zone and there are no recent BT observations.\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6984,
+      "offset": 6792,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7139,
+      "offset": 6947,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7791,
+      "offset": 7583,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7851,
+      "offset": 7639,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 11938,
+      "offset": 11714,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 13958,
+      "offset": 13730,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 14301,
+      "offset": 14073,
       "length": 16,
       "value": "\"foregroundOnly\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 14619,
+      "offset": 14391,
       "length": 10,
       "value": "\"regionId\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 14911,
+      "offset": 14683,
       "length": 10,
       "value": "\"regionId\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15102,
+      "offset": 14874,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15504,
+      "offset": 15276,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 16310,
+      "offset": 16082,
       "length": 5,
       "value": "false"
     },
@@ -3634,147 +3662,175 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 6724,
+      "offset": 6720,
       "length": 10,
       "value": "\"isActive\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 6736,
+      "offset": 6732,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 6794,
+      "offset": 6790,
       "length": 32,
       "value": "\"CrowdConnected SDK has started\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 6878,
+      "offset": 6874,
       "length": 23,
       "value": "\"Device ID \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 6900,
+      "offset": 6896,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 7081,
+      "offset": 7077,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 7211,
+      "offset": 7207,
       "length": 14,
       "value": "\"trackingMode\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 7460,
+      "offset": 7452,
       "length": 32,
       "value": "\"CrowdConnected SDK has stopped\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 7710,
+      "offset": 7702,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 7923,
+      "offset": 7915,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "BooleanLiteral",
-      "offset": 8857,
+      "offset": 8726,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "IntegerLiteral",
-      "offset": 9273,
+      "offset": 9256,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "IntegerLiteral",
-      "offset": 9278,
+      "offset": 9261,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 9419,
+      "offset": 9402,
       "length": 42,
       "value": "\"Could not schedule SDK refresh: \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 9460,
+      "offset": 9443,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 9695,
+      "offset": 9678,
       "length": 46,
       "value": "\"Updating SDK state at app background refresh\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 13320,
+      "offset": 13299,
       "length": 53,
       "value": "\"Attempt to call delegate with empty locations array\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 13562,
-      "length": 119,
-      "value": "\"Location update at \""
+      "offset": 13681,
+      "length": 108,
+      "value": "\"Location update: \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 13620,
+      "offset": 13720,
       "length": 1,
-      "value": "\" (\""
+      "value": "\"         (\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 13649,
+      "offset": 13757,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
       "kind": "StringLiteral",
-      "offset": 13679,
+      "offset": 13787,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
+      "kind": "StringLiteral",
+      "offset": 13866,
+      "length": 112,
+      "value": "\"Location update at \""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
+      "kind": "StringLiteral",
+      "offset": 13917,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
+      "kind": "StringLiteral",
+      "offset": 13946,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Interface\/CrowdConnected.swift",
+      "kind": "StringLiteral",
+      "offset": 13976,
       "length": 1,
       "value": "\")\""
     },
@@ -3816,98 +3872,112 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2236,
+      "offset": 2232,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2424,
+      "offset": 2420,
       "length": 84,
       "value": "\"Attempt to temporary save logs without having an appKey and a device id configured\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2579,
+      "offset": 2575,
       "length": 71,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2591,
+      "offset": 2587,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2628,
+      "offset": 2624,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2639,
+      "offset": 2635,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 2649,
+      "offset": 2645,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 3458,
+      "offset": 3450,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3786,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3858,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 3768,
+      "offset": 3929,
       "length": 41,
       "value": "\"Start uploading \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 3803,
+      "offset": 3964,
       "length": 4,
       "value": "\" logs\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 4166,
+      "offset": 4327,
       "length": 49,
       "value": "\"Logs upload \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 4191,
+      "offset": 4352,
       "length": 11,
       "value": "\"succeeded\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 4205,
+      "offset": 4366,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Utils\/LogsMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 4214,
+      "offset": 4375,
       "length": 2,
       "value": "\"\""
     },
@@ -4229,35 +4299,35 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceCapabilitiesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
+      "offset": 1687,
       "length": 13,
       "value": "\"deviceModel\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceCapabilitiesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1802,
+      "offset": 1798,
       "length": 29,
       "value": "\"locationAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceCapabilitiesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 1874,
       "length": 29,
       "value": "\"accuracyAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceCapabilitiesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 1950,
       "length": 27,
       "value": "\"motionAuthorizationStatus\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/DeviceCapabilitiesProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2026,
+      "offset": 2022,
       "length": 30,
       "value": "\"pedometerAuthorizationStatus\""
     },
@@ -4306,259 +4376,259 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 172,
+      "offset": 120,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 179,
+      "offset": 127,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 184,
+      "offset": 132,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 245,
+      "offset": 193,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 252,
+      "offset": 200,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 257,
+      "offset": 205,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 262,
+      "offset": 210,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 327,
+      "offset": 275,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 334,
+      "offset": 282,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 339,
+      "offset": 287,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 396,
+      "offset": 344,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 401,
+      "offset": 349,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 484,
+      "offset": 432,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 489,
+      "offset": 437,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 547,
+      "offset": 495,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 552,
+      "offset": 500,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 633,
+      "offset": 581,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 638,
+      "offset": 586,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 700,
+      "offset": 644,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 707,
+      "offset": 651,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 786,
+      "offset": 734,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 793,
+      "offset": 741,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 860,
+      "offset": 808,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 867,
+      "offset": 815,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 945,
+      "offset": 893,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1015,
+      "offset": 963,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1094,
+      "offset": 1038,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1101,
+      "offset": 1045,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1106,
+      "offset": 1050,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1111,
+      "offset": 1055,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "BooleanLiteral",
-      "offset": 307,
+      "offset": 303,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "StringLiteral",
-      "offset": 363,
+      "offset": 359,
       "length": 35,
       "value": "\"Start monitorization for regions.\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "BooleanLiteral",
-      "offset": 1051,
+      "offset": 1047,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "StringLiteral",
-      "offset": 2340,
+      "offset": 2332,
       "length": 10,
       "value": "\"regionID\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "BooleanLiteral",
-      "offset": 2432,
+      "offset": 2424,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "StringLiteral",
-      "offset": 2723,
+      "offset": 2715,
       "length": 10,
       "value": "\"regionID\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+RegionMonitoring.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+RegionMonitoring.swift",
       "kind": "StringLiteral",
-      "offset": 2904,
+      "offset": 2896,
       "length": 29,
       "value": "\"Make one-off regions check.\""
     },
@@ -7260,77 +7330,77 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1303,
+      "offset": 1295,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 7055,
+      "offset": 7003,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7105,
+      "offset": 7053,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 7871,
+      "offset": 7819,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 7924,
+      "offset": 7872,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 8880,
+      "offset": 8828,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 8933,
+      "offset": 8881,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9830,
+      "offset": 9778,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 9884,
+      "offset": 9832,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "BooleanLiteral",
-      "offset": 10661,
+      "offset": 10609,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/StateMonitor.swift",
       "kind": "IntegerLiteral",
-      "offset": 10720,
+      "offset": 10668,
       "length": 1,
       "value": "1"
     },
@@ -7372,343 +7442,343 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 631,
+      "offset": 627,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 660,
+      "offset": 656,
       "length": 7,
       "value": "\"zones\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 691,
+      "offset": 687,
       "length": 10,
       "value": "\"settings\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 724,
+      "offset": 720,
       "length": 9,
       "value": "\"beacons\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 753,
       "length": 10,
       "value": "\"surfaces\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 804,
       "length": 14,
       "value": "\"registration\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 842,
       "length": 14,
       "value": "\"device-alias\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 886,
+      "offset": 882,
       "length": 21,
       "value": "\"device-alias\/cached\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 935,
+      "offset": 931,
       "length": 18,
       "value": "\"capabilities\/ios\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 969,
       "length": 13,
       "value": "\"mobile-logs\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3113,
+      "offset": 3101,
       "length": 10,
       "value": "\"deviceID\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3207,
+      "offset": 3195,
       "length": 12,
       "value": "\"macAddress\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 4015,
+      "offset": 3995,
       "length": 6,
       "value": "\"time\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 4094,
+      "offset": 4074,
       "length": 19,
       "value": "\"polling_frequency\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5491,
+      "offset": 5471,
       "length": 10,
       "value": "\"deviceID\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9428,
+      "offset": 9404,
       "length": 7,
       "value": "\"Zones\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10016,
+      "offset": 9992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10111,
+      "offset": 10087,
       "length": 9,
       "value": "\"records\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10377,
+      "offset": 10353,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10660,
+      "offset": 10636,
       "length": 16,
       "value": "\"FailedPutCount\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 10727,
+      "offset": 10703,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10766,
+      "offset": 10742,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10836,
+      "offset": 10812,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11003,
+      "offset": 10979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11334,
+      "offset": 11310,
       "length": 9,
       "value": "\"records\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11620,
+      "offset": 11596,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11876,
+      "offset": 11852,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 12019,
+      "offset": 11995,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 12343,
+      "offset": 12319,
       "length": 9,
       "value": "\"records\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 12617,
+      "offset": 12593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 12873,
+      "offset": 12849,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 13016,
+      "offset": 12992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 13357,
+      "offset": 13333,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 13375,
+      "offset": 13351,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 13395,
+      "offset": 13371,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 13462,
+      "offset": 13438,
       "length": 8,
       "value": "\"record\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 13739,
+      "offset": 13715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 14008,
+      "offset": 13984,
       "length": 10,
       "value": "\"RecordId\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 14075,
+      "offset": 14051,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 14145,
+      "offset": 14121,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 14311,
+      "offset": 14287,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 14636,
+      "offset": 14612,
       "length": 10,
       "value": "\"aliasKey\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 14707,
+      "offset": 14683,
       "length": 12,
       "value": "\"aliasValue\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 14782,
+      "offset": 14758,
       "length": 8,
       "value": "\"appKey\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "StringLiteral",
-      "offset": 14854,
+      "offset": 14830,
       "length": 10,
       "value": "\"deviceID\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 15141,
+      "offset": 15117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 15403,
+      "offset": 15379,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 15473,
+      "offset": 15449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/API\/APIProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 15657,
+      "offset": 15633,
       "length": 5,
       "value": "false"
     },
@@ -8316,22 +8386,120 @@
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
-      "kind": "BooleanLiteral",
-      "offset": 347,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 274,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 307,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 372,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1394,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1431,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1267,
+      "offset": 1456,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1528,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1564,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1589,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1663,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1700,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1725,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1793,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1827,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1852,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/DateStreamManagers\/DataFetcherSDKStateDecorator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1315,
+      "offset": 1914,
       "length": 5,
       "value": "false"
     },
@@ -8359,35 +8527,49 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 2501,
+      "length": 42,
+      "value": "\"Setting up Firehose Recorder had failed.\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
+      "kind": "StringLiteral",
+      "offset": 4091,
       "length": 12,
       "value": "\"OIDC Login\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
       "kind": "IntegerLiteral",
-      "offset": 4039,
+      "offset": 4135,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
       "kind": "StringLiteral",
-      "offset": 4079,
+      "offset": 4175,
       "length": 26,
       "value": "\"Unable to get OIDC token\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
       "kind": "StringLiteral",
-      "offset": 4107,
+      "offset": 4203,
       "length": 39,
       "value": "\"Cognito failed to provide a JWT token\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
       "kind": "StringLiteral",
-      "offset": 2663,
+      "offset": 4326,
+      "length": 64,
+      "value": "\"Generating access token for Firehose Recorder auth had failed.\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConcreteDatabases\/FirehoseDatabase\/FirehoseConfigurator.swift",
+      "kind": "StringLiteral",
+      "offset": 2759,
       "length": 12,
       "value": "\"CrowdConnectedCore.OIDCProvider\""
     },
@@ -8436,14 +8618,14 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 733,
+      "offset": 671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1767,
+      "offset": 1705,
       "length": 4,
       "value": "true"
     },
@@ -8457,91 +8639,91 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 1948,
       "length": 104,
       "value": "\"Location manager did change authorisation status to \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2112,
+      "offset": 2050,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2162,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2437,
+      "offset": 2375,
       "length": 64,
       "value": "\"Location manager did change authorization status to \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2499,
+      "offset": 2437,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2611,
+      "offset": 2549,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2790,
+      "offset": 2728,
       "length": 16,
       "value": "\"not determined\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2852,
+      "offset": 2790,
       "length": 12,
       "value": "\"restricted\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2906,
+      "offset": 2844,
       "length": 8,
       "value": "\"denied\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2966,
+      "offset": 2904,
       "length": 8,
       "value": "\"always\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3029,
+      "offset": 2967,
       "length": 13,
       "value": "\"when in use\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3088,
+      "offset": 3026,
       "length": 12,
       "value": "\"authorized\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/DeviceCapabilities\/LocationAuthorizationStatusProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 3084,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -8555,28 +8737,28 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConfigurationDatabase\/SDKConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1120,
+      "offset": 1108,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConfigurationDatabase\/SDKConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1169,
+      "offset": 1157,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConfigurationDatabase\/SDKConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1297,
+      "offset": 1281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/Databases\/ConfigurationDatabase\/SDKConfigurationManager.swift",
       "kind": "StringLiteral",
-      "offset": 1426,
+      "offset": 1410,
       "length": 34,
       "value": "\"Resetting configuration database\""
     },
@@ -8623,93 +8805,93 @@
       "value": "\"UserPool\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 896,
+      "offset": 880,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 995,
+      "offset": 979,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1301,
+      "offset": 1285,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1592,
+      "offset": 1572,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1907,
+      "offset": 1887,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2277,
       "length": 21,
       "value": "\"Deactivate tracking\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "StringLiteral",
-      "offset": 2463,
+      "offset": 2439,
       "length": 14,
       "value": "\"trackingMode\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "StringLiteral",
-      "offset": 2604,
+      "offset": 2580,
       "length": 30,
       "value": "\"Activate foreground tracking\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "StringLiteral",
-      "offset": 2775,
+      "offset": 2751,
       "length": 14,
       "value": "\"trackingMode\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "StringLiteral",
-      "offset": 2915,
+      "offset": 2891,
       "length": 30,
       "value": "\"Activate background tracking\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "StringLiteral",
-      "offset": 3086,
+      "offset": 3062,
       "length": 14,
       "value": "\"trackingMode\""
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 3288,
+      "offset": 3264,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/LibraryState\/LibraryStateManager+ChangeState.swift",
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorCore\/CrowdConnectedCore\/StateMonitor\/SDKState\/SDKStateManager+ChangeState.swift",
       "kind": "BooleanLiteral",
-      "offset": 3986,
+      "offset": 3962,
       "length": 4,
       "value": "true"
     },

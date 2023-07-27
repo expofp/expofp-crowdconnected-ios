@@ -101,6 +101,30 @@
       },
       {
         "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedGeo"
+      },
+      {
+        "kind": "Import",
+        "name": "CrowdConnectedShared",
+        "printedName": "CrowdConnectedShared",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedGeo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CrowdConnectedGeo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -357,42 +381,28 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Helpers\/LocationManagerProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 971,
+      "offset": 954,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Helpers\/LocationManagerProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1305,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Helpers\/LocationManagerProvider.swift",
-      "kind": "FloatLiteral",
-      "offset": 1407,
-      "length": 4,
-      "value": "30.0"
-    },
-    {
-      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Helpers\/LocationManagerProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1605,
+      "offset": 1222,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/StateMonitor\/GeoStateMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 6847,
+      "offset": 6801,
       "length": 6,
       "value": "\"rule\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/StateMonitor\/GeoStateMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 7248,
+      "offset": 7202,
       "length": 14,
       "value": "\"trackingMode\""
     },
@@ -721,245 +731,245 @@
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1188,
+      "offset": 1186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1861,
+      "offset": 1870,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1912,
+      "offset": 1921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2058,
+      "offset": 2067,
       "length": 94,
       "value": "\"Start monitoring Geo locations at an interval of \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2143,
+      "offset": 2152,
       "length": 7,
       "value": "\" seconds\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 2229,
+      "offset": 2238,
       "length": 31,
       "value": "\"Stop monitoring Geo locations\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 1949,
+      "offset": 1958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "IntegerLiteral",
-      "offset": 2401,
+      "offset": 2410,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 3185,
+      "offset": 3102,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 3560,
+      "offset": 3477,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 3636,
+      "offset": 3553,
       "length": 9,
       "value": "\"publish\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 4481,
+      "offset": 4398,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 4547,
+      "offset": 4464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 4621,
+      "offset": 4538,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 4687,
+      "offset": 4604,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 4761,
+      "offset": 4678,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 4828,
+      "offset": 4745,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 4890,
+      "offset": 4807,
       "length": 32,
       "value": "\"Unknown tracking mode was used\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 5481,
+      "offset": 5398,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 5543,
+      "offset": 5460,
       "length": 57,
       "value": "\"Attempt to use Geo module while it's remotely disabled.\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 5678,
+      "offset": 5595,
       "length": 46,
       "value": "\"Make one-off check for geo zones relativity.\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 6324,
+      "offset": 6241,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 6365,
+      "offset": 6282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 6718,
+      "offset": 6635,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 6842,
+      "offset": 6759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 7502,
+      "offset": 7419,
       "length": 48,
       "value": "\"Update geo monitoring mode to \""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 7549,
+      "offset": 7466,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "IntegerLiteral",
-      "offset": 8127,
+      "offset": 8044,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "IntegerLiteral",
-      "offset": 8286,
+      "offset": 8203,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "FloatLiteral",
-      "offset": 8501,
+      "offset": 8418,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 9223,
+      "offset": 9140,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 9355,
+      "offset": 9272,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "BooleanLiteral",
-      "offset": 10232,
+      "offset": 10149,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 10931,
+      "offset": 10848,
       "length": 10,
       "value": "\"regionId\""
     },
     {
       "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/CrowdConnectedGeo\/CrowdConnectedGeo\/Observer\/LocationObserver.swift",
       "kind": "StringLiteral",
-      "offset": 11135,
+      "offset": 11052,
       "length": 10,
       "value": "\"regionId\""
     },
