@@ -6360,6 +6360,28 @@
               "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isExpiredToken",
+            "printedName": "isExpiredToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20CrowdConnectedShared16DescriptiveErrorV14isExpiredTokenSbyF",
+            "mangledName": "$s20CrowdConnectedShared16DescriptiveErrorV14isExpiredTokenSbyF",
+            "moduleName": "CrowdConnectedShared",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -9609,6 +9631,13 @@
       "offset": 1242,
       "length": 1,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tcode\/CC\/ColocatorV3iOS\/ColocatorShared\/CrowdConnectedShared\/Errors\/DescriptiveError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1717,
+      "length": 3,
+      "value": "401"
     }
   ]
 }

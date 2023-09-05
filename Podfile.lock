@@ -16,24 +16,24 @@ PODS:
     - AWSCore (= 2.28.5)
   - AWSPinpoint (2.28.5):
     - AWSCore (= 2.28.5)
-  - CrowdConnectedCore (1.5.2):
+  - CrowdConnectedCore (1.6.0):
     - AWSKinesis
     - AWSMobileClient
     - AWSPinpoint
     - CrowdConnectedShared
-  - CrowdConnectedGeo (1.5.2):
+  - CrowdConnectedGeo (1.6.0):
     - CrowdConnectedShared
-  - CrowdConnectedIPS (1.5.2):
+  - CrowdConnectedIPS (1.6.0):
     - CrowdConnectedShared
-  - CrowdConnectedShared (1.5.2)
-  - ExpoFpCommon (4.2.5)
+  - CrowdConnectedShared (1.6.0)
+  - ExpoFpCommon (4.2.6)
 
 DEPENDENCIES:
   - AWSKinesis (~> 2.28.2)
-  - CrowdConnectedCore (~> 1.5.2)
-  - CrowdConnectedGeo (~> 1.5.2)
-  - CrowdConnectedIPS (~> 1.5.2)
-  - ExpoFpCommon (= 4.2.5)
+  - CrowdConnectedCore (~> 1.6.0)
+  - CrowdConnectedGeo (~> 1.6.0)
+  - CrowdConnectedIPS (~> 1.6.0)
+  - ExpoFpCommon (= 4.2.6)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -58,12 +58,12 @@ SPEC CHECKSUMS:
   AWSKinesis: 098e422ef20c72710c173c3407a5cc82d7624ecd
   AWSMobileClient: c898658a4d15e64e07d39c7dc6354fd3ea3055a9
   AWSPinpoint: 2c41ce0ff69c6e5621c330c62d504807e4ce534a
-  CrowdConnectedCore: 0425d9b5fe08c29143d644a30c350b6db8382770
-  CrowdConnectedGeo: b08bd5fef551c923cced6ab24cd0cb8831d06d6d
-  CrowdConnectedIPS: caf2105652e9339045623b76b9bc0539ffa55e76
-  CrowdConnectedShared: 5397c46e18451903dcf65c99a3fa322e11f7daf0
-  ExpoFpCommon: 7388c6ad456afa57381fca39aca42ac8268d152e
+  CrowdConnectedCore: 291fc691f8c61563f97b2d26257988bfb64955c0
+  CrowdConnectedGeo: 8585b4d9fe570c986914947df366d1b94e027406
+  CrowdConnectedIPS: 8ec1d8604d49b00b69014c58e33eab3ea7dba839
+  CrowdConnectedShared: ba6736370f6dbb1a651b71c054140faa1af90e8f
+  ExpoFpCommon: c0c88a2f75b05fd9ea7d82e532208b0ab96d0ce7
 
-PODFILE CHECKSUM: cfc4f1e04197bc63cb5248b3a36417925d0abed7
+PODFILE CHECKSUM: 73f8e8740f1c6d1373cf01db4f00ed7cf2bb0cab
 
 COCOAPODS: 1.12.1

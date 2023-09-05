@@ -258,6 +258,7 @@ public struct DescriptiveError : Foundation.LocalizedError {
   }
   public init(name: Swift.String, message: Swift.String? = nil, code: Swift.Int? = nil)
   public init(_ error: any Swift.Error)
+  public func isExpiredToken() -> Swift.Bool
 }
 extension CrowdConnectedShared.ReactiveNotification : Swift.Equatable {}
 extension CrowdConnectedShared.ReactiveNotification : Swift.Hashable {}

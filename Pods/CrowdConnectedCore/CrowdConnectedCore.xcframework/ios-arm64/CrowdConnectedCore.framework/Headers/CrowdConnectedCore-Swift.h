@@ -313,13 +313,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) CrowdConnect
 - (void)startWithAppKey:(NSString * _Nonnull)appKey token:(NSString * _Nonnull)token secret:(NSString * _Nonnull)secret completion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))completion;
 /// Stop the SDK and all its processes.
 - (void)stop;
-/// Initiates a navigation session.
+/// Initiate a navigation session.
 - (void)startNavigation;
-/// Ends the current navigation session.
+/// End the current navigation session.
 - (void)stopNavigation;
-/// Is <code>true</code> if the SDK has established a successful connection with the server and has started functionality. Is <code>false</code> otherwise.
+/// Returns <code>true</code> if the SDK has established a successful connection with the server and has started its functionality. Returns <code>false</code> otherwise.
 @property (nonatomic, readonly) BOOL isSuccessfullyRunning;
-/// Is <code>true</code> if the navigation feature is running. Is <code>false</code> otherwise.
+/// Returns <code>true</code> if the navigation feature is running. Returns <code>false</code> otherwise.
 @property (nonatomic, readonly) BOOL isNavigationRunning;
 /// Set and persist an alias for the current device.
 - (void)setAliasWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;

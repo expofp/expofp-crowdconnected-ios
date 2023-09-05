@@ -5,12 +5,12 @@ platform :ios, '14.0'
 use_frameworks!
 
 def shared_pods
-  pod 'ExpoFpCommon', '4.2.5'
+  pod 'ExpoFpCommon', '4.2.6'
 
   pod 'AWSKinesis', '~> 2.28.2'
-  pod 'CrowdConnectedIPS', '~> 1.5.2'
-  pod 'CrowdConnectedGeo', '~> 1.5.2'
-  pod 'CrowdConnectedCore', '~> 1.5.2'
+  pod 'CrowdConnectedIPS', '~> 1.6.0'
+  pod 'CrowdConnectedGeo', '~> 1.6.0'
+  pod 'CrowdConnectedCore', '~> 1.6.0'
 
 end
 
