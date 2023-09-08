@@ -11,7 +11,7 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     private let locationManager = CLLocationManager()
     
     private var started = false
-    private var ccStarted = false
+    //private var ccStarted = false
     private var inBackground = false
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
     
@@ -85,15 +85,13 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     }
     
     private func startAsync(_ inBackground: Bool){
-        ccStarted = true
+        //ccStarted = true
         
         DispatchQueue.main.async {
             
             self.locationManager.delegate = self
-            /*if(inBackground){
-             self.locationManager.allowsBackgroundLocationUpdates = true
-             }*/
-            
+            CrowdConnected.shared.delegate = self
+
             switch self.settings.mode {
             case .IPS_ONLY:
                 print("[CrowdConnectedProvider] CrowdConnectedIPS activate")
@@ -113,13 +111,13 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
             
             print("[CrowdConnectedProvider] CrowdConnected start")
             CrowdConnected.shared.start(appKey: self.settings.appKey, token: self.settings.token, secret: self.settings.secret) { deviceId, error in
-                if let err = error {
-                    print("[CrowdConnectedProvider] CrowdConnected error: \(err)")
+                if(CrowdConnected.shared.isSuccessfullyRunning && !self.started){
+                    self.stopAsync()
                 }
-                else if(deviceId != nil && deviceId != ""){
+                else if(CrowdConnected.shared.isSuccessfullyRunning){
                     print("[CrowdConnectedProvider] CrowdConnected is connected: \(CrowdConnected.shared.isSuccessfullyRunning)")
-                    print("[CrowdConnectedProvider] CrowdConnected, deviceId: \(deviceId!)")
-                    CrowdConnected.shared.delegate = self
+                    //print("[CrowdConnectedProvider] CrowdConnected, deviceId: \(deviceId!)")
+                    //CrowdConnected.shared.delegate = self
                     for (aliasKey, aliasValue) in self.settings.aliases {
                         CrowdConnected.shared.setAlias(key: aliasKey, value: aliasValue)
                     }
@@ -132,13 +130,14 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     }
     
     private func stopAsync(){
-        ccStarted = false
+        //ccStarted = false
         DispatchQueue.main.async {
             self.locationManager.delegate = nil
-            self.locationManager.allowsBackgroundLocationUpdates = false
             
-            CrowdConnected.shared.delegate = nil
-            CrowdConnected.shared.stop()
+            if(CrowdConnected.shared.delegate === self){
+                CrowdConnected.shared.delegate = nil
+                CrowdConnected.shared.stop()
+            }
         }
     }
     
