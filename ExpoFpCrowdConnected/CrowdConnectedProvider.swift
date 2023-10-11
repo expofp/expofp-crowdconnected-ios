@@ -87,12 +87,16 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     private func startAsync(_ inBackground: Bool){
         //ccStarted = true
         
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
             
-            self.locationManager.delegate = self
+            if(self == nil){
+                return
+            }
+            
+            self?.locationManager.delegate = self
             CrowdConnected.shared.delegate = self
 
-            switch self.settings.mode {
+            switch self!.settings.mode {
             case .IPS_ONLY:
                 print("[CrowdConnectedProvider] CrowdConnectedIPS activate")
                 CrowdConnectedIPS.activate()
@@ -110,19 +114,19 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
             }
             
             print("[CrowdConnectedProvider] CrowdConnected start")
-            CrowdConnected.shared.start(appKey: self.settings.appKey, token: self.settings.token, secret: self.settings.secret) { deviceId, error in
-                if(CrowdConnected.shared.isSuccessfullyRunning && !self.started){
-                    self.stopAsync()
+            CrowdConnected.shared.start(appKey: self!.settings.appKey, token: self!.settings.token, secret: self!.settings.secret) { deviceId, error in
+                if(CrowdConnected.shared.isSuccessfullyRunning && !self!.started){
+                    self?.stopAsync()
                 }
                 else if(CrowdConnected.shared.isSuccessfullyRunning){
                     print("[CrowdConnectedProvider] CrowdConnected is connected: \(CrowdConnected.shared.isSuccessfullyRunning)")
                     //print("[CrowdConnectedProvider] CrowdConnected, deviceId: \(deviceId!)")
                     //CrowdConnected.shared.delegate = self
-                    for (aliasKey, aliasValue) in self.settings.aliases {
+                    for (aliasKey, aliasValue) in self!.settings.aliases {
                         CrowdConnected.shared.setAlias(key: aliasKey, value: aliasValue)
                     }
                     
-                    self.requestPermission()
+                    self?.requestPermission()
                 }
             }
             //self.requestPermission()
@@ -131,8 +135,8 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     
     private func stopAsync(){
         //ccStarted = false
-        DispatchQueue.main.async {
-            self.locationManager.delegate = nil
+        DispatchQueue.main.async { [weak self] in
+            self?.locationManager.delegate = nil
             
             if(CrowdConnected.shared.delegate === self){
                 CrowdConnected.shared.delegate = nil
@@ -143,14 +147,19 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     
     private func requestPermission(){
         if(started && delegate != nil){
-            DispatchQueue.main.async{
-                if(self.inBackground){
+            DispatchQueue.main.async{ [weak self] in
+                
+                if(self == nil){
+                    return
+                }
+                
+                if(self!.inBackground){
                     print("[CrowdConnectedProvider] request 'AlwaysAuthorization' permission")
-                    self.locationManager.requestAlwaysAuthorization()
+                    self?.locationManager.requestAlwaysAuthorization()
                 }
                 else{
                     print("[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission")
-                    self.locationManager.requestWhenInUseAuthorization()
+                    self?.locationManager.requestWhenInUseAuthorization()
                 }
             }
         }
