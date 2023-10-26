@@ -19,7 +19,18 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
         get { lDelegate }
         set(newDelegate) {
             lDelegate = newDelegate
-            self.requestPermission()
+            
+            if(lDelegate != nil){
+                DispatchQueue.main.async { [weak self] in
+                    self?.startNavigation()
+                    self?.requestPermission()
+                }
+            }
+            else {
+                DispatchQueue.main.async { [weak self] in
+                    self?.stopNavigation()
+                }
+            }
         }
     }
     
@@ -75,7 +86,9 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
     
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         if(manager.authorizationStatus == .notDetermined){
-            self.requestPermission()
+            DispatchQueue.main.async { [weak self] in
+                self?.requestPermission()
+            }
         }
         else if((manager.authorizationStatus == .authorizedAlways
                     || manager.authorizationStatus == .authorizedWhenInUse)
@@ -126,7 +139,10 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
                         CrowdConnected.shared.setAlias(key: aliasKey, value: aliasValue)
                     }
                     
-                    self?.requestPermission()
+                    DispatchQueue.main.async { [weak self] in
+                        self?.startNavigation()
+                        self?.requestPermission()
+                    }
                 }
             }
             //self.requestPermission()
@@ -137,30 +153,49 @@ public class CrowdConnectedProvider : NSObject, CLLocationManagerDelegate, Locat
         //ccStarted = false
         DispatchQueue.main.async { [weak self] in
             self?.locationManager.delegate = nil
-            
+
             if(CrowdConnected.shared.delegate === self){
+                self?.stopNavigation()
+                
                 CrowdConnected.shared.delegate = nil
                 CrowdConnected.shared.stop()
             }
         }
     }
     
+    private func startNavigation() {
+        print("[CrowdConnectedProvider] startNavigation")
+        
+        if(self.inBackground && self.settings.mode == .GPS_ONLY
+           && CrowdConnected.shared.isSuccessfullyRunning
+           && !CrowdConnected.shared.isNavigationRunning
+           && delegate != nil) {
+            print("[CrowdConnectedProvider] CrowdConnected.shared.startNavigation")
+            CrowdConnected.shared.startNavigation()
+        }
+    }
+    
+    private func stopNavigation() {
+        print("[CrowdConnectedProvider] stopNavigation")
+        
+        if(self.inBackground && self.settings.mode == .GPS_ONLY
+           && CrowdConnected.shared.isNavigationRunning) {
+            print("[CrowdConnectedProvider] CrowdConnected.shared.stopNavigation")
+            CrowdConnected.shared.stopNavigation()
+        }
+    }
+    
     private func requestPermission(){
+        print("[CrowdConnectedProvider] requestPermission")
+        
         if(started && delegate != nil){
-            DispatchQueue.main.async{ [weak self] in
-                
-                if(self == nil){
-                    return
-                }
-                
-                if(self!.inBackground){
-                    print("[CrowdConnectedProvider] request 'AlwaysAuthorization' permission")
-                    self?.locationManager.requestAlwaysAuthorization()
-                }
-                else{
-                    print("[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission")
-                    self?.locationManager.requestWhenInUseAuthorization()
-                }
+            if(self.inBackground){
+                print("[CrowdConnectedProvider] request 'AlwaysAuthorization' permission")
+                self.locationManager.requestAlwaysAuthorization()
+            }
+            else{
+                print("[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission")
+                self.locationManager.requestWhenInUseAuthorization()
             }
         }
     }
