@@ -23,16 +23,6 @@ public class Settings {
   public func addAlias(_ key: Swift.String, _ value: Swift.String)
   @objc deinit
 }
-public enum Mode {
-  case IPS_ONLY
-  case GPS_ONLY
-  case IPS_AND_GPS
-  public static func == (a: ExpoFpCrowdConnected.Mode, b: ExpoFpCrowdConnected.Mode) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 @objc public class CrowdConnectedProvider : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate, ExpoFpCommon.LocationProvider, CrowdConnectedCore.CrowdConnectedDelegate {
   public var delegate: (any ExpoFpCommon.LocationProviderDelegate)? {
     get
@@ -44,6 +34,16 @@ public enum Mode {
   public func stop()
   @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc deinit
+}
+public enum Mode {
+  case IPS_ONLY
+  case GPS_ONLY
+  case IPS_AND_GPS
+  public static func == (a: ExpoFpCrowdConnected.Mode, b: ExpoFpCrowdConnected.Mode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 extension ExpoFpCrowdConnected.Mode : Swift.Equatable {}
 extension ExpoFpCrowdConnected.Mode : Swift.Hashable {}

@@ -451,250 +451,6 @@
         "moduleName": "ExpoFpCrowdConnected"
       },
       {
-        "kind": "TypeDecl",
-        "name": "Mode",
-        "printedName": "Mode",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "IPS_ONLY",
-            "printedName": "IPS_ONLY",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Mode",
-                    "printedName": "ExpoFpCrowdConnected.Mode",
-                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Mode",
-                        "printedName": "ExpoFpCrowdConnected.Mode",
-                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20ExpoFpCrowdConnected4ModeO8IPS_ONLYyA2CmF",
-            "mangledName": "$s20ExpoFpCrowdConnected4ModeO8IPS_ONLYyA2CmF",
-            "moduleName": "ExpoFpCrowdConnected"
-          },
-          {
-            "kind": "Var",
-            "name": "GPS_ONLY",
-            "printedName": "GPS_ONLY",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Mode",
-                    "printedName": "ExpoFpCrowdConnected.Mode",
-                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Mode",
-                        "printedName": "ExpoFpCrowdConnected.Mode",
-                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20ExpoFpCrowdConnected4ModeO8GPS_ONLYyA2CmF",
-            "mangledName": "$s20ExpoFpCrowdConnected4ModeO8GPS_ONLYyA2CmF",
-            "moduleName": "ExpoFpCrowdConnected"
-          },
-          {
-            "kind": "Var",
-            "name": "IPS_AND_GPS",
-            "printedName": "IPS_AND_GPS",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Mode",
-                    "printedName": "ExpoFpCrowdConnected.Mode",
-                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Mode",
-                        "printedName": "ExpoFpCrowdConnected.Mode",
-                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20ExpoFpCrowdConnected4ModeO11IPS_AND_GPSyA2CmF",
-            "mangledName": "$s20ExpoFpCrowdConnected4ModeO11IPS_AND_GPSyA2CmF",
-            "moduleName": "ExpoFpCrowdConnected"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Mode",
-                "printedName": "ExpoFpCrowdConnected.Mode",
-                "usr": "s:20ExpoFpCrowdConnected4ModeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Mode",
-                "printedName": "ExpoFpCrowdConnected.Mode",
-                "usr": "s:20ExpoFpCrowdConnected4ModeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20ExpoFpCrowdConnected4ModeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s20ExpoFpCrowdConnected4ModeO2eeoiySbAC_ACtFZ",
-            "moduleName": "ExpoFpCrowdConnected",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20ExpoFpCrowdConnected4ModeO9hashValueSivp",
-            "mangledName": "$s20ExpoFpCrowdConnected4ModeO9hashValueSivp",
-            "moduleName": "ExpoFpCrowdConnected",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20ExpoFpCrowdConnected4ModeO9hashValueSivg",
-                "mangledName": "$s20ExpoFpCrowdConnected4ModeO9hashValueSivg",
-                "moduleName": "ExpoFpCrowdConnected",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20ExpoFpCrowdConnected4ModeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s20ExpoFpCrowdConnected4ModeO4hash4intoys6HasherVz_tF",
-            "moduleName": "ExpoFpCrowdConnected",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:20ExpoFpCrowdConnected4ModeO",
-        "mangledName": "$s20ExpoFpCrowdConnected4ModeO",
-        "moduleName": "ExpoFpCrowdConnected",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ExpoFpCrowdConnected"
-      },
-      {
         "kind": "Import",
         "name": "ExpoFpCommon",
         "printedName": "ExpoFpCommon",
@@ -1087,195 +843,439 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoFpCrowdConnected"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Mode",
+        "printedName": "Mode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "IPS_ONLY",
+            "printedName": "IPS_ONLY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "ExpoFpCrowdConnected.Mode",
+                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO8IPS_ONLYyA2CmF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO8IPS_ONLYyA2CmF",
+            "moduleName": "ExpoFpCrowdConnected"
+          },
+          {
+            "kind": "Var",
+            "name": "GPS_ONLY",
+            "printedName": "GPS_ONLY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "ExpoFpCrowdConnected.Mode",
+                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO8GPS_ONLYyA2CmF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO8GPS_ONLYyA2CmF",
+            "moduleName": "ExpoFpCrowdConnected"
+          },
+          {
+            "kind": "Var",
+            "name": "IPS_AND_GPS",
+            "printedName": "IPS_AND_GPS",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ExpoFpCrowdConnected.Mode.Type) -> ExpoFpCrowdConnected.Mode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Mode",
+                    "printedName": "ExpoFpCrowdConnected.Mode",
+                    "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ExpoFpCrowdConnected.Mode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Mode",
+                        "printedName": "ExpoFpCrowdConnected.Mode",
+                        "usr": "s:20ExpoFpCrowdConnected4ModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO11IPS_AND_GPSyA2CmF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO11IPS_AND_GPSyA2CmF",
+            "moduleName": "ExpoFpCrowdConnected"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "ExpoFpCrowdConnected.Mode",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Mode",
+                "printedName": "ExpoFpCrowdConnected.Mode",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO2eeoiySbAC_ACtFZ",
+            "moduleName": "ExpoFpCrowdConnected",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO9hashValueSivp",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO9hashValueSivp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected4ModeO9hashValueSivg",
+                "mangledName": "$s20ExpoFpCrowdConnected4ModeO9hashValueSivg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20ExpoFpCrowdConnected4ModeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s20ExpoFpCrowdConnected4ModeO4hash4intoys6HasherVz_tF",
+            "moduleName": "ExpoFpCrowdConnected",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20ExpoFpCrowdConnected4ModeO",
+        "mangledName": "$s20ExpoFpCrowdConnected4ModeO",
+        "moduleName": "ExpoFpCrowdConnected",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/Settings.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "Dictionary",
       "offset": 336,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 401,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 474,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 1383,
       "length": 14,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 1396,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 1527,
       "length": 5,
       "value": "\"IPS\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 1749,
       "length": 5,
       "value": "\"GEO\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 2199,
       "length": 32,
       "value": "\"[CrowdConnectedProvider] start\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 2265,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 2459,
       "length": 31,
       "value": "\"[CrowdConnectedProvider] stop\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 2524,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 3057,
       "length": 92,
       "value": "\"[CrowdConnectedProvider] The provider requires 'accuracyAuthorization' permission to work.\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 3593,
       "length": 53,
       "value": "\"[CrowdConnectedProvider] CrowdConnectedIPS activate\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 3768,
       "length": 53,
       "value": "\"[CrowdConnectedProvider] CrowdConnectedGeo activate\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 3890,
       "length": 53,
       "value": "\"[CrowdConnectedProvider] CrowdConnectedIPS activate\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 4062,
       "length": 53,
       "value": "\"[CrowdConnectedProvider] CrowdConnectedGeo activate\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 4229,
       "length": 47,
       "value": "\"[CrowdConnectedProvider] CrowdConnected start\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 4665,
       "length": 102,
       "value": "\"[CrowdConnectedProvider] CrowdConnected is connected: \""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 4766,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 5860,
       "length": 42,
       "value": "\"[CrowdConnectedProvider] startNavigation\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 6143,
       "length": 64,
       "value": "\"[CrowdConnectedProvider] CrowdConnected.shared.startNavigation\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 6332,
       "length": 41,
       "value": "\"[CrowdConnectedProvider] stopNavigation\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 6525,
       "length": 63,
       "value": "\"[CrowdConnectedProvider] CrowdConnected.shared.stopNavigation\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 6714,
       "length": 44,
       "value": "\"[CrowdConnectedProvider] requestPermission\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 6866,
       "length": 67,
       "value": "\"[CrowdConnectedProvider] request 'AlwaysAuthorization' permission\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 7055,
       "length": 70,
       "value": "\"[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission\""
     },
     {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/src\/CrowdConnectedProvider.swift",
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 22,
