@@ -18,8 +18,10 @@ public class Settings {
   final public let token: Swift.String
   final public let secret: Swift.String
   final public let mode: ExpoFpCrowdConnected.Mode
+  final public let isNavigationEnable: Swift.Bool
   public var aliases: [Swift.String : Swift.String]
   public init(_ appKey: Swift.String, _ token: Swift.String, _ secret: Swift.String, _ mode: ExpoFpCrowdConnected.Mode = Mode.IPS_ONLY, aliases: [Swift.String : Swift.String] = [:])
+  public init(_ appKey: Swift.String, _ token: Swift.String, _ secret: Swift.String, _ mode: ExpoFpCrowdConnected.Mode = Mode.IPS_ONLY, aliases: [Swift.String : Swift.String] = [:], _ enableNavigation: Swift.Bool = false)
   public func addAlias(_ key: Swift.String, _ value: Swift.String)
   @objc deinit
 }
