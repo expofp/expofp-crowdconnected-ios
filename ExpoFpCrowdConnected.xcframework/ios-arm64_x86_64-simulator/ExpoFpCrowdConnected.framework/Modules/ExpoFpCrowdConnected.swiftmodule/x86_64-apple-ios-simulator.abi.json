@@ -627,12 +627,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "ExpoFpCommon.LocationProviderDelegate?",
+                "printedName": "(any ExpoFpCommon.LocationProviderDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "LocationProviderDelegate",
-                    "printedName": "ExpoFpCommon.LocationProviderDelegate",
+                    "printedName": "any ExpoFpCommon.LocationProviderDelegate",
                     "usr": "s:12ExpoFpCommon24LocationProviderDelegateP"
                   }
                 ],
@@ -655,12 +655,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "ExpoFpCommon.LocationProviderDelegate?",
+                    "printedName": "(any ExpoFpCommon.LocationProviderDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "LocationProviderDelegate",
-                        "printedName": "ExpoFpCommon.LocationProviderDelegate",
+                        "printedName": "any ExpoFpCommon.LocationProviderDelegate",
                         "usr": "s:12ExpoFpCommon24LocationProviderDelegateP"
                       }
                     ],
@@ -686,12 +686,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "ExpoFpCommon.LocationProviderDelegate?",
+                    "printedName": "(any ExpoFpCommon.LocationProviderDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "LocationProviderDelegate",
-                        "printedName": "ExpoFpCommon.LocationProviderDelegate",
+                        "printedName": "any ExpoFpCommon.LocationProviderDelegate",
                         "usr": "s:12ExpoFpCommon24LocationProviderDelegateP"
                       }
                     ],
@@ -1223,13 +1223,6 @@
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
-      "kind": "BooleanLiteral",
-      "offset": 536,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "Dictionary",
       "offset": 711,
       "length": 3,
@@ -1255,167 +1248,6 @@
       "offset": 474,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1383,
-      "length": 14,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1396,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1527,
-      "length": 5,
-      "value": "\"IPS\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1749,
-      "length": 5,
-      "value": "\"GEO\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 2199,
-      "length": 32,
-      "value": "\"[CrowdConnectedProvider] start\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2265,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 2459,
-      "length": 31,
-      "value": "\"[CrowdConnectedProvider] stop\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2524,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 3057,
-      "length": 92,
-      "value": "\"[CrowdConnectedProvider] The provider requires 'accuracyAuthorization' permission to work.\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 3593,
-      "length": 53,
-      "value": "\"[CrowdConnectedProvider] CrowdConnectedIPS activate\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 3768,
-      "length": 53,
-      "value": "\"[CrowdConnectedProvider] CrowdConnectedGeo activate\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 3890,
-      "length": 53,
-      "value": "\"[CrowdConnectedProvider] CrowdConnectedIPS activate\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 4062,
-      "length": 53,
-      "value": "\"[CrowdConnectedProvider] CrowdConnectedGeo activate\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 4229,
-      "length": 47,
-      "value": "\"[CrowdConnectedProvider] CrowdConnected start\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 4665,
-      "length": 102,
-      "value": "\"[CrowdConnectedProvider] CrowdConnected is connected: \""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 4766,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 5860,
-      "length": 42,
-      "value": "\"[CrowdConnectedProvider] startNavigation\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 6123,
-      "length": 64,
-      "value": "\"[CrowdConnectedProvider] CrowdConnected.shared.startNavigation\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 6312,
-      "length": 41,
-      "value": "\"[CrowdConnectedProvider] stopNavigation\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 6485,
-      "length": 63,
-      "value": "\"[CrowdConnectedProvider] CrowdConnected.shared.stopNavigation\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 6674,
-      "length": 44,
-      "value": "\"[CrowdConnectedProvider] requestPermission\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 6826,
-      "length": 67,
-      "value": "\"[CrowdConnectedProvider] request 'AlwaysAuthorization' permission\""
-    },
-    {
-      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 7015,
-      "length": 70,
-      "value": "\"[CrowdConnectedProvider] request 'WhenInUseAuthorization' permission\""
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/CrowdConnectedProvider.swift",
