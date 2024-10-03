@@ -6,7 +6,7 @@
 	<dict>
 		<key>CrowdConnectedCoreResources.bundle/Info.plist</key>
 		<data>
-		hyaV6rWxD9rZJwtJSFKEWgZpAAY=
+		Sfzyc20DD1nZExbYoCkZmOj09kQ=
 		</data>
 		<key>CrowdConnectedCoreResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/ExpoFpCrowdConnected.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		TLuPWIyO4fLJtOeYHBOc+yG8GSU=
+		6QdQMneQgzge1z+ND9xkKSIwq0w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			npLsA0KL+D6hGO/lcV8YGkejhQrNbpog9XXhytyJPOw=
+			9umeP/lFtD0BABU4vNtsNG/yEFDtNjXiyjIL88NoUyA=
 			</data>
 		</dict>
 		<key>CrowdConnectedCoreResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ya3YQb4PkXEAUbkemTnHluBk/1jyQnbW8TVMJUT3KaI=
+			PczxE+QJPSP5yCFT4f4EYZ+6ieO7bsBgptZy0P3PaRc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
