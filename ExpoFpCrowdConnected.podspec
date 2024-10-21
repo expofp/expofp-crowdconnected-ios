@@ -19,6 +19,7 @@ Pod::Spec.new do |spec|
 
   # Add here any resources to be exported.
   spec.dependency 'ExpoFpCommon', '4.5.13'
+  spec.dependency 'AWSKinesis', '~> 2.28.2'
   spec.dependency 'CrowdConnectedShared', '~> 1.6.6'
   spec.dependency 'CrowdConnectedCore', '~> 1.6.6'
   spec.dependency 'CrowdConnectedIPS', '~> 1.6.6'
