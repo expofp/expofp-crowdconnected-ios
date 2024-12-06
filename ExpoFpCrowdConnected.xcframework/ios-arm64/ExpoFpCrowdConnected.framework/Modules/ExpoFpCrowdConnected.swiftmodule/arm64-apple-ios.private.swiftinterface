@@ -31,7 +31,7 @@ public class Settings {
   }
   public init(_ settings: ExpoFpCrowdConnected.Settings)
   @objc public func didUpdateLocation(_ locations: [CrowdConnectedCore.Location])
-  public func start(_ inBackground: Swift.Bool)
+  public func start()
   public func stop()
   @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
   @objc deinit
