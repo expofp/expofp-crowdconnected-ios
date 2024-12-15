@@ -307,11 +307,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class Location;
 @class CLLocationManager;
+@class CLHeading;
 
 SWIFT_CLASS("_TtC20ExpoFpCrowdConnected22CrowdConnectedProvider")
 @interface CrowdConnectedProvider : NSObject <CLLocationManagerDelegate, CrowdConnectedDelegate>
 - (void)didUpdateLocation:(NSArray<Location *> * _Nonnull)locations;
 - (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateHeading:(CLHeading * _Nonnull)newHeading;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
