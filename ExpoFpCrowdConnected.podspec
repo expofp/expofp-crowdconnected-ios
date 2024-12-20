@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpCrowdConnected"
-  spec.version            = "4.8.2"
+  spec.version            = "4.8.3"
   spec.platform           = :ios, '14.0'
   spec.summary            = "ExpoFP-CrowdConnected location provider"
   spec.description        = "CrowdConnected location provider for ExpoFP SDK"
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "ExpoFpCrowdConnected.xcframework"
 
   # Add here any resources to be exported.
-  spec.dependency 'ExpoFpCommon', '4.8.2'
+  spec.dependency 'ExpoFpCommon', '4.8.3'
 
   #spec.dependency 'AWSKinesis', '~> 2.28.2'
 
