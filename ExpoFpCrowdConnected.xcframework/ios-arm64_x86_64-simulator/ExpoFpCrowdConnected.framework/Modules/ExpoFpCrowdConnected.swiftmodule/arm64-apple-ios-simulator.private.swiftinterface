@@ -19,9 +19,11 @@ public class Settings {
   final public let secret: Swift.String
   final public let mode: ExpoFpCrowdConnected.Mode
   final public let inBackground: Swift.Bool
+  final public let enableHeading: Swift.Bool
   public var aliases: [Swift.String : Swift.String]
   public init(appKey: Swift.String, token: Swift.String, secret: Swift.String, mode: ExpoFpCrowdConnected.Mode = Mode.IPS_ONLY, aliases: [Swift.String : Swift.String] = [:])
   public init(appKey: Swift.String, token: Swift.String, secret: Swift.String, mode: ExpoFpCrowdConnected.Mode = Mode.IPS_ONLY, inBackground: Swift.Bool = false, aliases: [Swift.String : Swift.String] = [:])
+  public init(appKey: Swift.String, token: Swift.String, secret: Swift.String, mode: ExpoFpCrowdConnected.Mode = Mode.IPS_ONLY, inBackground: Swift.Bool = false, enableHeading: Swift.Bool = false, aliases: [Swift.String : Swift.String] = [:])
   public func addAlias(_ key: Swift.String, _ value: Swift.String)
   @objc deinit
 }
