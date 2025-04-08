@@ -306,6 +306,54 @@
           },
           {
             "kind": "Var",
+            "name": "isNavigationEnable",
+            "printedName": "isNavigationEnable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC18isNavigationEnableSbvp",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC18isNavigationEnableSbvp",
+            "moduleName": "ExpoFpCrowdConnected",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20ExpoFpCrowdConnected8SettingsC18isNavigationEnableSbvg",
+                "mangledName": "$s20ExpoFpCrowdConnected8SettingsC18isNavigationEnableSbvg",
+                "moduleName": "ExpoFpCrowdConnected",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "aliases",
             "printedName": "aliases",
             "children": [
@@ -575,7 +623,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(appKey:token:secret:mode:inBackground:enableHeading:aliases:)",
+            "printedName": "init(appKey:token:secret:mode:inBackground:enableHeading:enableNavigation:aliases:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -624,6 +672,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Dictionary",
                 "printedName": "[Swift.String : Swift.String]",
                 "children": [
@@ -645,8 +700,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20ExpoFpCrowdConnected8SettingsC6appKey5token6secret4mode12inBackground13enableHeading7aliasesACSS_S2SAA4ModeOS2bSDyS2SGtcfc",
-            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC6appKey5token6secret4mode12inBackground13enableHeading7aliasesACSS_S2SAA4ModeOS2bSDyS2SGtcfc",
+            "usr": "s:20ExpoFpCrowdConnected8SettingsC6appKey5token6secret4mode12inBackground13enableHeading0M10Navigation7aliasesACSS_S2SAA4ModeOS3bSDyS2SGtcfc",
+            "mangledName": "$s20ExpoFpCrowdConnected8SettingsC6appKey5token6secret4mode12inBackground13enableHeading0M10Navigation7aliasesACSS_S2SAA4ModeOS3bSDyS2SGtcfc",
             "moduleName": "ExpoFpCrowdConnected",
             "declAttributes": [
               "AccessControl"
@@ -1418,42 +1473,49 @@
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "Dictionary",
-      "offset": 397,
+      "offset": 437,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "BooleanLiteral",
-      "offset": 746,
+      "offset": 826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "Dictionary",
-      "offset": 781,
+      "offset": 861,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1153,
+      "offset": 1273,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1182,
+      "offset": 1302,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1334,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-crowdconnected-ios-src\/cocoapods\/ExpoFpCrowdConnected\/Settings.swift",
       "kind": "Dictionary",
-      "offset": 1217,
+      "offset": 1385,
       "length": 3,
       "value": "[]"
     },
