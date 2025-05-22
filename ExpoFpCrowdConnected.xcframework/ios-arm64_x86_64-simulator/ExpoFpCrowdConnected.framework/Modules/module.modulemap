@@ -1,4 +1,0 @@
-framework module ExpoFpCrowdConnected {
-  header "ExpoFpCrowdConnected-Swift.h"
-  requires objc
-}

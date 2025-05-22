@@ -14,16 +14,11 @@ Pod::Spec.new do |spec|
   # Supported deployment targets
   spec.ios.deployment_target  = "14.0"
 
-  # Published binaries
-  spec.ios.vendored_frameworks = "ExpoFpCrowdConnected.xcframework"
-
   # Add here any resources to be exported.
-  spec.dependency 'ExpoFpCommon', '4.9.0'
   spec.dependency 'CrowdConnectedShared', '1.6.8'
   spec.dependency 'CrowdConnectedCore', '1.6.8'
-  #spec.dependency 'CrowdConnectedCoreBluetooth', '1.6.8'
   spec.dependency 'CrowdConnectedIPS', '1.6.8'
   spec.dependency 'CrowdConnectedGeo', '1.6.8'
-
+  spec.dependency 'ExpoFpFplan', '5.0.0'
 
 end
