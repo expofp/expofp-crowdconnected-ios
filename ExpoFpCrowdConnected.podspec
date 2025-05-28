@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpCrowdConnected"
-  spec.version            = "4.9.0"
+  spec.version            = "5.0.0"
   spec.platform           = :ios, '14.0'
   spec.summary            = "ExpoFP-CrowdConnected location provider"
   spec.description        = "CrowdConnected location provider for ExpoFP SDK"
   spec.homepage           = "https://www.expofp.com"
   spec.documentation_url  = "https://expofp.github.io/expofp-mobile-sdk/ios-sdk"
   spec.license            = { :type => "MIT" }
-  spec.author                = { 'ExpoFP' => 'support@expofp.com' }
+  spec.author             = { 'ExpoFP' => 'support@expofp.com' }
   spec.source             = { :git => 'https://github.com/expofp/expofp-crowdconnected-ios.git', :tag => "#{spec.version}" }
   spec.swift_version      = "5"
 
