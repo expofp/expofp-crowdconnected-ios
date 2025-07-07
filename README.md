@@ -5,15 +5,33 @@
 [![Platform](https://img.shields.io/badge/Platforms-%20iOS%20|%20iPadOS-lightgrey.svg)](https://github.com/expofp/expofp-crowdconnected-ios)
 
 **ExpoFpCrowdConnected** is a wrapper around [CrowdConnected Location Provider](https://github.com/CrowdConnected), made for **ExpoFP** floor plans.<br>
-This package includes the latest version of [ExpoFP SDK](https://github.com/expofp/expofp-fplan-ios).<br>
-Also you can take [CrowdConnected SDK](https://github.com/CrowdConnected) and create your own wrapper to use with [ExpoFP SDK](https://github.com/expofp/expofp-fplan-ios) after confirming it to `IExpoFpLocationProvider` protocol following the example in this package.
+This package includes the latest version of [ExpoFP SDK](https://github.com/expofp/expofp-sdk-ios).<br>
+Also you can take [CrowdConnected SDK](https://github.com/CrowdConnected) and create your own wrapper to use with [ExpoFP SDK](https://github.com/expofp/expofp-sdk-ios) after confirming it to `IExpoFpLocationProvider` protocol following the [documentation](https://expofp.github.io/expofp-sdk-ios/documentation/expofp/setup-navigation) or the example in this package.
 
-## 1 Installation
+## Setup
 
-To use Location Provider you **must add** `NSLocationWhenInUseUsageDescription` key in your app `Info.plist` file.<br>
-To use Location Provider in background you **must also add** `NSLocationAlwaysUsageDescription` key in your app `Info.plist` file.
+### Activate GPS/IPS option:
+![image](https://github.com/user-attachments/assets/65658895-cd91-4a66-936d-c7e9bf8ffd82)
 
-### 1.1 Swift Package Manager
+### Add permissions to Info.plist:
+
+```xml
+<key>UIBackgroundModes</key>
+<array>
+<string>location</string>
+</array>
+
+<key>NSLocationAlwaysUsageDescription</key>
+<string>Platform location requested for better indoor positioning experience.</string>
+
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>Platform location requested for better indoor positioning experience.</string>
+
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Platform location requested for better indoor positioning experience.</string>
+```
+
+### Swift Package Manager
 
 ```swift
 dependencies: [
@@ -21,7 +39,7 @@ dependencies: [
 ]
 ```
 
-and then as a dependency for the Package target utilizing **ExpoFpCrowdConnected**:
+and add it to your target’s dependencies
 
 ```swift
 .target(
@@ -32,14 +50,16 @@ and then as a dependency for the Package target utilizing **ExpoFpCrowdConnected
 ),
 ```
 
-### 1.2 CocoaPods
+### CocoaPods
+> Warning: CocoaPods [will be deprecated soon](https://blog.cocoapods.org/CocoaPods-Specs-Repo/)
 
 ```swift
-spec.dependency 'ExpoFpCrowdConnected', '~>5.0.0'
+target 'MyApp' do
+    pod 'ExpoFpCrowdConnected', '~> 5.0.0'
+end
 ```
 
-## 2 Usage
-### 2.1 Load a location provider
+## Quick Guide
 
 ```swift
 let settings = ExpoFpCrowdConnectedLocationProviderSettings(
@@ -51,68 +71,24 @@ let settings = ExpoFpCrowdConnectedLocationProviderSettings(
     isHeadingEnabled: false, // or true if settings allowed
     aliases: ["AliasKey": "AliasValue"]
 )
+
 let locationProvider = ExpoFpCrowdConnectedLocationProvider(settings: settings)
+
 let presenter = ExpoFpPlan.createPlanPresenter(
     with: .expoKey("YourExpoKey"),
     locationProvider: locationProvider
 )
 ```
-Plan will call `startUpdatingLocation()` when it appers and `stopUpdatingLocation()` when it disappears.
 
-### 2.2 Load a global location provider
-
-```swift
-let settings = ExpoFpCrowdConnectedLocationProviderSettings(
-    appKey: "YourAppKey",
-    token: "YourToken",
-    secret: "YourSecret",
-    navigationType: ExpoFpCrowdConnectedNavigationType = .ips, // or .geo or .all
-    isAllowInBackground: false, // or true if settings allowed
-    isHeadingEnabled: false, // or true if settings allowed
-    aliases: ["AliasKey": "AliasValue"]
-)
-let locationProvider = ExpoFpCrowdConnectedLocationProvider(settings: settings)
-
-ExpoFpPlan.globalLocationProvider.sharedProvider = locationProvider
-
-locationProvider.startUpdatingLocation() // if needed
-
-let presenter = ExpoFpPlan.createPlanPresenter(
-    with: .expoKey("YourExpoKey"),
-    locationProvider: ExpoFpPlan.globalLocationProvider
-)
-```
-Plan will call `startUpdatingLocation()` when it appers.<br>
-**Important:** Plan will not call `stopUpdatingLocation()` when it disappears. You are responsible to stop global location provider when you need.
-
-### 2.3 Location provider management
-
-#### Start updating location:
-```swift
-locationProvider.startUpdatingLocation()
-
-or if global location provider is set
-
-ExpoFpPlan.globalLocationProvider.startUpdatingLocation()
-```
-
-#### Stop updating location:
-```swift
-locationProvider.stopUpdatingLocation()
-
-or if global location provider is set
-
-ExpoFpPlan.globalLocationProvider.stopUpdatingLocation()
-```
-
-#### Listen location updates:
+Or set to `presenter` after initialization
 
 ```swift
-let delegate: ExpoFpLocationProviderDelegate = YourExpoFpLocationProviderDelegate()
-locationProvider.expoFpLocationProviderDelegate = delegate
-
-or if global location provider is set
-
-ExpoFpPlan.globalLocationProvider.expoFpLocationProviderDelegate = delegate
+presenter.setLocationProvider(locationProvider)
 ```
-**Important:** When you initialize `IExpoFpPlanPresenter` with location provider, it automatically becomes location provider delegate. If you need to listen location updates, don't set it to presenter, instead you can update location manually using `presenter.selectCurrentPosition(position)`
+
+When a plan appers it will call [startUpdatingLocation()](https://expofp.github.io/expofp-sdk-ios/documentation/expofp/iexpofplocationprovider/startupdatinglocation()) and start updating the location automatically.<br>
+When a plan disappears it will call [stopUpdatingLocation()](https://expofp.github.io/expofp-sdk-ios/documentation/expofp/iexpofplocationprovider/stopupdatinglocation()) **if location provider is not set as Global**.<br>
+You also can manually start and stop your location provider using these methods.
+
+Use our full documentation to [setup global location provider](https://expofp.github.io/expofp-sdk-ios/documentation/expofp/setup-navigation#Setup-location-provider-as-Global) and
+[listen location updates](https://expofp.github.io/expofp-sdk-ios/documentation/expofp/setup-navigation#Listen-location-updates-manually).

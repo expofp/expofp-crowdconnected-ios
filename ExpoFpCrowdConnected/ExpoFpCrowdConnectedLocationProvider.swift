@@ -11,7 +11,7 @@ import CrowdConnectedCore
 import CrowdConnectedGeo
 import CrowdConnectedIPS
 import CrowdConnectedShared
-import ExpoFpFplan
+import ExpoFP
 import Foundation
 
 public final class ExpoFpCrowdConnectedLocationProvider:

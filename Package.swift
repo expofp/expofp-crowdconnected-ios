@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://github.com/crowdconnected/crowdconnected-core-ios", exact: "1.6.8"),
         .package(url: "https://github.com/crowdconnected/crowdconnected-ips-ios", exact: "1.6.8"),
         .package(url: "https://github.com/crowdconnected/crowdconnected-geo-ios", exact: "1.6.8"),
-        .package(url: "https://github.com/expofp/expofp-fplan-ios", exact: "5.0.0"),
+        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.1.0"),
     ],
     targets: [
         .target(
@@ -27,7 +27,7 @@ let package = Package(
                 .product(name: "CrowdConnectedCore", package: "crowdconnected-core-ios"),
                 .product(name: "CrowdConnectedIPS", package: "crowdconnected-ips-ios"),
                 .product(name: "CrowdConnectedGeo", package: "crowdconnected-geo-ios"),
-                .product(name: "ExpoFpFplan", package: "expofp-fplan-ios"),
+                .product(name: "ExpoFP", package: "expofp-sdk-ios"),
             ],
             path: "ExpoFpCrowdConnected"
         ),

@@ -5,10 +5,10 @@ Pod::Spec.new do |spec|
   spec.summary            = "ExpoFP-CrowdConnected location provider"
   spec.description        = "CrowdConnected location provider for ExpoFP SDK"
   spec.homepage           = "https://www.expofp.com"
-  spec.documentation_url  = "https://expofp.github.io/expofp-mobile-sdk/ios-sdk"
-  spec.license            = { :type => "MIT" }
+  spec.documentation_url  = "https://github.com/expofp/expofp-crowdconnected-ios"
+  spec.license            = { :type => "MIT", :file => "LICENSE.md" }
   spec.author             = { 'ExpoFP' => 'support@expofp.com' }
-  spec.source             = { :git => 'https://github.com/expofp/expofp-crowdconnected-ios.git', :tag => "#{spec.version}" }
+  spec.source             = { :git => 'https://github.com/expofp/expofp-crowdconnected-ios.git', :tag => "v#{spec.version}" }
   spec.swift_version      = "5"
 
   # Supported deployment targets
@@ -19,6 +19,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'CrowdConnectedCore', '1.6.8'
   spec.dependency 'CrowdConnectedIPS', '1.6.8'
   spec.dependency 'CrowdConnectedGeo', '1.6.8'
-  spec.dependency 'ExpoFpFplan', '5.0.0'
+  spec.dependency 'ExpoFP', '~> 5.1.0'
 
 end
