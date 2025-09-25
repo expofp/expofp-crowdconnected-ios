@@ -6,6 +6,7 @@
 //  Copyright © 2025 ExpoFP. All rights reserved.
 //
 
+/// A type of navigation that can be enabled in the CrowdConnected framework.
 public enum ExpoFpCrowdConnectedNavigationType: String {
     case all
     case geo = "GEO"

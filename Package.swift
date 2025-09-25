@@ -13,20 +13,18 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/crowdconnected/crowdconnected-shared-ios", exact: "1.6.8"),
-        .package(url: "https://github.com/crowdconnected/crowdconnected-core-ios", exact: "1.6.8"),
-        .package(url: "https://github.com/crowdconnected/crowdconnected-ips-ios", exact: "1.6.8"),
-        .package(url: "https://github.com/crowdconnected/crowdconnected-geo-ios", exact: "1.6.8"),
-        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.1.0"),
+        .package(url: "https://github.com/crowdconnected/crowdconnected-sdk-swift-spm", exact: "2.2.0"),
+        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.2.0"),
     ],
     targets: [
         .target(
             name: "ExpoFpCrowdConnected",
             dependencies: [
-                .product(name: "CrowdConnectedShared", package: "crowdconnected-shared-ios"),
-                .product(name: "CrowdConnectedCore", package: "crowdconnected-core-ios"),
-                .product(name: "CrowdConnectedIPS", package: "crowdconnected-ips-ios"),
-                .product(name: "CrowdConnectedGeo", package: "crowdconnected-geo-ios"),
+                .product(name: "CrowdConnectedCore", package: "crowdconnected-sdk-swift-spm"),
+                .product(name: "CrowdConnectedCoreBluetooth", package: "crowdconnected-sdk-swift-spm"),
+                .product(name: "CrowdConnectedGeo", package: "crowdconnected-sdk-swift-spm"),
+                .product(name: "CrowdConnectedIPS", package: "crowdconnected-sdk-swift-spm"),
+                .product(name: "CrowdConnectedShared", package: "crowdconnected-sdk-swift-spm"),
                 .product(name: "ExpoFP", package: "expofp-sdk-ios"),
             ],
             path: "ExpoFpCrowdConnected"
