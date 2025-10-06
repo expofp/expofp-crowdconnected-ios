@@ -30,12 +30,17 @@ public final class ExpoFpCrowdConnectedLocationProvider:
     private let ccLocationManager = CrowdConnected.shared
     private let clLocationManager = CLLocationManager()
     private var isLocationUpdating = false
+    private var timeoutTask: Task<Void, Error>?
 
     private var position = ExpoFpPosition() {
         didSet {
             guard isLocationUpdating else { return }
             expoFpLocationProviderDelegate?.positionDidChange(position)
         }
+    }
+
+    private var deviceIdDescription: String {
+        deviceID.map { "Device ID: \($0). " } ?? ""
     }
 
     // MARK: - Construction
@@ -67,27 +72,27 @@ public final class ExpoFpCrowdConnectedLocationProvider:
     /// Apply new settings.
     /// If location is updating, method will automatically stop and start location updates with new settings
     /// - Parameter settings: Settings for ExpoFpCrowdConnectedLocationProvider initialization.
-    public func updateSettings(_ settings: ExpoFpCrowdConnectedLocationProviderSettings) async throws {
+    public func updateSettings(_ settings: ExpoFpCrowdConnectedLocationProviderSettings) {
         self.settings = settings
 
         if isLocationUpdating {
             stopUpdatingLocation()
-            try await startUpdatingLocation()
+            startUpdatingLocation()
         }
     }
 
-    public func startUpdatingLocation() async throws {
+    public func startUpdatingLocation() {
         guard !isLocationUpdating else { return }
         isLocationUpdating = true
         requestPermission()
-        try await startCrowdConnected()
+        startCrowdConnected()
     }
 
     public func stopUpdatingLocation() {
-        isLocationUpdating = false
-
+        stopTimeoutTask()
         ccLocationManager.stop()
         clLocationManager.stopUpdatingHeading()
+        isLocationUpdating = false
     }
 
     public func didUpdateLocation(_ locations: [Location]) {
@@ -120,6 +125,17 @@ public final class ExpoFpCrowdConnectedLocationProvider:
 
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         requestPermission()
+
+        let errorMessage: String? = switch manager.authorizationStatus {
+        case .denied: "Authorization status: Denied."
+        case .restricted: "Authorization status: Restricted."
+        default: nil
+        }
+
+        errorMessage.map {
+            let message = deviceIdDescription + $0
+            return expoFpLocationProviderDelegate?.errorOccurred(.locationProviderError(message: message), from: .crowdConnected)
+        }
     }
 
     private func requestPermission() {
@@ -132,48 +148,73 @@ public final class ExpoFpCrowdConnectedLocationProvider:
         }
     }
 
-    private func startCrowdConnected() async throws {
-        try await withCheckedThrowingContinuation { [weak self, settings] continuation in
-            self?.ccLocationManager.start(
-                credentials: settings.credentials,
-                trackingMode: settings.trackingMode
-            ) { deviceID, result in
+    private func startCrowdConnected() {
+        startTimeoutTask()
 
-                if deviceID != nil {
-                    self?.deviceID = deviceID
+        ccLocationManager.start(
+            credentials: settings.credentials,
+            trackingMode: settings.trackingMode
+        ) { [weak self, settings, deviceIdDescription] deviceID, result in
+
+            self?.stopTimeoutTask()
+
+            if deviceID != nil {
+                self?.deviceID = deviceID
+            }
+
+            switch result {
+            case .alreadyRunning, .success:
+                if settings.isHeadingEnabled {
+                    self?.clLocationManager.startUpdatingHeading()
                 }
 
-                switch result {
-                case .alreadyRunning, .success:
-                    if settings.isHeadingEnabled {
-                        self?.clLocationManager.startUpdatingHeading()
-                    }
-
-                    if settings.trackingMode.isAllowedInBackground {
-                        self?.ccLocationManager.activateSDKBackgroundRefresh()
-                    }
-
-                    settings.aliases.forEach(CrowdConnected.shared.setAlias)
-                    continuation.resume()
-
-                case .missingAppKey, // will crash the app
-                        .missingToken, // will crash the app
-                        .missingSecret, // will crash the app
-                        .deviceRegistrationFailed,
-                        .noModulesAreActive, // will crash the app
-                        .missingBluetoothPermissionItem, // will crash the app
-                        .missingWhileInUseLocationPermissionItem, // will crash the app
-                        .missingAlwaysLocationPermissionItem, // will crash the app
-                        .missingLocationBackgroundModeItem, // will crash the app
-                        .missingBluetoothBackgroundModeItem: // will crash the app
-                    self?.stopUpdatingLocation()
-                    continuation.resume(throwing: ExpoFpError.locationProviderError(message: result.description))
-
-                @unknown default:
-                    self?.stopUpdatingLocation()
-                    continuation.resume(throwing: ExpoFpError.locationProviderError(message: "@unknown start result!"))
+                if settings.trackingMode.isAllowedInBackground {
+                    self?.ccLocationManager.activateSDKBackgroundRefresh()
                 }
+
+                settings.aliases.forEach(CrowdConnected.shared.setAlias)
+
+            case .missingAppKey, // will crash the app
+                    .missingToken, // will crash the app
+                    .missingSecret, // will crash the app
+                    .deviceRegistrationFailed,
+                    .noModulesAreActive, // will crash the app
+                    .missingBluetoothPermissionItem, // will crash the app
+                    .missingWhileInUseLocationPermissionItem, // will crash the app
+                    .missingAlwaysLocationPermissionItem, // will crash the app
+                    .missingLocationBackgroundModeItem, // will crash the app
+                    .missingBluetoothBackgroundModeItem: // will crash the app
+                self?.stopUpdatingLocation()
+
+                let error = ExpoFpError.locationProviderError(message: deviceIdDescription + result.description)
+                self?.expoFpLocationProviderDelegate?.errorOccurred(error, from: .crowdConnected)
+
+            @unknown default:
+                self?.stopUpdatingLocation()
+
+                let error = ExpoFpError.locationProviderError(message: deviceIdDescription + "@unknown start result!")
+                self?.expoFpLocationProviderDelegate?.errorOccurred(error, from: .crowdConnected)
             }
         }
+    }
+
+    private func startTimeoutTask() {
+        timeoutTask?.cancel()
+
+        timeoutTask = Task { [weak self, deviceIdDescription] in
+            try await Task.sleep(nanoseconds: 65 * 1_000_000_000) // 65 seconds
+            guard !Task.isCancelled else { return }
+
+            let error = ExpoFpError.locationProviderError(message: deviceIdDescription + "Start Timeout!")
+            self?.expoFpLocationProviderDelegate?.errorOccurred(error, from: .crowdConnected)
+
+            self?.stopUpdatingLocation()
+            self?.startUpdatingLocation()
+        }
+    }
+
+    private func stopTimeoutTask() {
+        timeoutTask?.cancel()
+        timeoutTask = nil
     }
 }
