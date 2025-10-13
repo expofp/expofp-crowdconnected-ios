@@ -138,6 +138,8 @@ public final class ExpoFpCrowdConnectedLocationProvider:
         }
     }
 
+    // MARK: - Private Methods
+
     private func requestPermission() {
         if clLocationManager.authorizationStatus == .notDetermined ||
             (clLocationManager.authorizationStatus == .authorizedWhenInUse && settings.trackingMode.isAllowedInBackground) {
