@@ -1,0 +1,14 @@
+//
+//  ExpoFpCrowdConnectedNavigationType.swift
+//  ExpoFpCrowdConnected
+//
+//  Created by Nikita Kolesnikov on 21.05.2025.
+//  Copyright © 2025 ExpoFP. All rights reserved.
+//
+
+/// A type of navigation that can be enabled in the CrowdConnected framework.
+public enum ExpoFpCrowdConnectedNavigationType: String {
+    case all
+    case geo = "GEO"
+    case ips = "IPS"
+}
