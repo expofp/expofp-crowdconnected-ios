@@ -25,11 +25,11 @@ public final class ExpoFpCrowdConnectedLocationProvider:
 
     public weak var expoFpLocationProviderDelegate: ExpoFpLocationProviderDelegate?
     public private(set) var deviceID: DeviceID?
+    public private(set) var isLocationUpdating = false
     public private(set) var settings: ExpoFpCrowdConnectedLocationProviderSettings
 
     private let ccLocationManager = CrowdConnected.shared
     private let clLocationManager = CLLocationManager()
-    private var isLocationUpdating = false
     private var timeoutTask: Task<Void, Error>?
 
     private var position = ExpoFpPosition() {
