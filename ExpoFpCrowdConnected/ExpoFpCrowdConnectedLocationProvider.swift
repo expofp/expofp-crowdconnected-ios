@@ -124,7 +124,9 @@ public final class ExpoFpCrowdConnectedLocationProvider:
     }
 
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        requestPermission()
+        if clLocationManager.authorizationStatus != .notDetermined {
+            requestPermission()
+        }
 
         let errorMessage: String? = switch manager.authorizationStatus {
         case .denied: "Authorization status: Denied."
