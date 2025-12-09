@@ -23,7 +23,9 @@ public final class ExpoFpCrowdConnectedLocationProvider:
 
     // MARK: - Properties
 
-    public weak var expoFpLocationProviderDelegate: ExpoFpLocationProviderDelegate?
+    public let id = UUID()
+    public weak var expoFpLocationProviderDelegate: (any ExpoFpLocationProviderDelegate)?
+
     public private(set) var deviceID: DeviceID?
     public private(set) var isLocationUpdating = false
     public private(set) var settings: ExpoFpCrowdConnectedLocationProviderSettings
@@ -158,7 +160,7 @@ public final class ExpoFpCrowdConnectedLocationProvider:
         ccLocationManager.start(
             credentials: settings.credentials,
             trackingMode: settings.trackingMode
-        ) { [weak self, settings, deviceIdDescription] deviceID, result in
+        ) { [weak self, settings] deviceID, result in
 
             self?.stopTimeoutTask()
 
@@ -170,10 +172,6 @@ public final class ExpoFpCrowdConnectedLocationProvider:
             case .alreadyRunning, .success:
                 if settings.isHeadingEnabled {
                     self?.clLocationManager.startUpdatingHeading()
-                }
-
-                if settings.trackingMode.isAllowedInBackground {
-                    self?.ccLocationManager.activateSDKBackgroundRefresh()
                 }
 
                 settings.aliases.forEach(CrowdConnected.shared.setAlias)
@@ -190,13 +188,13 @@ public final class ExpoFpCrowdConnectedLocationProvider:
                     .missingBluetoothBackgroundModeItem: // will crash the app
                 self?.stopUpdatingLocation()
 
-                let error = ExpoFpError.locationProviderError(message: deviceIdDescription + result.description)
+                let error = ExpoFpError.locationProviderError(message: (self?.deviceIdDescription ?? "") + result.description)
                 self?.expoFpLocationProviderDelegate?.errorOccurred(error, from: .crowdConnected)
 
             @unknown default:
                 self?.stopUpdatingLocation()
 
-                let error = ExpoFpError.locationProviderError(message: deviceIdDescription + "@unknown start result!")
+                let error = ExpoFpError.locationProviderError(message: (self?.deviceIdDescription ?? "") + "@unknown start result!")
                 self?.expoFpLocationProviderDelegate?.errorOccurred(error, from: .crowdConnected)
             }
         }
@@ -205,11 +203,11 @@ public final class ExpoFpCrowdConnectedLocationProvider:
     private func startTimeoutTask() {
         timeoutTask?.cancel()
 
-        timeoutTask = Task { [weak self, deviceIdDescription] in
+        timeoutTask = Task { [weak self] in
             try await Task.sleep(nanoseconds: 65 * 1_000_000_000) // 65 seconds
             guard !Task.isCancelled else { return }
 
-            let error = ExpoFpError.locationProviderError(message: deviceIdDescription + "Start Timeout!")
+            let error = ExpoFpError.locationProviderError(message: (self?.deviceIdDescription ?? "") + "Start Timeout!")
             self?.expoFpLocationProviderDelegate?.errorOccurred(error, from: .crowdConnected)
 
             self?.stopUpdatingLocation()

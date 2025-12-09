@@ -6,7 +6,7 @@
 # Set bash script to exit immediately if any commands fail
 set -e
 
-VERSION="5.1.3"
+VERSION="5.1.4"
 PACKAGE_NAME="ExpoFpCrowdConnected"
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)

@@ -50,7 +50,7 @@ Also you can take [CrowdConnected SDK](https://github.com/crowdconnected/crowdco
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/expofp/expofp-crowdconnected-ios", from: "5.1.3"),
+    .package(url: "https://github.com/expofp/expofp-crowdconnected-ios", from: "5.1.4"),
 ]
 ```
 
@@ -70,7 +70,7 @@ and add it to your target’s dependencies
 
 ```swift
 target 'MyApp' do
-    pod 'ExpoFpCrowdConnected', '~> 5.1.3'
+    pod 'ExpoFpCrowdConnected', '~> 5.1.4'
 end
 ```
 
