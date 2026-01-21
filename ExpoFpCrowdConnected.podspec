@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpCrowdConnected"
-  spec.version            = "5.1.4"
+  spec.version            = "5.1.5"
   spec.platform           = :ios, '14.0'
   spec.summary            = "ExpoFP-CrowdConnected location provider"
   spec.description        = "CrowdConnected location provider for ExpoFP SDK"
@@ -15,11 +15,11 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = "14.0"
 
   # Add here any resources to be exported.
-  spec.dependency 'CrowdConnectedShared', '2.2.1'
-  spec.dependency 'CrowdConnectedCore', '2.2.1'
-  spec.dependency 'CrowdConnectedIPS', '2.2.1'
-  spec.dependency 'CrowdConnectedCoreBluetooth', '2.2.1'
-  spec.dependency 'CrowdConnectedGeo', '2.2.1'
-  spec.dependency 'ExpoFP', '~> 5.4.2'
+  spec.dependency 'CrowdConnectedShared', '2.3.0'
+  spec.dependency 'CrowdConnectedCore', '2.3.0'
+  spec.dependency 'CrowdConnectedIPS', '2.3.0'
+  spec.dependency 'CrowdConnectedCoreBluetooth', '2.3.0'
+  spec.dependency 'CrowdConnectedGeo', '2.3.0'
+  spec.dependency 'ExpoFP', '~> 5.4.4'
 
 end
