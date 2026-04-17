@@ -12,21 +12,16 @@ import ExpoFP
 /// Settings for `ExpoFpCrowdConnectedLocationProvider` initialization.
 public struct ExpoFpCrowdConnectedLocationProviderSettings {
 
-    /// Authentication credentials: `AppKey`, `Token`, `Secret`.
-    ///
-    /// For `AppKey` [register here](https://app.crowdconnected.com/register).
-    ///
-    /// For more information use [Tokens gude](https://customer.support.crowdconnected.com/servicedesk/customer/article/2888139205).
-    public let credentials: SDKCredentials
+    let credentials: Credentials
+
+    /// SDK Configuration containing authentication Credentials and tracking mode.
+    public let configuration: Configuration
 
     /// Navigation type to enable.
-    public let navigationType: ExpoFpCrowdConnectedNavigationType
+    public var modules: [Module] { configuration.modules }
 
-    /// Tracking mode: `foregroundOnly` or `foregroundAndBackground`.
-    public let trackingMode: LocationTrackingMode
-
-    /// Enables CrowdConnected CoreBluetooth positioning.
-    public let isBluetoothEnabled: Bool
+    /// Tracking mode: `foreground` or `background`.
+    public var trackingMode: LocationTrackingMode { configuration.trackingMode }
 
     /// Enables 'heading' on the map using build-in native CoreLocation tools.
     public let isHeadingEnabled: Bool
@@ -37,24 +32,25 @@ public struct ExpoFpCrowdConnectedLocationProviderSettings {
     public let aliases: [String: String]
 
     /// Settings for `ExpoFpCrowdConnectedLocationProvider` initialization.
+    ///
+    ///   For more information about credentials use [Credentials gude](https://crowdconnected.atlassian.net/helpcenter/support/article/2888139205).
+    ///
+    ///   For more information about aliases use [Alias guide](https://customer.support.crowdconnected.com/servicedesk/customer/kb/view/2888204977).
+    ///
     /// - Parameters:
-    ///   - appKey: Authentication credential `AppKey`. For more information [register here](https://app.crowdconnected.com/register).
-    ///   - token: Authentication credential `Token`.
-    ///   For more information use [Tokens gude](https://customer.support.crowdconnected.com/servicedesk/customer/article/2888139205).
-    ///   - secret: Authentication credential `Secret`.
-    ///   For more information use [Tokens gude](https://customer.support.crowdconnected.com/servicedesk/customer/article/2888139205).
-    ///   - navigationTypes: Navigation types to enable.
-    ///   - trackingMode: Tracking mode: `foregroundOnly` or `foregroundAndBackground`.
+    ///   - appKey: Authentication credential `AppKey`.
+    ///   - clientId: Authentication credential `clientId`.
+    ///   - clientSecret: Authentication credential `clientSecret`.
+    ///   - modules: Navigation types to enable.
+    ///   - trackingMode: Tracking mode: `foreground` or `background`.
     ///   - isHeadingEnabled: Enables 'heading' on the map using build-in native CoreLocation tools.
     ///   - aliases: CrowdConnected aliases for deviceID.
-    ///   For more information use [Alias guide](https://customer.support.crowdconnected.com/servicedesk/customer/kb/view/2888204977).
     public init(
         appKey: String,
-        token: String,
-        secret: String,
-        navigationType: ExpoFpCrowdConnectedNavigationType,
+        clientId: String,
+        clientSecret: String,
+        modules: [Module],
         trackingMode: LocationTrackingMode,
-        isBluetoothEnabled: Bool,
         isHeadingEnabled: Bool,
         aliases: [String: String] = [:]
     ) throws(ExpoFpError) {
@@ -62,20 +58,23 @@ public struct ExpoFpCrowdConnectedLocationProviderSettings {
         let appKey = appKey.replacingOccurrences(of: " ", with: "")
         if appKey.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingAppKey)) }
 
-        let token = token.replacingOccurrences(of: " ", with: "")
-        if token.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingToken)) }
+        let clientId = clientId.replacingOccurrences(of: " ", with: "")
+        if clientId.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingToken)) }
 
-        let secret = secret.replacingOccurrences(of: " ", with: "")
-        if secret.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingSecret)) }
+        let clientSecret = clientSecret.replacingOccurrences(of: " ", with: "")
+        if clientSecret.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingSecret)) }
 
-        self.credentials = SDKCredentials(appKey: appKey, token: token, secret: secret)
+        self.credentials = Credentials(appKey: appKey, clientId: clientId, clientSecret: clientSecret)
+
+        if modules.isEmpty || (modules.count == 1 && modules.first == .coreBluetooth) {
+            throw ExpoFpError.locationProviderError(message: Self.message(for: .noModulesAreActive))
+        }
+
+        if modules.contains(where: \.isBluetoothEnabled) { try Self.checkBluetoothPermissions() }
 
         try Self.checkLocationPermissions(for: trackingMode)
-        self.navigationType = navigationType
-        self.trackingMode = trackingMode
 
-        if isBluetoothEnabled { try Self.checkBluetoothPermissions() }
-        self.isBluetoothEnabled = isBluetoothEnabled
+        self.configuration = Configuration(credentials: credentials, modules: modules, trackingMode: trackingMode)
 
         self.isHeadingEnabled = isHeadingEnabled
         self.aliases = aliases
@@ -109,7 +108,7 @@ public struct ExpoFpCrowdConnectedLocationProviderSettings {
         }
     }
 
-    private static func message(for result: CrowdConnectedValidationResult) -> String {
+    private static func message(for result: ErrorCode) -> String {
         result.description
     }
 
