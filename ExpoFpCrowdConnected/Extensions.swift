@@ -10,10 +10,11 @@ import CrowdConnectedCore
 import ExpoFP
 
 extension LocationTrackingMode {
+    var isAllowedInBackground: Bool { self == .background }
+}
 
-    var isAllowedInBackground: Bool {
-        self == .foregroundAndBackground
-    }
+extension Module {
+    var isBluetoothEnabled: Bool { self == .coreBluetooth }
 }
 
 extension ExpoFpPosition {
