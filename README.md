@@ -15,13 +15,13 @@ Also you can take [CrowdConnected SDK](https://github.com/crowdconnected/crowdco
 
 ### Add permissions to Info.plist:
 
-#### If SDK is started in `.foregroundOnly` mode:
+#### If SDK is started in `.foreground` mode:
 ```xml
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>YOUR DESCRIPTIVE TEXT HERE</string>
 ```
 
-#### If SDK is started in `.foregroundAndBackground` mode:
+#### If SDK is started in `.background` mode:
 ```xml
 <key>UIBackgroundModes</key>
 <array>
@@ -50,7 +50,7 @@ Also you can take [CrowdConnected SDK](https://github.com/crowdconnected/crowdco
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/expofp/expofp-crowdconnected-ios", from: "5.1.5"),
+    .package(url: "https://github.com/expofp/expofp-crowdconnected-ios", from: "5.2.0"),
 ]
 ```
 
@@ -66,7 +66,7 @@ and add it to your target’s dependencies
 ```
 
 ### CocoaPods
-> Warning: CocoaPods [will be deprecated soon](https://blog.cocoapods.org/CocoaPods-Specs-Repo/)
+> Warning: CocoaPods [is deprecated](https://blog.cocoapods.org/CocoaPods-Specs-Repo/), the last compatible version is 5.1.5 (CrowdConnected v2.3.0).
 
 ```swift
 target 'MyApp' do
@@ -79,11 +79,10 @@ end
 ```swift
 let settings = try ExpoFpCrowdConnectedLocationProviderSettings(
     appKey: "YourAppKey",
-    token: "YourToken",
-    secret: "YourSecret",
-    navigationType: .all, // or specifically .ips or .geo
-    trackingMode: .foregroundAndBackground, // or .foregroundOnly if background location updates not required
-    isBluetoothEnabled: true, // or false if not required
+    clientId: "YourClientId",
+    clientSecret: "YourClientSecret",
+    modules: [.geo, .ips, .coreBluetooth],
+    trackingMode: .background, // or .foreground if background location updates not required
     isHeadingEnabled: true // or false if not required
 )
 

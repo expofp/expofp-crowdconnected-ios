@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpCrowdConnected"
-  spec.version            = "5.1.5"
+  spec.version            = "5.2.0"
   spec.platform           = :ios, '14.0'
   spec.summary            = "ExpoFP-CrowdConnected location provider"
   spec.description        = "CrowdConnected location provider for ExpoFP SDK"
