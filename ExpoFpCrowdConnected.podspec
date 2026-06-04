@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'CrowdConnectedIPS', '2.3.0'
   spec.dependency 'CrowdConnectedCoreBluetooth', '2.3.0'
   spec.dependency 'CrowdConnectedGeo', '2.3.0'
-  spec.dependency 'ExpoFP', '~> 5.5.0'
+  spec.dependency 'ExpoFP', '~> 5.6.0'
 
 end

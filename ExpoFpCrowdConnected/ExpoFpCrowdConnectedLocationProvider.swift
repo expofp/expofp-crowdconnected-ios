@@ -45,8 +45,6 @@ public final class ExpoFpCrowdConnectedLocationProvider: NSObject, IExpoFpLocati
 
         ccLocationManager.delegate = self
         clLocationManager.delegate = self
-
-        settings.aliases.forEach(ccLocationManager.setAlias)
     }
 
     // MARK: - Methods
@@ -56,7 +54,6 @@ public final class ExpoFpCrowdConnectedLocationProvider: NSObject, IExpoFpLocati
     /// - Parameter settings: Settings for ExpoFpCrowdConnectedLocationProvider initialization.
     public func updateSettings(_ settings: ExpoFpCrowdConnectedLocationProviderSettings) {
         self.settings = settings
-        settings.aliases.forEach(ccLocationManager.setAlias)
 
         if isLocationUpdating {
             stopUpdatingLocation()
@@ -148,6 +145,8 @@ extension ExpoFpCrowdConnectedLocationProvider: CrowdConnectedDelegate {
         if settings.isHeadingEnabled {
             clLocationManager.startUpdatingHeading()
         }
+
+        settings.aliases.forEach(ccLocationManager.setAlias)
     }
 
     public func locationProvider(_ crowdConnected: CrowdConnected, didStartFailure errorCode: ErrorCode) {
