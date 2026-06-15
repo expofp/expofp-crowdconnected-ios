@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ExpoFpCrowdConnected",
-    platforms: [.iOS(.v14)],
+    platforms: [.iOS(.v16)],
     products: [
         .library(
             name: "ExpoFpCrowdConnected",
@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/crowdconnected/crowdconnected-sdk-swift-spm", exact: "3.0.1"),
-        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.6.0"),
+        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.7.0"),
     ],
     targets: [
         .target(

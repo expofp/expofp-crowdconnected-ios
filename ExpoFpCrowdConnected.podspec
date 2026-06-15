@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpCrowdConnected"
-  spec.version            = "5.2.1"
-  spec.platform           = :ios, '14.0'
+  spec.version            = "5.3.0"
+  spec.platform           = :ios, '16.0'
   spec.summary            = "ExpoFP-CrowdConnected location provider"
   spec.description        = "CrowdConnected location provider for ExpoFP SDK"
   spec.homepage           = "https://www.expofp.com"
@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'CrowdConnectedIPS', '2.3.0'
   spec.dependency 'CrowdConnectedCoreBluetooth', '2.3.0'
   spec.dependency 'CrowdConnectedGeo', '2.3.0'
-  spec.dependency 'ExpoFP', '~> 5.6.0'
+  spec.dependency 'ExpoFP', '~> 5.7.0'
 
 end
