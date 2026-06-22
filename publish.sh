@@ -6,7 +6,7 @@
 # Set bash script to exit immediately if any commands fail
 set -e
 
-VERSION="5.3.0"
+VERSION="5.3.1"
 PACKAGE_NAME="ExpoFpCrowdConnected"
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)
@@ -16,7 +16,6 @@ if [ "$current_branch" != "main" ]; then
 fi
 
 echo "🛃 Updating version."
-sed -i '' "s/\(spec\.version[^)]*= *\"\)[^\"]*/\1$VERSION/" "$PACKAGE_NAME.podspec"
 sed -i '' "s/\(\.package([^)]*from: *\"\)[^\"]*/\1$VERSION/" README.md
 
 echo "🛜 Publishing $PACKAGE_NAME."
