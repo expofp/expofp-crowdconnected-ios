@@ -1,0 +1,24 @@
+{
+  "originHash" : "0a377dc9f188647b8222a3abfef0b5f496182aeec73b9d23df8e883a45c2400b",
+  "pins" : [
+    {
+      "identity" : "crowdconnected-sdk-swift-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/crowdconnected/crowdconnected-sdk-swift-spm",
+      "state" : {
+        "revision" : "6a11107c35341122d692c089c5933a4b4b9152ee",
+        "version" : "3.1.1"
+      }
+    },
+    {
+      "identity" : "expofp-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/expofp/expofp-sdk-ios",
+      "state" : {
+        "revision" : "1009bf57b732479f879dd856c29ce5083bbc8ba6",
+        "version" : "5.11.0"
+      }
+    }
+  ],
+  "version" : 3
+}
