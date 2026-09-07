@@ -6,7 +6,7 @@
 
 **ExpoFpCrowdConnected** is a wrapper around [CrowdConnected Location Provider](https://github.com/crowdconnected/crowdconnected-sdk-swift-spm), made for **ExpoFP** floor plans.<br>
 This package includes the latest version of [ExpoFP SDK](https://github.com/expofp/expofp-sdk-ios).<br>
-Also you can take [CrowdConnected SDK](https://github.com/crowdconnected/crowdconnected-sdk-swift-spm) and create your own wrapper to use with [ExpoFP SDK](https://github.com/expofp/expofp-sdk-ios) following the [CrowdConnected documentation](https://customer.support.crowdconnected.com/servicedesk/customer/article/3098935297) and this package as an example.
+Also you can take [CrowdConnected SDK](https://github.com/crowdconnected/crowdconnected-sdk-swift-spm) and create your own wrapper to use with [ExpoFP SDK](https://github.com/expofp/expofp-sdk-ios) following the [CrowdConnected documentation](https://docs.crowdconnected.com/ios/3.1.1/documentation/crowdconnectedcore/) and this package as an example.
 
 ## Setup
 

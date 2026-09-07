@@ -1,0 +1,154 @@
+name: Claude PR Review
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  id-token: write
+  actions: read
+
+jobs:
+  derive_context:
+    if: |
+      github.actor != 'claude[bot]' &&
+      github.event.issue.pull_request != null &&
+      startsWith(github.event.comment.body, '@claude') &&
+      (
+        github.event.comment.author_association == 'OWNER' ||
+        github.event.comment.author_association == 'MEMBER'
+      )
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    outputs:
+      pr_number: ${{ steps.ctx.outputs.pr_number }}
+      model: ${{ steps.ctx.outputs.model }}
+      max_turns: ${{ steps.ctx.outputs.max_turns }}
+      model_key: ${{ steps.ctx.outputs.model_key }}
+      focus: ${{ steps.ctx.outputs.focus }}
+
+    steps:
+      - name: Derive trigger context
+        id: ctx
+        env:
+          PR_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          set -euo pipefail
+
+          # Default mode = Sonnet light. Override by trailing modifier on the @claude line:
+          #  - "@claude deep" → Opus deep
+          #  - "@claude focus: <text>" → focus_areas
+          # Modifiers must appear on the same line as @claude; subsequent lines are
+          # ignored so that words like "focus:" elsewhere in the comment do not trigger
+          # parsing.
+          MODEL="claude-sonnet-5"
+          MAX_TURNS="35"
+          MODEL_KEY="sonnet"
+          FOCUS=""
+
+          FIRST_LINE=$(printf '%s' "$COMMENT_BODY" | sed -n '1p')
+
+          # First word after @claude (whitespace-separated).
+          FIRST=$(printf '%s' "$FIRST_LINE" | sed -nE 's/^@claude[[:space:]]+([^[:space:]]+).*/\1/p')
+          if [ "$FIRST" = "deep" ]; then
+            MODEL="claude-opus-5"
+            MAX_TURNS="50"
+            MODEL_KEY="opus"
+          fi
+          # focus: <text-to-end-of-line on the @claude line> — capped at 200 chars.
+          FOCUS=$(printf '%s' "$FIRST_LINE" | sed -nE 's/^@claude[[:space:]]+.*focus:[[:space:]]*(.+)$/\1/p' | head -c 200 || true)
+
+          {
+            echo "pr_number=$PR_NUMBER"
+            echo "model=$MODEL"
+            echo "max_turns=$MAX_TURNS"
+            echo "model_key=$MODEL_KEY"
+            echo "focus=$FOCUS"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "PR=$PR_NUMBER Model=$MODEL MaxTurns=$MAX_TURNS Focus='$FOCUS'"
+
+  review:
+    needs: derive_context
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+
+    concurrency:
+      group: claude-review-${{ needs.derive_context.outputs.pr_number }}-${{ needs.derive_context.outputs.model_key }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout PR branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ needs.derive_context.outputs.pr_number }}
+        run: gh pr checkout "$PR_NUMBER"
+
+      - name: Claude PR Review
+        id: claude_review
+        continue-on-error: true
+        timeout-minutes: 60
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          track_progress: true
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR NUMBER: ${{ needs.derive_context.outputs.pr_number }}
+            MODE: ${{ needs.derive_context.outputs.model_key }}
+            FOCUS: ${{ needs.derive_context.outputs.focus }}
+
+            Read `REVIEW.md` first. It is the source of truth for PR review
+            rules — review modes, mandatory JS API verification, output format
+            (single batched Review object), deduplication, and severity
+            conventions all live there.
+
+            Read `CLAUDE.md` only as additional project context. If `REVIEW.md`
+            and `CLAUDE.md` conflict, `REVIEW.md` wins for this review.
+
+            Apply the mode named above (see `# Review Modes` in REVIEW.md).
+            If FOCUS is non-empty, restrict findings to that area per the
+            `# Review Modes` rule.
+
+            Publish exactly one Review object via the GitHub Reviews API as
+            described in `# Review Output Format`. Do not post scattered
+            individual comments. Do not submit review text to workflow logs.
+
+          claude_args: |
+            --model ${{ needs.derive_context.outputs.model }}
+            --max-turns ${{ needs.derive_context.outputs.max_turns }}
+            --allowedTools "WebFetch(domain:js-sdk.expofp.com),mcp__github_inline_comment__create_inline_comment,Bash(gh api repos/*/pulls/*/reviews:*),Bash(gh api repos/*/pulls/*/comments:*),Bash(gh api repos/*/issues/*/comments:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(git diff:*),Bash(git log:*),Bash(git show:*)"
+            --disallowedTools "Edit,MultiEdit,Write,NotebookEditCell,Bash(git push:*),Bash(gh pr merge:*),Bash(gh pr close:*),Bash(gh pr edit:*),Bash(gh pr comment:*)"
+
+      - name: Notify PR if Claude review failed
+        if: steps.claude_review.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ needs.derive_context.outputs.pr_number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh pr comment "$PR_NUMBER" --body "⚠️ Claude PR review did not complete.
+
+          Possible reasons:
+          - Claude usage limit was reached
+          - the action timed out
+          - max-turns was reached before completion
+          - GitHub or Claude action failed
+
+          The review may be incomplete.
+
+          Workflow logs:
+          $RUN_URL"
+
+          exit 1
