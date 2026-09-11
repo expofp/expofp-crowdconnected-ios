@@ -83,7 +83,8 @@ let settings = try ExpoFpCrowdConnectedLocationProviderSettings(
     clientSecret: "YourClientSecret",
     modules: [.geo, .ips, .coreBluetooth],
     trackingMode: .background, // or .foreground if background location updates not required
-    isHeadingEnabled: true // or false if not required
+    isHeadingEnabled: true, // or false if not required
+	aliases: [:] // or your personal aliases with `[String: String]` format
 )
 
 let locationProvider = ExpoFpCrowdConnectedLocationProvider(settings: settings)
