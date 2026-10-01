@@ -50,7 +50,7 @@ Also you can take [CrowdConnected SDK](https://github.com/crowdconnected/crowdco
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/expofp/expofp-crowdconnected-ios", from: "5.4.2"),
+    .package(url: "https://github.com/expofp/expofp-crowdconnected-ios", from: "5.4.3"),
 ]
 ```
 

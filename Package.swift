@@ -13,8 +13,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/crowdconnected/crowdconnected-sdk-swift-spm", exact: "3.1.2"),
-        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.11.0"),
+        .package(url: "https://github.com/crowdconnected/crowdconnected-sdk-swift-spm", exact: "3.1.3"),
+        .package(url: "https://github.com/expofp/expofp-sdk-ios", from: "5.12.0"),
     ],
     targets: [
         .target(
