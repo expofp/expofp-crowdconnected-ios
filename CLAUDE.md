@@ -34,7 +34,6 @@ Library only — no app target, no tests, no linter. All source is in `ExpoFpCro
 ## Releasing
 
 Edit `VERSION` in `publish.sh`, run it from `main`: it rewrites the README's SPM version, commits `Release v<VERSION>`,
-tags, and pushes. It does **not** touch `ExpoFpCrowdConnected.podspec` — CocoaPods is frozen at 5.1.5 / CrowdConnected
-2.3.0 while SPM tracks 3.x, so dependency bumps are separate edits in `Package.swift` and the podspec.
+tags, and pushes.
 
 Commit messages carry the Jira key (`EFP-####`) when a change maps to a ticket.
