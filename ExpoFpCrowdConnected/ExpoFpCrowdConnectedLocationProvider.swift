@@ -128,7 +128,7 @@ public final class ExpoFpCrowdConnectedLocationProvider: NSObject, IExpoFpLocati
 
 // MARK: - CLLocationManagerDelegate
 
-extension ExpoFpCrowdConnectedLocationProvider: CLLocationManagerDelegate {
+extension ExpoFpCrowdConnectedLocationProvider: @MainActor CLLocationManagerDelegate {
 
     public func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         guard position != ExpoFpPosition() else { return }
@@ -155,7 +155,7 @@ extension ExpoFpCrowdConnectedLocationProvider: CLLocationManagerDelegate {
 
 // MARK: - CrowdConnectedDelegate
 
-extension ExpoFpCrowdConnectedLocationProvider: CrowdConnectedDelegate {
+extension ExpoFpCrowdConnectedLocationProvider: @MainActor CrowdConnectedDelegate {
 
     public func locationProvider(_ crowdConnected: CrowdConnected, didStartSuccess deviceId: DeviceID) {
         stopTimeoutTask()

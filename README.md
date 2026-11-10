@@ -1,7 +1,6 @@
 <img src="https://expofp.com/template/img/site-header-logo-inverse.png" width="350"/>
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ExpoFpCrowdConnected.svg)](https://cocoapods.org/pods/ExpoFpCrowdConnected)
 [![Platform](https://img.shields.io/badge/Platforms-%20iOS%20|%20iPadOS-lightgrey.svg)](https://github.com/expofp/expofp-crowdconnected-ios)
 
 **ExpoFpCrowdConnected** is a wrapper around [CrowdConnected Location Provider](https://github.com/crowdconnected/crowdconnected-sdk-swift-spm), made for **ExpoFP** floor plans.<br>
@@ -63,15 +62,6 @@ and add it to your target’s dependencies
         .product(name: "ExpoFpCrowdConnected", package: "expofp-crowdconnected-ios"),
     ]
 ),
-```
-
-### CocoaPods
-> Warning: CocoaPods [is deprecated](https://blog.cocoapods.org/CocoaPods-Specs-Repo/), the last compatible version is 5.1.5 (CrowdConnected v2.3.0).
-
-```swift
-target 'MyApp' do
-    pod 'ExpoFpCrowdConnected', '~> 5.1.5'
-end
 ```
 
 ## Quick Guide
