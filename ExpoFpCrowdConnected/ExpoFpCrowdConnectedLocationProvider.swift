@@ -179,11 +179,11 @@ extension ExpoFpCrowdConnectedLocationProvider: CrowdConnectedDelegate {
         ? ExpoFpPosition(
             x: location.pixelCoordinates?.xPixels,
             y: location.pixelCoordinates?.yPixels,
-            z: .index(location.floor),
+            z: (location.floor?.intValue).map(ExpoFpFloorType.index),
             angle: position.angle
         )
         : ExpoFpPosition(
-            z: .index(location.floor),
+            z: (location.floor?.intValue).map(ExpoFpFloorType.index),
             angle: position.angle,
             lat: location.latitude,
             lng: location.longitude

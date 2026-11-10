@@ -59,10 +59,10 @@ public struct ExpoFpCrowdConnectedLocationProviderSettings {
         if appKey.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingAppKey)) }
 
         let clientId = clientId.replacingOccurrences(of: " ", with: "")
-        if clientId.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingToken)) }
+        if clientId.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingClientId)) }
 
         let clientSecret = clientSecret.replacingOccurrences(of: " ", with: "")
-        if clientSecret.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingSecret)) }
+        if clientSecret.isEmpty { throw ExpoFpError.locationProviderError(message: Self.message(for: .missingClientSecret)) }
 
         self.credentials = Credentials(appKey: appKey, clientId: clientId, clientSecret: clientSecret)
 
